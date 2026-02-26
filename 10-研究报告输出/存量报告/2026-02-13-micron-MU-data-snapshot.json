@@ -1,0 +1,109 @@
+{
+  "fetch_date": "2026-02-13",
+  "ticker": "MU",
+  "name": "Micron Technology, Inc.",
+  "price": 413.97,
+  "market_cap": 465927077888,
+  "enterprise_value": 468102053888,
+  "trailing_pe": 39.388203,
+  "forward_pe": 9.535639,
+  "pb": 7.9265113,
+  "ps_ttm": 11.011701,
+  "ev_revenue": 11.063,
+  "ev_ebitda": 21.053,
+  "trailing_eps": 10.51,
+  "forward_eps": 43.41293,
+  "roe": 0.22554001,
+  "roa": 0.10934,
+  "gross_margin": 0.45308998,
+  "operating_margin": 0.44974998,
+  "profit_margin": 0.28146,
+  "revenue_growth": 0.567,
+  "earnings_growth": 1.754,
+  "total_revenue_ttm": 42311999488,
+  "total_cash": 10318000128,
+  "total_debt": 12492999680,
+  "free_cashflow": 444249984,
+  "operating_cashflow": 22691999744,
+  "beta": 1.505,
+  "book_value": 52.226,
+  "shares_outstanding": 1125509261,
+  "52w_high": 455.5,
+  "52w_low": 61.54,
+  "analyst_target_mean": 387.23077,
+  "analyst_target_high": 500.0,
+  "analyst_target_low": 196.0,
+  "analyst_recommendation": "buy",
+  "analyst_count": 39,
+  "annual_financials": {
+    "FY2025_aug": {
+      "revenue": 37378000000,
+      "gross_profit": 14873000000,
+      "operating_income": 9809000000,
+      "net_income": 8539000000,
+      "ebitda": 18483000000,
+      "capex": 15857000000,
+      "ocf": 17525000000,
+      "fcf": 1668000000,
+      "rnd": 3798000000
+    },
+    "FY2024_aug": {
+      "revenue": 25111000000,
+      "gross_profit": 5613000000,
+      "operating_income": 1305000000,
+      "net_income": 778000000,
+      "ebitda": 9582000000,
+      "capex": 8386000000,
+      "ocf": 8507000000,
+      "fcf": 121000000,
+      "rnd": 3430000000
+    },
+    "FY2023_aug": {
+      "revenue": 15540000000,
+      "gross_profit": -1416000000,
+      "operating_income": -5405000000,
+      "net_income": -5833000000,
+      "ebitda": 2486000000,
+      "capex": null,
+      "rnd": 3114000000
+    },
+    "FY2022_aug": {
+      "revenue": 30758000000,
+      "gross_profit": 13898000000,
+      "operating_income": 9709000000,
+      "net_income": 8687000000,
+      "ebitda": 16876000000,
+      "rnd": 3116000000
+    }
+  },
+  "quarterly_latest": {
+    "FQ1_2026_nov25": {
+      "revenue": 13643000000,
+      "gross_profit": 7646000000,
+      "op_income": 6136000000,
+      "net_income": 5240000000,
+      "ebitda": 8347000000
+    },
+    "FQ4_2025_aug25": {
+      "revenue": 11315000000,
+      "gross_profit": 5054000000,
+      "op_income": 3693000000,
+      "net_income": 3201000000,
+      "ebitda": 5904000000
+    },
+    "FQ3_2025_may25": {
+      "revenue": 9301000000,
+      "gross_profit": 3508000000,
+      "op_income": 2169000000,
+      "net_income": 1885000000,
+      "ebitda": 4330000000
+    },
+    "FQ2_2025_feb25": {
+      "revenue": 8053000000,
+      "gross_profit": 2963000000,
+      "op_income": 1773000000,
+      "net_income": 1583000000,
+      "ebitda": 3949000000
+    }
+  }
+}

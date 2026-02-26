@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-02-09 15:48:27",
+  "sources": {
+    "primary": [
+      "akshare.forex_hist_em",
+      "akshare.index_global_hist_em",
+      "akshare.macro_japan_*"
+    ],
+    "secondary": [
+      "FRED CSV API",
+      "Frankfurter ECB API"
+    ]
+  },
+  "data": {
+    "usd_jpy_akshare": {
+      "last_date": "2026-02-09",
+      "last_open": 157.5743,
+      "last_close": 156.5175
+    },
+    "nikkei_akshare": {
+      "last_date": "2026-02-09",
+      "last_open": 55130.63,
+      "last_close": 56363.94
+    },
+    "japan_macro_akshare": {
+      "boj_policy_rate": {
+        "period": "2026年01月",
+        "value": 0.75,
+        "release_date": "2026-01-23"
+      },
+      "cpi_yoy": {
+        "period": "2025年12月",
+        "value": 2.1,
+        "release_date": "2026-01-23"
+      },
+      "core_cpi_yoy": {
+        "period": "2025年12月",
+        "value": 1.5,
+        "release_date": "2026-01-23"
+      },
+      "unemployment_rate": {
+        "period": "2025年12月",
+        "value": 2.6,
+        "release_date": "2026-01-30"
+      },
+      "leading_index": {
+        "period": "2025年11月",
+        "value": 109.9,
+        "release_date": "2026-01-26"
+      }
+    },
+    "fred": {
+      "usd_jpy_fred": {
+        "series_id": "DEXJPUS",
+        "last_date": "2026-01-30",
+        "last_value": 154.34,
+        "prev_date": "2026-01-29",
+        "prev_value": 152.88
+      },
+      "nikkei_fred": {
+        "series_id": "NIKKEI225",
+        "last_date": "2026-02-06",
+        "last_value": 54253.68,
+        "prev_date": "2026-02-05",
+        "prev_value": 53818.04
+      },
+      "unemployment_fred": {
+        "series_id": "LRHUTTTTJPM156S",
+        "last_date": "2025-11-01",
+        "last_value": 2.6,
+        "prev_date": "2025-10-01",
+        "prev_value": 2.6
+      },
+      "jgb10y_fred": {
+        "series_id": "IRLTLT01JPM156N",
+        "last_date": "2025-12-01",
+        "last_value": 2.06,
+        "prev_date": "2025-11-01",
+        "prev_value": 1.805
+      },
+      "japan_short_rate_fred": {
+        "series_id": "IRSTCI01JPM156N",
+        "last_date": "2025-12-01",
+        "last_value": 0.557,
+        "prev_date": "2025-11-01",
+        "prev_value": 0.478
+      },
+      "real_gdp_level_fred": {
+        "series_id": "JPNRGDPEXP",
+        "last_date": "2025-07-01",
+        "last_value": 590141.1,
+        "prev_date": "2025-04-01",
+        "prev_value": 593596.9,
+        "qoq_pct": -0.5821795902236082
+      },
+      "industrial_production_yoy_fred": {
+        "series_id": "JPNPRINTO01GYSAM",
+        "last_date": "2025-11-01",
+        "last_value": 0.791295746785382,
+        "prev_date": "2025-10-01",
+        "prev_value": 1.45631067961164
+      }
+    },
+    "usd_jpy_frankfurter": {
+      "date": "2026-02-06",
+      "rate": 157.09
+    }
+  },
+  "cross_check": {
+    "usd_jpy_ak_vs_fred": {
+      "date": "2026-01-30",
+      "akshare": 154.7765,
+      "fred": 154.34,
+      "diff_pct": 0.2828171569262636
+    },
+    "nikkei_ak_vs_fred": {
+      "date": "2026-02-06",
+      "akshare": 54253.68,
+      "fred": 54253.68,
+      "diff_pct": 0.0
+    },
+    "unemployment_ak_vs_fred_latest": {
+      "ak_period": "2025年12月",
+      "ak_value": 2.6,
+      "fred_date": "2025-11-01",
+      "fred_value": 2.6,
+      "note": "release calendars differ by about one month"
+    }
+  },
+  "warnings": []
+}

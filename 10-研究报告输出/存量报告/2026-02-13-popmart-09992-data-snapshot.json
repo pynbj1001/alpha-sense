@@ -1,0 +1,165 @@
+{
+  "as_of": "2026-02-13 11:22:49",
+  "company": "????(09992.HK)",
+  "price": {
+    "last_close_yf": 248.8000030517578,
+    "ret_1m_pct": 31.50106081651782,
+    "ret_3m_pct": 12.885666942718753,
+    "ret_6m_pct": -7.164177965762009,
+    "ret_1y_pct": 140.8518835445708,
+    "ann_vol_pct": 60.90204279172616,
+    "last_price_ak_realtime": 249.0,
+    "spot_time_ak": "2026/02/13 11:10:13",
+    "spot_turnover_hkd": 1059661110.0
+  },
+  "valuation_yf": {
+    "marketCap": 330440671232,
+    "enterpriseValue": 323077636096,
+    "trailingPE": 43.269566,
+    "forwardPE": 17.395931,
+    "priceToBook": 20.622623,
+    "dividendYield": 0.35
+  },
+  "fundamental_yf": {
+    "totalRevenue": 22356193280,
+    "revenueGrowth": 2.044,
+    "earningsGrowth": 3.955,
+    "profitMargins": 0.3032,
+    "grossMargins": 0.69554,
+    "operatingMargins": 0.42384997,
+    "returnOnEquity": 0.61409,
+    "returnOnAssets": 0.34513,
+    "debtToEquity": 9.78,
+    "currentRatio": 3.014,
+    "quickRatio": 2.49
+  },
+  "fundamental_ak_annual": [
+    {
+      "report_date": "2024-12-31",
+      "operate_income": 13037749000.0,
+      "operate_income_yoy_pct": 106.9154874098,
+      "holder_profit": 3125473000.0,
+      "holder_profit_yoy_pct": 188.7689126562,
+      "gross_profit_ratio_pct": 66.788868231778,
+      "roe_avg_pct": 33.874164979176,
+      "debt_asset_ratio_pct": 26.8046595339,
+      "current_ratio": 3.630854402397,
+      "per_netcash_operate": 3.689076488457,
+      "basic_eps": 2.36
+    },
+    {
+      "report_date": "2023-12-31",
+      "operate_income": 6301002000.0,
+      "operate_income_yoy_pct": 36.4643676727,
+      "holder_profit": 1082344000.0,
+      "holder_profit_yoy_pct": 127.5457259387,
+      "gross_profit_ratio_pct": 61.32470676886,
+      "roe_avg_pct": 14.692570494627,
+      "debt_asset_ratio_pct": 21.9531655716,
+      "current_ratio": 4.432853266686,
+      "per_netcash_operate": 1.476436946852,
+      "basic_eps": 0.81
+    },
+    {
+      "report_date": "2022-12-31",
+      "operate_income": 4617324000.0,
+      "operate_income_yoy_pct": 2.8208159574,
+      "holder_profit": 475660000.0,
+      "holder_profit_yoy_pct": -44.3242085402,
+      "gross_profit_ratio_pct": 57.490940640076,
+      "roe_avg_pct": 6.902892071746,
+      "debt_asset_ratio_pct": 18.819642562,
+      "current_ratio": 5.850588151019,
+      "per_netcash_operate": 0.645415304896,
+      "basic_eps": 0.35
+    }
+  ],
+  "fundamental_ak_ttm": {
+    "基本每股收益(元)": 3.4417,
+    "每股净资产(元)": 10.56190800035,
+    "法定股本(股)": 5000000000.0,
+    "每手股": 200.0,
+    "每股股息TTM(港元)": 0.8881,
+    "派息比率(%)": 16.2206,
+    "已发行股本(股)": 1341543150.0,
+    "已发行股本-H股(股)": 1341543150.0,
+    "每股经营现金流(元)": 4.451024602196,
+    "股息率TTM(%)": 0.356953,
+    "总市值(港元)": 338337182430.0,
+    "港股市值(港元)": 338337182430.0,
+    "营业总收入": 13876276000.0,
+    "营业总收入滚动环比增长(%)": 71.47280562005,
+    "销售净利率(%)": 33.738972906,
+    "净利润": 4574368000.0,
+    "净利润滚动环比增长(%)": 116.879429129607,
+    "股东权益回报率(%)": 36.789861098885,
+    "市盈率": 45.834939103459,
+    "市净率": 21.753079518309,
+    "总资产回报率(%)": 25.253670907376
+  },
+  "valuation_stress": {
+    "if_pe_30_price": 172.4999989958932,
+    "if_pe_30_dd_pct": -30.667203826356836,
+    "if_pe_25_price": 143.74999916324433,
+    "if_pe_25_dd_pct": -42.22266985529737,
+    "if_pe_to_forward_price": 100.02660266775425,
+    "if_pe_to_forward_dd_pct": -59.79638205754132,
+    "implied_growth_from_trailing_forward_pe_pct": 148.73383321651482
+  },
+  "cross_validation": {
+    "pe_yf_vs_ak_ttm_pct_diff": 5.928816349715647,
+    "pb_yf_vs_ak_ttm_pct_diff": 5.48163305079572,
+    "dividend_yield_yf_vs_ak_ttm_pct_diff": 1.986571428571441,
+    "revenue_yf_vs_ak_ttm_pct_diff": -37.930953511598915,
+    "net_profit_yf_est_vs_ak_ttm_pct_diff": -32.51549800875383
+  },
+  "errors": {},
+  "sources": {
+    "yfinance": "https://finance.yahoo.com/quote/9992.HK",
+    "akshare": "https://github.com/akfamily/akshare"
+  },
+  "derived_annual": {
+    "base_years": [
+      "2022-12-31",
+      "2023-12-31",
+      "2024-12-31"
+    ],
+    "revenue_cagr_pct": 68.03746948542455,
+    "net_profit_cagr_pct": 156.33597457027136,
+    "gross_margin_change_pctpt": 9.297927591701999,
+    "roe_change_pctpt": 26.971272907430002
+  },
+  "latest_report_period": {
+    "report_date": "2024-12-31",
+    "date_type_code": "001",
+    "operate_income": 13037749000.0,
+    "operate_income_yoy_pct": 106.9154874098,
+    "holder_profit": 3125473000.0,
+    "holder_profit_yoy_pct": 188.7689126562,
+    "gross_margin_pct": 66.788868231778,
+    "net_margin_pct": 25.3751241875,
+    "roe_avg_pct": 33.874164979176,
+    "debt_asset_pct": 26.8046595339,
+    "current_ratio": 3.630854402397
+  },
+  "latest_full_year": {
+    "report_date": "2024-12-31",
+    "operate_income": 13037749000.0,
+    "operate_income_yoy_pct": 106.9154874098,
+    "holder_profit": 3125473000.0,
+    "holder_profit_yoy_pct": 188.7689126562,
+    "gross_margin_pct": 66.788868231778,
+    "net_margin_pct": 25.3751241875,
+    "roe_avg_pct": 33.874164979176
+  },
+  "cash_quality_2024_yf": {
+    "revenue": 13037749000.0,
+    "net_income": 3125473000.0,
+    "operating_cashflow": 4954220000.0,
+    "free_cashflow": 4437530000.0,
+    "capex": -516690000.0,
+    "ocf_to_net_income_pct": 158.51104776780986,
+    "fcf_to_net_income_pct": 141.9794699874227,
+    "fcf_margin_pct": 34.03601342532365
+  }
+}

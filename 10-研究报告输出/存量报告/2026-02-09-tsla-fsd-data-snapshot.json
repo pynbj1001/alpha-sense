@@ -1,0 +1,216 @@
+{
+  "as_of_utc": "2026-02-09T06:06:34.595637+00:00",
+  "sources": {
+    "akshare_hist": "ak.stock_us_hist(symbol=\"105.TSLA\")",
+    "akshare_financials": [
+      "ak.stock_financial_us_analysis_indicator_em(symbol=\"TSLA\")",
+      "ak.stock_financial_us_report_em(stock=\"TSLA\", symbol=\"cashflow_statement\")"
+    ],
+    "sec_companyfacts": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
+    "nhtsa_adas_csv": "https://static.nhtsa.gov/odi/ffdd/sgo-2021-01/SGO-2021-01_Incident_Reports_ADAS.csv"
+  },
+  "price": {
+    "latest_trading_date": "2026-02-06",
+    "latest_close": 411.11,
+    "latest_open": 400.87,
+    "latest_high": 414.55,
+    "latest_low": 397.751,
+    "latest_volume": 62677144,
+    "high_52w": 498.83,
+    "low_52w": 214.25,
+    "return_1y_pct": 9.828488993374652
+  },
+  "financials_akshare": {
+    "2025": {
+      "revenue": 94827000000.0,
+      "net_income": 3794000000.0,
+      "diluted_eps": 1.08,
+      "gross_margin_pct": 18.0265114366,
+      "net_margin_pct": 4.0652978582,
+      "roe_pct": 4.8939051919,
+      "debt_asset_pct": 39.8683656735,
+      "notice_date": "2026-01-29 00:00:00",
+      "operating_cf": 14747000000.0,
+      "capex_signed": -8527000000.0,
+      "capex_outflow_abs": 8527000000.0,
+      "fcf": 6220000000.0
+    },
+    "2024": {
+      "revenue": 97690000000.0,
+      "net_income": 7091000000.0,
+      "diluted_eps": 2.04,
+      "gross_margin_pct": 17.8626266762,
+      "net_margin_pct": 7.3221414679,
+      "roe_pct": 10.4627915041,
+      "debt_asset_pct": 39.6411894814,
+      "notice_date": "2026-01-29 00:00:00",
+      "operating_cf": 14923000000.0,
+      "capex_signed": -11342000000.0,
+      "capex_outflow_abs": 11342000000.0,
+      "fcf": 3581000000.0
+    },
+    "2023": {
+      "revenue": 96773000000.0,
+      "net_income": 14997000000.0,
+      "diluted_eps": 4.3,
+      "gross_margin_pct": 18.2488917363,
+      "net_margin_pct": 15.473324171,
+      "roe_pct": 27.9435055619,
+      "debt_asset_pct": 40.3393423249,
+      "notice_date": "2026-01-29 00:00:00",
+      "operating_cf": 13256000000.0,
+      "capex_signed": -8899000000.0,
+      "capex_outflow_abs": 8899000000.0,
+      "fcf": 4357000000.0
+    }
+  },
+  "financials_sec_normalized": {
+    "2025": {
+      "revenue": 94827000000.0,
+      "net_income": 3794000000.0,
+      "operating_cf": 14747000000.0,
+      "capex_signed": -8527000000.0,
+      "capex_outflow_abs": 8527000000.0,
+      "fcf": 6220000000.0,
+      "filed": "2026-01-29",
+      "form": "10-K",
+      "revenue_tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    "2024": {
+      "revenue": 97690000000.0,
+      "net_income": 7091000000.0,
+      "operating_cf": 14923000000.0,
+      "capex_signed": -11339000000.0,
+      "capex_outflow_abs": 11339000000.0,
+      "fcf": 3584000000.0,
+      "filed": "2025-01-30",
+      "form": "10-K",
+      "revenue_tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    "2023": {
+      "revenue": 96773000000.0,
+      "net_income": 14997000000.0,
+      "operating_cf": 13256000000.0,
+      "capex_signed": -8898000000.0,
+      "capex_outflow_abs": 8898000000.0,
+      "fcf": 4358000000.0,
+      "filed": "2024-01-29",
+      "form": "10-K",
+      "revenue_tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+    }
+  },
+  "cross_check": {
+    "2025": {
+      "revenue": {
+        "akshare": 94827000000.0,
+        "sec": 94827000000.0,
+        "pct_diff": 0.0
+      },
+      "net_income": {
+        "akshare": 3794000000.0,
+        "sec": 3794000000.0,
+        "pct_diff": 0.0
+      },
+      "operating_cf": {
+        "akshare": 14747000000.0,
+        "sec": 14747000000.0,
+        "pct_diff": 0.0
+      },
+      "capex_signed": {
+        "akshare": -8527000000.0,
+        "sec": -8527000000.0,
+        "pct_diff": -0.0
+      },
+      "fcf": {
+        "akshare": 6220000000.0,
+        "sec": 6220000000.0,
+        "pct_diff": 0.0
+      }
+    },
+    "2024": {
+      "revenue": {
+        "akshare": 97690000000.0,
+        "sec": 97690000000.0,
+        "pct_diff": 0.0
+      },
+      "net_income": {
+        "akshare": 7091000000.0,
+        "sec": 7091000000.0,
+        "pct_diff": 0.0
+      },
+      "operating_cf": {
+        "akshare": 14923000000.0,
+        "sec": 14923000000.0,
+        "pct_diff": 0.0
+      },
+      "capex_signed": {
+        "akshare": -11342000000.0,
+        "sec": -11339000000.0,
+        "pct_diff": 0.026457359555516362
+      },
+      "fcf": {
+        "akshare": 3581000000.0,
+        "sec": 3584000000.0,
+        "pct_diff": -0.08370535714285714
+      }
+    },
+    "2023": {
+      "revenue": {
+        "akshare": 96773000000.0,
+        "sec": 96773000000.0,
+        "pct_diff": 0.0
+      },
+      "net_income": {
+        "akshare": 14997000000.0,
+        "sec": 14997000000.0,
+        "pct_diff": 0.0
+      },
+      "operating_cf": {
+        "akshare": 13256000000.0,
+        "sec": 13256000000.0,
+        "pct_diff": 0.0
+      },
+      "capex_signed": {
+        "akshare": -8899000000.0,
+        "sec": -8898000000.0,
+        "pct_diff": 0.011238480557428635
+      },
+      "fcf": {
+        "akshare": 4357000000.0,
+        "sec": 4358000000.0,
+        "pct_diff": -0.02294630564479119
+      }
+    }
+  },
+  "valuation_derived": {
+    "shares_outstanding_2025": null,
+    "market_cap_est": null,
+    "trailing_pe_est": 380.6574074074074,
+    "price_to_sales_est": null,
+    "price_to_fcf_est": null,
+    "notes": "Derived from latest close and FY2025 statements."
+  },
+  "nhtsa_adas_snapshot": {
+    "unique_incidents_total_all_makes": 661,
+    "unique_incidents_tesla": 560,
+    "tesla_share_pct": 84.72012102874432,
+    "last_incident_date": "2025-12-01",
+    "severity_counts": {
+      "Unknown": 521,
+      "Fatality": 10,
+      "No Injured Reported": 9,
+      "Minor W/ Hospitalization": 6,
+      "Property Damage. No Injured Reported": 5,
+      "Minor W/O Hospitalization": 5,
+      "Serious W/ Hospitalization": 2,
+      "Moderate W/ Hospitalization": 1,
+      "Serious W/O Hospitalization": 1
+    },
+    "engagement_status_counts": {
+      "Verified Engaged": 557,
+      "Verified Not Engaged": 2,
+      "Alleged Engaged": 1
+    },
+    "limitations": "NHTSA ADAS CSV redacts Tesla automation feature version; cannot isolate FSD from Autopilot in this table."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "投研路由：输入@指令",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/vscode_investment_router.py",
+        "--query",
+        "${input:investQuery}"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "投研路由：@宏观",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/vscode_investment_router.py",
+        "--query",
+        "@宏观"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "投研路由：@日志",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/vscode_investment_router.py",
+        "--query",
+        "@日志"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "投研路由：@机会",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/vscode_investment_router.py",
+        "--query",
+        "@机会"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "同步FSP复用资产（MCP+Skills+Prompts）",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "tools/sync_financial_plugins_reuse.py"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "investQuery",
+      "type": "promptString",
+      "description": "输入指令，例如：@分析 GOOGL / @估值 MSFT / @宏观",
+      "default": "@分析 GOOGL"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "asof": "2026-02-25",
+  "ticker": "ASML",
+  "current_price": 1497.800048828125,
+  "market_cap": 581367627776.0,
+  "shares_outstanding": 388147674.0,
+  "beta": 1.462,
+  "cash": 13321900032.0,
+  "debt": 2708999936.0,
+  "net_debt": -10612900096.0,
+  "latest_revenue": 32667300000.0,
+  "latest_fcf": 11027300000.0,
+  "tax_rate": 0.2,
+  "risk_free": 0.043,
+  "erp": 0.055,
+  "cost_of_equity": 0.12340999999999999,
+  "after_tax_cost_debt": 0.04000000000000001,
+  "base_wacc": 0.12,
+  "peer_table": [
+    {
+      "ticker": "AMAT",
+      "ev_to_ebitda": 33.593,
+      "forward_pe": 27.40804,
+      "revenue_growth": -0.021,
+      "ebitda_margin": 0.31506002
+    },
+    {
+      "ticker": "LRCX",
+      "ev_to_ebitda": 41.304,
+      "forward_pe": 35.464497,
+      "revenue_growth": 0.221,
+      "ebitda_margin": 0.35717
+    },
+    {
+      "ticker": "KLAC",
+      "ev_to_ebitda": 34.55,
+      "forward_pe": 32.52321,
+      "revenue_growth": 0.072,
+      "ebitda_margin": 0.45055
+    },
+    {
+      "ticker": "TOELY",
+      "ev_to_ebitda": -0.518,
+      "forward_pe": NaN,
+      "revenue_growth": -0.157,
+      "ebitda_margin": 0.28445
+    },
+    {
+      "ticker": "TEL.OL",
+      "ev_to_ebitda": 9.267,
+      "forward_pe": 16.772131,
+      "revenue_growth": -0.032,
+      "ebitda_margin": 0.46317002
+    }
+  ],
+  "peer_stats": {
+    "median_ev_ebitda": 34.0715,
+    "p25_ev_ebitda": 27.5115,
+    "p75_ev_ebitda": 36.2385
+  },
+  "scenarios": {
+    "bear": {
+      "growth": [
+        0.06,
+        0.07,
+        0.07,
+        0.06,
+        0.05
+      ],
+      "fcf_margin": [
+        0.24,
+        0.25,
+        0.25,
+        0.24,
+        0.24
+      ],
+      "wacc": 0.13,
+      "tg": 0.025,
+      "exit_multiple": 27.5115
+    },
+    "base": {
+      "growth": [
+        0.1,
+        0.11,
+        0.1,
+        0.09,
+        0.08
+      ],
+      "fcf_margin": [
+        0.27,
+        0.28,
+        0.29,
+        0.29,
+        0.29
+      ],
+      "wacc": 0.12,
+      "tg": 0.03,
+      "exit_multiple": 34.0715
+    },
+    "bull": {
+      "growth": [
+        0.14,
+        0.14,
+        0.13,
+        0.11,
+        0.1
+      ],
+      "fcf_margin": [
+        0.3,
+        0.31,
+        0.31,
+        0.32,
+        0.32
+      ],
+      "wacc": 0.11,
+      "tg": 0.035,
+      "exit_multiple": 36.2385
+    }
+  },
+  "dcf_results": {
+    "bear": {
+      "enterprise_value": 197489565938.58566,
+      "equity_value": 208102466034.58566,
+      "implied_price": 536.1425044494423,
+      "pv_explicit_fcf": 35516477279.482,
+      "pv_terminal": 161973088659.10367,
+      "terminal_pct_ev": 0.8201602342347204,
+      "terminal_fcf": 10854677704.145008,
+      "terminal_value_perpetuity": 103377882896.61911,
+      "terminal_value_exit_multiple": 458091210571.32697,
+      "exit_multiple_used": 27.5115
+    },
+    "base": {
+      "enterprise_value": 297359283337.9906,
+      "equity_value": 307972183433.9906,
+      "implied_price": 793.4407548040352,
+      "pv_explicit_fcf": 46497306236.718544,
+      "pv_terminal": 250861977101.27203,
+      "terminal_pct_ev": 0.8436325723052411,
+      "terminal_fcf": 15427908909.864676,
+      "terminal_value_perpetuity": 171421210109.6075,
+      "terminal_value_exit_multiple": 664077797538.3239,
+      "exit_multiple_used": 34.0715
+    },
+    "bull": {
+      "enterprise_value": 388140450272.3394,
+      "equity_value": 398753350368.3394,
+      "implied_price": 1027.3238179145687,
+      "pv_explicit_fcf": 56860408076.91987,
+      "pv_terminal": 331280042195.41956,
+      "terminal_pct_ev": 0.8535055853183463,
+      "terminal_fcf": 19400252350.92298,
+      "terminal_value_perpetuity": 258670031345.63977,
+      "terminal_value_exit_multiple": 801019570872.1877,
+      "exit_multiple_used": 36.2385
+    }
+  },
+  "sensitivity_wacc_tg": [
+    {
+      "wacc": 0.11,
+      "tg_0.020": 821.4336621139282,
+      "tg_0.025": 830.1859380450009,
+      "tg_0.030": 840.0322484674574,
+      "tg_0.035": 851.1914002795749,
+      "tg_0.040": 863.9447166362804
+    },
+    {
+      "wacc": 0.115,
+      "tg_0.020": 799.5646998926956,
+      "tg_0.025": 807.2734632054469,
+      "tg_0.030": 815.88913984911,
+      "tg_0.035": 825.581776073231,
+      "tg_0.040": 836.5667637939016
+    },
+    {
+      "wacc": 0.12,
+      "tg_0.020": 779.0216841831472,
+      "tg_0.025": 785.8517702667257,
+      "tg_0.030": 793.4407548040352,
+      "tg_0.035": 801.9225610516163,
+      "tg_0.040": 811.464593080145
+    },
+    {
+      "wacc": 0.125,
+      "tg_0.020": 759.6464293681088,
+      "tg_0.025": 765.7304367788598,
+      "tg_0.030": 772.4548660223218,
+      "tg_0.035": 779.9264540706126,
+      "tg_0.040": 788.2770524775259
+    },
+    {
+      "wacc": 0.13,
+      "tg_0.020": 741.3083507957045,
+      "tg_0.025": 746.7540835598259,
+      "tg_0.030": 752.7443896003591,
+      "tg_0.035": 759.3652541714749,
+      "tg_0.040": 766.7217703616035
+    }
+  ],
+  "implied_terminal_ev_ebitda_base": 15.256460703560354
+}

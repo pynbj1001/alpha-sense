@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vscode/main/extensions/mcp/schemas/mcp.schema.json",
+  "servers": {
+    "aiera": {
+      "type": "http",
+      "url": "https://mcp-pub.aiera.com"
+    },
+    "chronograph": {
+      "type": "http",
+      "url": "https://ai.chronograph.pe/mcp"
+    },
+    "daloopa": {
+      "type": "http",
+      "url": "https://mcp.daloopa.com/server/mcp"
+    },
+    "egnyte": {
+      "type": "http",
+      "url": "https://mcp-server.egnyte.com/mcp"
+    },
+    "factset": {
+      "type": "http",
+      "url": "https://mcp.factset.com/mcp"
+    },
+    "lseg": {
+      "type": "http",
+      "url": "https://api.analytics.lseg.com/lfa/mcp"
+    },
+    "lseg-partner-built": {
+      "type": "http",
+      "url": "https://api.analytics.lseg.com/lfa/mcp/server-cl"
+    },
+    "moodys": {
+      "type": "http",
+      "url": "https://api.moodys.com/genai-ready-data/m1/mcp"
+    },
+    "morningstar": {
+      "type": "http",
+      "url": "https://mcp.morningstar.com/mcp"
+    },
+    "mtnewswire": {
+      "type": "http",
+      "url": "https://vast-mcp.blueskyapi.com/mtnewswires"
+    },
+    "pitchbook": {
+      "type": "http",
+      "url": "https://premium.mcp.pitchbook.com/mcp"
+    },
+    "sp-global": {
+      "type": "http",
+      "url": "https://kfinance.kensho.com/integrations/mcp"
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-02-21T08:25:43",
+  "data_window_note": "yfinance 0y growth interpreted as current fiscal year consensus (2026 in current context); dividend_yield is forward yield field from provider.",
+  "growth_summary": [
+    {
+      "country": "CN",
+      "industry": "算力硬件与光模块",
+      "valid_tickers": 3,
+      "rev_growth_median": 0.568,
+      "eps_growth_median": 1.1226001,
+      "rev_growth_mean": 0.9259333666666668,
+      "eps_growth_mean": 1.2460667333333333,
+      "dual_growth_score": 1.6906001000000002
+    },
+    {
+      "country": "CN",
+      "industry": "消费电子升级链",
+      "valid_tickers": 4,
+      "rev_growth_median": 0.194799995,
+      "eps_growth_median": 0.41169999999999995,
+      "rev_growth_mean": 0.191600001,
+      "eps_growth_mean": 0.504225,
+      "dual_growth_score": 0.606499995
+    },
+    {
+      "country": "CN",
+      "industry": "动力电池与电车部件",
+      "valid_tickers": 4,
+      "rev_growth_median": 0.1769,
+      "eps_growth_median": 0.41795001,
+      "rev_growth_mean": 0.2065499975,
+      "eps_growth_mean": 0.62667498,
+      "dual_growth_score": 0.59485001
+    },
+    {
+      "country": "US",
+      "industry": "AI半导体与存储",
+      "valid_tickers": 5,
+      "rev_growth_median": 0.5276,
+      "eps_growth_median": 0.5887,
+      "rev_growth_mean": 0.59254,
+      "eps_growth_mean": 1.11246,
+      "dual_growth_score": 1.1162999999999998
+    },
+    {
+      "country": "US",
+      "industry": "网络安全SaaS",
+      "valid_tickers": 5,
+      "rev_growth_median": 0.22479999,
+      "eps_growth_median": 0.108,
+      "rev_growth_mean": 0.216639998,
+      "eps_growth_mean": 0.10338,
+      "dual_growth_score": 0.33279999
+    },
+    {
+      "country": "US",
+      "industry": "电网与数据中心电力设备",
+      "valid_tickers": 5,
+      "rev_growth_median": 0.1676,
+      "eps_growth_median": 0.108100004,
+      "rev_growth_mean": 0.170580005,
+      "eps_growth_mean": 0.1366600048,
+      "dual_growth_score": 0.275700004
+    }
+  ],
+  "dividend_summary": [
+    {
+      "country": "CN",
+      "industry": "电信运营商",
+      "valid_tickers": 5,
+      "div_yield_median": 5.4,
+      "div_yield_mean": 5.324,
+      "fcf_payout_median": 0.6585222436711341,
+      "fcf_cover_median": 1.518551589730961,
+      "roe_median": 0.10456,
+      "net_debt_ebitda_median": -0.528344506541838
+    },
+    {
+      "country": "CN",
+      "industry": "能源煤炭石油",
+      "valid_tickers": 6,
+      "div_yield_median": 4.915,
+      "div_yield_mean": 5.041666666666667,
+      "fcf_payout_median": 1.659547151998828,
+      "fcf_cover_median": 0.6856389034232954,
+      "roe_median": 0.121754995,
+      "net_debt_ebitda_median": -0.40992825155060975
+    },
+    {
+      "country": "CN",
+      "industry": "国有大型银行",
+      "valid_tickers": 5,
+      "div_yield_median": 4.35,
+      "div_yield_mean": 4.316,
+      "fcf_payout_median": NaN,
+      "fcf_cover_median": NaN,
+      "roe_median": 0.09077,
+      "net_debt_ebitda_median": NaN
+    },
+    {
+      "country": "US",
+      "industry": "电信运营商",
+      "valid_tickers": 3,
+      "div_yield_median": 3.98,
+      "div_yield_mean": 3.9,
+      "fcf_payout_median": 0.6499155700880137,
+      "fcf_cover_median": 1.5386613985330073,
+      "roe_median": 0.18177,
+      "net_debt_ebitda_median": 3.3155187743639574
+    },
+    {
+      "country": "US",
+      "industry": "综合能源与中游管道",
+      "valid_tickers": 6,
+      "div_yield_median": 3.4450000000000003,
+      "div_yield_mean": 3.9150000000000005,
+      "fcf_payout_median": 1.0394636771069685,
+      "fcf_cover_median": 1.067258391715179,
+      "roe_median": 0.115055002,
+      "net_debt_ebitda_median": 0.720706949510666
+    },
+    {
+      "country": "US",
+      "industry": "公用事业",
+      "valid_tickers": 5,
+      "div_yield_median": 2.96,
+      "div_yield_mean": 2.996,
+      "fcf_payout_median": 0.2979310404500126,
+      "fcf_cover_median": 3.3564814142545907,
+      "roe_median": 0.09916,
+      "net_debt_ebitda_median": 5.798645195565298
+    }
+  ],
+  "us_macro_snapshot": {
+    "real_gdp_yoy": {
+      "date": "2025-10-01",
+      "value": 0.022270666043373355
+    },
+    "core_cpi_yoy": {
+      "date": "2026-01-01",
+      "value": 0.029493378374616075
+    },
+    "fed_funds": {
+      "series": "DFF",
+      "date": "2026-02-19",
+      "value": 3.64
+    },
+    "term_spread_10y_2y": {
+      "series": "T10Y2Y",
+      "date": "2026-02-20",
+      "value": 0.6
+    },
+    "unemployment_rate": {
+      "series": "UNRATE",
+      "date": "2026-01-01",
+      "value": 4.3
+    }
+  },
+  "cn_macro_snapshot": {
+    "gdp_yoy": {
+      "date": "2025-07-15",
+      "value": 5.2
+    },
+    "cpi_yoy": {
+      "date": "2025-08-09",
+      "value": 0.0
+    },
+    "ppi_yoy": {
+      "date": "2025-08-09",
+      "value": -3.6
+    },
+    "m2_yoy": {
+      "date": "2025-08-13",
+      "value": 8.8
+    },
+    "official_pmi": {
+      "date": "2025-08-31",
+      "value": 49.4
+    },
+    "lpr": {
+      "date": "2026-01-20",
+      "lpr_1y": 3.0,
+      "lpr_5y": 3.5
+    }
+  },
+  "file_outputs": {
+    "growth_detail_csv": "10-研究报告输出\\2026-02-21-中美行业增长-明细.csv",
+    "growth_summary_csv": "10-研究报告输出\\2026-02-21-中美行业增长-汇总.csv",
+    "dividend_detail_csv": "10-研究报告输出\\2026-02-21-中美行业分红-明细.csv",
+    "dividend_summary_csv": "10-研究报告输出\\2026-02-21-中美行业分红-汇总.csv",
+    "ak_eps_check_csv": "10-研究报告输出\\2026-02-21-中概A股-盈利预测交叉验证.csv",
+    "ak_fin_check_csv": "10-研究报告输出\\2026-02-21-A股财务指标交叉验证.csv"
+  }
+}

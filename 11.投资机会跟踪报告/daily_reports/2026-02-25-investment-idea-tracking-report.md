@@ -1,0 +1,290 @@
+# 老板，这是今日的投资机会跟踪日报
+
+> **汇报时间**：2026-02-25 10:51:20
+> **跟踪范围**：覆盖 15 个核心标的，今日共扫描 105 条动态
+
+## 老板，今日重点摘要（Executive Summary）
+- **Uber Technologies**：今日关注度较高，近24h有 7 条线索（中性 / 中性）。
+- **Taiwan Semiconductor (TSMC)**：今日关注度较高，近24h有 6 条线索（中性 / 中性）。
+- **NVIDIA**：今日关注度较高，近24h有 6 条线索（中性 / 中性）。
+
+### 总体情况汇报
+老板好，为您呈上今日市场动态。今天我们重点跟踪了 15 个关注标的。从热度来看，**Uber Technologies、Taiwan Semiconductor (TSMC)、NVIDIA** 是今天市场关注的焦点。
+您可以先浏览下方的“一句话综述”快速掌握要点，若对细节感兴趣，再查看具体的“重点新闻摘要”。
+
+## 信用风险看板（三因子）
+- 触发规则：仅当三个子项同时恶化，“风险放大信号”才为 ON。
+
+### 1) Z.1 期限与流动性
+- 短期债务/总债务：`29.19%`（2025-07-01），QoQ `-0.16pct`。
+- 流动资产/短期负债：`98.16%`（2025-07-01），QoQ `+3.81pct`。
+- 子项状态：`未恶化`（规则：短债占比上升且流动性比例下降）。
+
+### 2) HY OAS（ICE BofA）
+- 最新 HY OAS：`2.95%`（2026-02-23）。
+- 6个月变动：`+0.07pct` ｜ 走势：`平稳`。
+- 子项状态：`未恶化`（规则：6个月利差走阔 > 0.25pct）。
+
+### 3) 利息负担缺口（同比）
+- 最新（2025-07-01）：利息支出同比 `+0.00%`，EBITDA代理同比 `+6.06%`，经营盈余同比 `+2.88%`。
+- 缺口：利息-EBITDA `-6.06pct`，利息-NOS `-2.88pct`；双缺口>0的连续季度数 `0`。
+- 最近4个季度路径：2024Q4: dE +0.15, dNOS +4.30 | 2025Q1: dE -4.45, dNOS -2.31 | 2025Q2: dE -3.46, dNOS -0.78 | 2025Q3: dE -6.06, dNOS -2.88。
+- 子项状态：`未恶化`（规则：两个缺口同时>0且连续>=2个季度）。
+
+### 综合信号
+- 风险放大信号：`OFF`。
+- 子项状态：Z1=`未恶化`，HY OAS=`未恶化`，利息缺口=`未恶化`。
+
+---
+
+## Google (Alphabet)
+
+> 标识 `stock-de10217a58` | 类型 `stock` | 代码 `GOOGL` | 市场 `US`
+
+**老板请看重点：** 关于 Google (Alphabet)，过去24小时我扫描到 0 条标的相关动态，以及 2 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（1正/0负），行业端中性（1正/0负）。
+- 大家主要在讨论 **产品/技术x2、其他x1、价格/市场表现x1**。标的热词涉及“alphabet、googl、google”，行业热词则是“search、visibility、future”。
+
+### 原文线索备查（Top Clues）
+1. **行业 / 产品/技术**：Why AI Visibility, GEO, and AEO are the future of marketing（2026-02-24 17:35，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637d13044ca98df82cfbef877bb4&url=https%3a%2f%2fwww.fastcompany.com%2f91497015%2fwhy-ai-visibility-geo-and-aeo-are-the-future-of-marketing&c=16454792256882243024&mkt=en-us)
+2. **行业 / 产品/技术**：Koah raises $20.5M to scale its ‘Adsense for AI’ platform across apps（2026-02-24 15:30，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637d13044ca98df82cfbef877bb4&url=https%3a%2f%2fsiliconangle.com%2f2026%2f02%2f24%2fkoah-raises-20-5m-scale-adsense-ai-across-apps%2f&c=18216751634084692647&mkt=en-us)
+3. **标的 / 其他**：Alphabet Inc. (GOOGL): Loblaw Companies Limited enters into new collaboration（2026-02-23 21:18，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637c230e43f8af391d3badf15a5e&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2ftechnology%2falphabet-inc-googl-loblaw-companies-limited-enters-into-new-collaboration%2far-AA1WVnoG&c=15078307346006552883&mkt=en-us)
+4. **标的 / 价格/市场表现**：How To Buy Google Stock At A 30% Discount?（2026-02-23 15:38，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637c230e43f8af391d3badf15a5e&url=https%3a%2f%2fwww.forbes.com%2fsites%2fgreatspeculations%2f2026%2f02%2f23%2fhow-to-buy-google-stock-at-a-30-discount%2f&c=6625719893538864533&mkt=en-us)
+
+---
+
+## Micron Technology
+
+> 标识 `stock-afdad8fcdb` | 类型 `stock` | 代码 `MU` | 市场 `US`
+
+**老板请看重点：** 关于 Micron Technology，过去24小时我扫描到 1 条标的相关动态，以及 4 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端偏正面（3正/1负），行业端偏正面（2正/0负）。
+- 大家主要在讨论 **产品/技术x2、价格/市场表现x1、其他x1**。标的热词涉及“micron、what、technology”，行业热词则是“memory、infrastructure、surge”。
+
+### 原文线索备查（Top Clues）
+1. **行业 / 产品/技术**：Emerging Markets And The AI Surge（2026-02-24 23:15，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637f5e054505996876d2eb6dfae3&url=https%3a%2f%2fseekingalpha.com%2farticle%2f4874219-emerging-markets-and-the-ai-surge&c=9762888075739870637&mkt=en-us)
+2. **标的 / 价格/市场表现**：Micron Stock Trades Near Record High — Cash Out or Hold On?（2026-02-24 20:57，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637e2f964de79eaeeebd73d6f35a&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fmicron-stock-trades-near-record-162619551.html&c=5383778342696656593&mkt=en-us)
+3. **行业 / 产品/技术**：Prediction: 2 artificial intelligence (AI) chip stocks that will soar after Feb. 25 (hint: not?（2026-02-24 18:25，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637f5e054505996876d2eb6dfae3&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2fhardware-and-devices%2fprediction-2-artificial-intelligence-ai-chip-stocks-that-will-soar-after-feb-25-hint-not-nvidia%2far-AA1WZirG&c=872114919837923079&mkt=en-us)
+4. **标的 / 其他**：What TD Cowen’s $60 EPS Call Means for Micron Technology (MU)（2026-02-24 06:22，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e637e2f964de79eaeeebd73d6f35a&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fwhat-td-cowen-s-60-eps-call-means-for-micron-technology-mu%2far-AA1WWGU2&c=2172699403986723543&mkt=en-us)
+
+---
+
+## Taiwan Semiconductor (TSMC)
+
+> 标识 `stock-d91a17c78b` | 类型 `stock` | 代码 `TSM` | 市场 `US`
+
+**老板请看重点：** 关于 Taiwan Semiconductor (TSMC)，过去24小时我扫描到 3 条标的相关动态，以及 3 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **产品/技术x4**。标的热词涉及“taiwan、semiconductor、tsmc”，行业热词则是“taiwan、semiconductor、tsmc”。
+
+### 原文线索备查（Top Clues）
+1. **标的 / 产品/技术**：Is Taiwan Semiconductor stock a buy now?（2026-02-24 20:37，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6381223447ee91543b305f825545&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2ftopstocks%2fis-taiwan-semiconductor-stock-a-buy-now%2far-AA1WZUl6&c=1452242105839918582&mkt=en-us)
+2. **标的 / 产品/技术**：TSMC Stock Jumps as AI Boom Powers Foundry Giant（2026-02-24 20:23，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6381223447ee91543b305f825545&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2ftsmc-stock-jumps-ai-boom-195325721.html&c=3168783122319557642&mkt=en-us)
+3. **行业 / 产品/技术**：Prediction: The AI "Inference Era" Will Crown a New Winner by the End of 2026（2026-02-24 20:12，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638221ac4d81985e91ced685b3ef&url=https%3a%2f%2fwww.fool.com%2finvesting%2f2026%2f02%2f24%2fpredict-ai-inference-era-new-winner-avgo%2f&c=11067182428318805081&mkt=en-us)
+4. **行业 / 产品/技术**：TSMC Record AI Sales Spotlight Valuation Gap And AI Infrastructure Role（2026-02-24 07:50，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638221ac4d81985e91ced685b3ef&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2ftsmc-record-ai-sales-spotlight-070935373.html&c=8138879893088029758&mkt=en-us)
+
+---
+
+## Pop Mart
+
+> 标识 `stock-4fd3fc1178` | 类型 `stock` | 代码 `9992.HK` | 市场 `HK`
+
+**老板请看重点：** 关于 Pop Mart，过去24小时我扫描到 0 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **N/A**。标的热词涉及“无明显集中”，行业热词则是“无明显集中”。
+
+### 原文线索备查（Top Clues）
+- 老板，今日暂未发现有价值的新闻线索。
+
+---
+
+## CNOOC (HK)
+
+> 标识 `stock-99fba62478` | 类型 `stock` | 代码 `0883.HK` | 市场 `HK`
+
+**老板请看重点：** 关于 CNOOC (HK)，过去24小时我扫描到 0 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **其他x1**。标的热词涉及“无明显集中”，行业热词则是“energy、india、relations”。
+
+### 原文线索备查（Top Clues）
+1. **行业 / 其他**：Oil Energy, India（2026-02-17 15:25，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6387b848472586acb2fabd2fc3f2&url=https%3a%2f%2fwww.cfr.org%2farticles%2foil-energy-india-u-s-relations-and-the-russia-conundrum&c=12434680874580855591&mkt=en-us)
+
+---
+
+## USD/JPY
+
+> 标识 `fx-40be6c7398` | 类型 `fx` | 代码 `USDJPY` | 市场 `FX`
+
+**老板请看重点：** 关于 USD/JPY，过去24小时我扫描到 2 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（1正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **其他x3、融资/资本开支x1**。标的热词涉及“dollar、japanese、forecast”，行业热词则是“carry、conviction、trades”。
+
+### 原文线索备查（Top Clues）
+1. **标的 / 其他**：Japanese Yen Forecast: USD/JPY Rebounds Before Trump Speech（2026-02-25 01:39，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6388e0e642b89c7a1ddfaba54c71&url=https%3a%2f%2fwww.fxempire.com%2fforecasts%2farticle%2fjapanese-yen-forecast-usd-jpy-rebounds-before-trump-speech-1581668&c=13386595229624441579&mkt=en-us)
+2. **标的 / 其他**：Dollar supported by a weak yen and strength in US consumer confidence（2026-02-24 20:32，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6388e0e642b89c7a1ddfaba54c71&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2feconomy%2fdollar-supported-by-a-weak-yen-and-strength-in-us-consumer-confidence%2far-AA1X04BX&c=12046610991176384810&mkt=en-us)
+3. **行业 / 融资/资本开支**：FX carry: Conviction trades face funding risks – BNY（2026-02-18 18:16，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e63896eab41708d6d348bc59127b4&url=https%3a%2f%2fwww.fxstreet.com%2fnews%2ffx-carry-conviction-trades-face-funding-risks-bny-202602181816&c=17368775612011658251&mkt=en-us)
+4. **行业 / 其他**：USD/ZAR, USD/MXN and GBP/JPY Forecast – Carry Trade Struggling on Tuesday（2026-02-17 15:35，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e63896eab41708d6d348bc59127b4&url=https%3a%2f%2fwww.fxempire.com%2fforecasts%2farticle%2fusd-zar-usd-mxn-and-gbp-jpy-forecast-carry-trade-struggling-on-tuesday-1580063&c=9360628495595813708&mkt=en-us)
+
+---
+
+## JPY Interest Rate
+
+> 标识 `macro-f019847cd3` | 类型 `macro` | 代码 `` | 市场 ``
+
+**老板请看重点：** 关于 JPY Interest Rate，过去24小时我扫描到 2 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **融资/资本开支x2、其他x1、产品/技术x1**。标的热词涉及“rate、hike、hikes”，行业热词则是“bond、multiple、factors”。
+
+### 原文线索备查（Top Clues）
+1. **标的 / 其他**：Yen weakens on report Japan PM questioned rate hike plans（2026-02-24 18:54，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638b4a1e4d69afc4e81bf6e0454e&url=https%3a%2f%2fwww.cnbc.com%2f2026%2f02%2f24%2fdollar-languishes-as-asia-markets-reopen-to-renewed-tariff-turmoil.html&c=15496508087518194407&mkt=en-us)
+2. **标的 / 产品/技术**：Japan PM voiced concerns about further rate hikes to BOJ, Mainichi reports（2026-02-24 11:57，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638b4a1e4d69afc4e81bf6e0454e&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fmarkets%2fjapan-pm-voiced-concerns-about-further-rate-hikes-to-boj-mainichi-reports%2far-AA1WXq2Q&c=14592170605726190702&mkt=en-us)
+3. **行业 / 融资/资本开支**：Multiple factors behind rise in Japanese bond yields: QNB（2026-02-21 08:43，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638cc60140ebadcf7376e53f9577&url=https%3a%2f%2fwww.gulf-times.com%2farticle%2f721003%2fbusiness%2fmultiple-factors-behind-rise-in-japanese-bond-yields-qnb&c=3148653027365600469&mkt=en-us)
+4. **行业 / 融资/资本开支**：QNB: Multiple factors behind the rise in Japanese bond yields（2026-02-21 08:43，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638cc60140ebadcf7376e53f9577&url=https%3a%2f%2fwww.gulf-times.com%2farticle%2f721003%2fbusiness%2fqnb-multiple-factors-behind-the-rise-in-japanese-bond-yields&c=18385191782319095138&mkt=en-us)
+
+---
+
+## Cloudflare
+
+> 标识 `stock-396892b9d7` | 类型 `stock` | 代码 `NET` | 市场 `US`
+
+**老板请看重点：** 关于 Cloudflare，过去24小时我扫描到 1 条标的相关动态，以及 1 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **其他x2、价格/市场表现x1**。标的热词涉及“cloudflare、becomes、first”，行业热词则是“zenarmor、intros、global”。
+
+### 原文线索备查（Top Clues）
+1. **行业 / 其他**：Zenarmor Intros Global SASE Partner Program for MSPs, MSSPs, ISPs with Distributed Zero Trust S?（2026-02-25 01:50，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638e3e4c41f0bc3f57145fa23b0a&url=https%3a%2f%2fwww.thefastmode.com%2ftechnology-solutions%2f47276-zenarmor-intros-global-sase-partner-program-for-msps-mssps-isps-with-distributed-zero-trust-security&c=12817736925118683740&mkt=en-us)
+2. **标的 / 价格/市场表现**：Is Claude Going to Kill Cloudflare Stock?（2026-02-24 22:33，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638dad234eacb6adbffcc1226bd7&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fclaude-going-kill-cloudflare-stock-184943580.html&c=1261441186975118546&mkt=en-us)
+3. **标的 / 其他**：Cloudflare Becomes the First and Only SASE Platform to Support Modern Post（2026-02-23 18:32，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e638dad234eacb6adbffcc1226bd7&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fcloudflare-becomes-first-only-sase-140000074.html&c=15748833828777490261&mkt=en-us)
+
+---
+
+## HY OAS
+
+> 标识 `macro-a31e8cb1ab` | 类型 `macro` | 代码 `` | 市场 ``
+
+**老板请看重点：** 关于 HY OAS，过去24小时我扫描到 0 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **N/A**。标的热词涉及“无明显集中”，行业热词则是“无明显集中”。
+
+### 原文线索备查（Top Clues）
+- 老板，今日暂未发现有价值的新闻线索。
+
+---
+
+## Z1 Corporate Maturity-Liquidity
+
+> 标识 `macro-d9aea6c3d5` | 类型 `macro` | 代码 `` | 市场 ``
+
+**老板请看重点：** 关于 Z1 Corporate Maturity-Liquidity，过去24小时我扫描到 0 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **N/A**。标的热词涉及“无明显集中”，行业热词则是“无明显集中”。
+
+### 原文线索备查（Top Clues）
+- 老板，今日暂未发现有价值的新闻线索。
+
+---
+
+## Interest Burden Gap (YoY)
+
+> 标识 `macro-e3141cfb7a` | 类型 `macro` | 代码 `` | 市场 ``
+
+**老板请看重点：** 关于 Interest Burden Gap (YoY)，过去24小时我扫描到 0 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **N/A**。标的热词涉及“无明显集中”，行业热词则是“无明显集中”。
+
+### 原文线索备查（Top Clues）
+- 老板，今日暂未发现有价值的新闻线索。
+
+---
+
+## Uber Technologies
+
+> 标识 `stock-1fe3279b71` | 类型 `stock` | 代码 `UBER` | 市场 `US`
+
+**老板请看重点：** 关于 Uber Technologies，过去24小时我扫描到 5 条标的相关动态，以及 2 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **其他x3、产品/技术x1**。标的热词涉及“uber、parking、spothero”，行业热词则是“autonomous、uber、wants”。
+
+### 原文线索备查（Top Clues）
+1. **标的 / 其他**：Uber Owns Your Ride And Dinner, Now It Wants Your Parking Too（2026-02-25 02:47，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e63969b4442a7b9218a020d899fe3&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2ftechnology%2fuber-owns-your-ride-and-dinner-now-it-wants-your-parking-too%2far-AA1X02aT&c=10589711630598158304&mkt=en-us)
+2. **标的 / 产品/技术**：Uber engineers built an AI version of their boss（2026-02-24 23:11，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e63969b4442a7b9218a020d899fe3&url=https%3a%2f%2ftechcrunch.com%2f2026%2f02%2f24%2fuber-engineers-built-ai-version-of-boss-dara-khosrowshahi%2f&c=5582780902276214821&mkt=en-us)
+3. **行业 / 其他**：Uber Wants To Win The Autonomous Vehicle Race. So It's Betting On All Of The Horses（2026-02-24 18:07，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6397f3544197a3f67c3cdea0e3f0&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fuber-wants-win-autonomous-vehicle-172904305.html&c=11341371599973619039&mkt=en-us)
+4. **行业 / 其他**：Inside The Digital Infrastructure Powering The Next Generation Of Autonomous Vehicles（2026-02-24 15:45，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6397f3544197a3f67c3cdea0e3f0&url=https%3a%2f%2fwww.forbes.com%2fcouncils%2fforbestechcouncil%2f2026%2f02%2f24%2finside-the-digital-infrastructure-powering-the-next-generation-of-autonomous-vehicles%2f&c=15595122417433486974&mkt=en-us)
+
+---
+
+## NVIDIA
+
+> 标识 `stock-9b3b7ed3e2` | 类型 `stock` | 代码 `NVDA` | 市场 `US`
+
+**老板请看重点：** 关于 NVIDIA，过去24小时我扫描到 4 条标的相关动态，以及 2 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **产品/技术x2、其他x2**。标的热词涉及“nvidia、over、just”，行业热词则是“expands、digital、realty”。
+
+### 原文线索备查（Top Clues）
+1. **行业 / 产品/技术**：Digital Realty Expands Innovation Lab Network to Singapore and Japan to Accelerate AI and Hybri?（2026-02-25 02:14，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639982084d498dda20502e8c5aff&url=https%3a%2f%2fwww.manilatimes.net%2f2026%2f02%2f25%2ftmt-newswire%2fglobenewswire%2fdigital-realty-expands-innovation-lab-network-to-singapore-and-japan-to-accelerate-ai-and-hybrid-cloud-implementation%2f2284526&c=9964754404780732991&mkt=en-us)
+2. **标的 / 其他**：Nvidia just sold its stake in Applied Digital and Arm Holdings and piled into a new artificial?（2026-02-24 21:20，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6398734346d78c813d16cff6944a&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fcompanies%2fnvidia-just-sold-its-stake-in-applied-digital-and-arm-holdings-and-piled-into-a-new-artificial-intelligence-gpu-player-up-over-7200-since-its-ipo%2far-AA1WZZBN&c=5015408083296618278&mkt=en-us)
+3. **标的 / 产品/技术**：Prediction: 2 Artificial Intelligence (AI) Chip Stocks That Will Soar After Feb. 25 (Hint: Not?（2026-02-24 17:31，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e6398734346d78c813d16cff6944a&url=https%3a%2f%2fwww.fool.com%2finvesting%2f2026%2f02%2f24%2fpredict-artificial-intelligence-ai-chip-stock-nvda%2f&c=3029447006124712056&mkt=en-us)
+4. **行业 / 其他**：LRCX vs. ASML: Which Semiconductor Equipment Giant Is the Better Buy?（2026-02-24 15:03，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639982084d498dda20502e8c5aff&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2flrcx-vs-asml-semiconductor-equipment-125000053.html&c=587902496039559315&mkt=en-us)
+
+---
+
+## Meta Platforms
+
+> 标识 `stock-a42c6ca4ef` | 类型 `stock` | 代码 `META` | 市场 `US`
+
+**老板请看重点：** 关于 Meta Platforms，过去24小时我扫描到 5 条标的相关动态，以及 1 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/0负），行业端中性（0正/0负）。
+- 大家主要在讨论 **产品/技术x2、其他x1、价格/市场表现x1**。标的热词涉及“meta、facebook、platforms”，行业热词则是“media、social、business”。
+
+### 原文线索备查（Top Clues）
+1. **标的 / 其他**：Meta executive warned Facebook Messenger encryption plan was 'so irresponsible'（2026-02-25 01:13，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639ad5134106812275b390bbf368&url=https%3a%2f%2ftelecom.economictimes.indiatimes.com%2fnews%2fmvas-apps%2fmeta-knew-messenger-encryption-would-slash-child-exploitation-reports-internal-documents-reveal%2f128766955&c=15644964092576104096&mkt=en-us)
+2. **标的 / 价格/市场表现**：Meta Platforms Stock: Is META Underperforming the Communication Services Sector?（2026-02-24 23:28，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639ad5134106812275b390bbf368&url=https%3a%2f%2ffinance.yahoo.com%2fnews%2fmeta-platforms-stock-meta-underperforming-191454815.html&c=8531688968754680668&mkt=en-us)
+3. **行业 / 产品/技术**：How to use AI for social media in business（2026-02-24 16:30，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639c821348219ee5f5d7f1372345&url=https%3a%2f%2fwww.sacbee.com%2fnews%2fbusiness%2farticle314822080.html&c=11419233451182251698&mkt=en-us)
+4. **行业 / 产品/技术**：How Earned Media Can Future-Proof Your Brand’s Reputation In The Age Of AI（2026-02-23 11:29，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639c821348219ee5f5d7f1372345&url=https%3a%2f%2fwww.forbes.com%2fcouncils%2fforbesagencycouncil%2f2026%2f02%2f23%2fhow-earned-media-can-future-proof-your-brands-reputation-in-the-age-of-ai%2f&c=14750820661995356943&mkt=en-us)
+
+---
+
+## Amazon
+
+> 标识 `stock-d5fd335980` | 类型 `stock` | 代码 `AMZN` | 市场 `US`
+
+**老板请看重点：** 关于 Amazon，过去24小时我扫描到 2 条标的相关动态，以及 0 条行业情报。
+
+### 详细情况汇报
+- 从市场情绪来看，标的端中性（0正/1负），行业端中性（0正/0负）。
+- 大家主要在讨论 **产品/技术x2**。标的热词涉及“amazon、amzn、billion”，行业热词则是“无明显集中”。
+
+### 原文线索备查（Top Clues）
+1. **标的 / 产品/技术**：A $200 Billion AI Bet Is Either Amazon’s Masterstroke or Its Biggest Mistake（2026-02-24 23:19，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639da6124d0cbbf0ab6bfa02b822&url=https%3a%2f%2f247wallst.com%2finvesting%2f2026%2f02%2f24%2fa-200-billion-ai-bet-is-either-amazons-masterstroke-or-its-biggest-mistake%2f&c=17450144618409366972&mkt=en-us)
+2. **标的 / 产品/技术**：Amazon’s $200 Billion AI Spending Shocker Has Wall Street Asking One Question（2026-02-24 19:33，BingNews）[原文链接](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699e639da6124d0cbbf0ab6bfa02b822&url=https%3a%2f%2f247wallst.com%2finvesting%2f2026%2f02%2f24%2famazons-200-billion-ai-spending-shocker-has-wall-street-asking-one-question%2f&c=7910253575776735415&mkt=en-us)
+
+---

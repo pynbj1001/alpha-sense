@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "updated_at": "2026-02-10 17:30:09",
+  "ideas": [
+    {
+      "id": "stock-9b3b7ed3e2",
+      "title": "NVDA",
+      "type": "stock",
+      "symbol": "NVDA",
+      "stooq_symbol": "nvda.us",
+      "market": "US",
+      "keywords": [
+        "NVIDIA",
+        "AI chip"
+      ],
+      "industry_keywords": [
+        "Semiconductor",
+        "AI infrastructure"
+      ],
+      "note": "watch earnings and Blackwell",
+      "added_at": "2026-02-10 17:29:56",
+      "active": true
+    },
+    {
+      "id": "fx-40be6c7398",
+      "title": "USDJPY",
+      "type": "fx",
+      "symbol": "USDJPY",
+      "stooq_symbol": "usdjpy",
+      "market": "FX",
+      "keywords": [
+        "USDJPY",
+        "BOJ",
+        "Fed"
+      ],
+      "industry_keywords": [
+        "macro rates"
+      ],
+      "note": "watch carry unwind",
+      "added_at": "2026-02-10 17:30:03",
+      "active": true
+    },
+    {
+      "id": "theme-61b5a2e0dc",
+      "title": "Japan AI supply chain",
+      "type": "theme",
+      "symbol": "",
+      "stooq_symbol": "",
+      "market": "",
+      "keywords": [
+        "Japan AI supply chain",
+        "semicap"
+      ],
+      "industry_keywords": [
+        "Japan semiconductor"
+      ],
+      "note": "theme tracking",
+      "added_at": "2026-02-10 17:30:09",
+      "active": true
+    }
+  ]
+}

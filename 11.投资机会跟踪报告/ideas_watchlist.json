@@ -1,0 +1,375 @@
+{
+  "version": 2,
+  "updated_at": "2026-02-20 21:00:00",
+  "ideas": [
+    {
+      "id": "stock-de10217a58",
+      "title": "Google (Alphabet)",
+      "type": "stock",
+      "symbol": "GOOGL",
+      "stooq_symbol": "googl.us",
+      "market": "US",
+      "keywords": [
+        "Google",
+        "Alphabet",
+        "GOOGL"
+      ],
+      "industry_keywords": [
+        "AI",
+        "Cloud",
+        "Search",
+        "Advertising"
+      ],
+      "note": "US stock",
+      "added_at": "2026-02-10 17:43:03",
+      "active": true
+    },
+    {
+      "id": "stock-afdad8fcdb",
+      "title": "Micron Technology",
+      "type": "stock",
+      "symbol": "MU",
+      "stooq_symbol": "mu.us",
+      "market": "US",
+      "keywords": [
+        "Micron",
+        "MU",
+        "HBM",
+        "Memory"
+      ],
+      "industry_keywords": [
+        "Semiconductor",
+        "Memory",
+        "AI infrastructure"
+      ],
+      "note": "US stock",
+      "added_at": "2026-02-10 17:43:09",
+      "active": true
+    },
+    {
+      "id": "stock-d91a17c78b",
+      "title": "Taiwan Semiconductor (TSMC)",
+      "type": "stock",
+      "symbol": "TSM",
+      "stooq_symbol": "tsm.us",
+      "market": "US",
+      "keywords": [
+        "TSMC",
+        "TSM",
+        "Foundry"
+      ],
+      "industry_keywords": [
+        "Semiconductor",
+        "Foundry",
+        "AI chips"
+      ],
+      "note": "US ADR tracking",
+      "added_at": "2026-02-10 17:43:16",
+      "active": true
+    },
+    {
+      "id": "stock-4fd3fc1178",
+      "title": "Pop Mart",
+      "type": "stock",
+      "symbol": "9992.HK",
+      "stooq_symbol": "9992.hk",
+      "market": "HK",
+      "keywords": [
+        "Pop Mart",
+        "POP MART",
+        "9992.HK"
+      ],
+      "industry_keywords": [
+        "Consumer",
+        "Retail",
+        "Toys",
+        "IP"
+      ],
+      "note": "HK stock",
+      "added_at": "2026-02-10 17:43:26",
+      "active": true
+    },
+    {
+      "id": "stock-99fba62478",
+      "title": "CNOOC (HK)",
+      "type": "stock",
+      "symbol": "0883.HK",
+      "stooq_symbol": "883.hk",
+      "market": "HK",
+      "keywords": [
+        "CNOOC",
+        "00883.HK",
+        "China Offshore Oil"
+      ],
+      "industry_keywords": [
+        "Energy",
+        "Oil",
+        "Gas",
+        "China SOE"
+      ],
+      "note": "HK stock",
+      "added_at": "2026-02-10 17:45:57",
+      "active": true
+    },
+    {
+      "id": "fx-40be6c7398",
+      "title": "USD/JPY",
+      "type": "fx",
+      "symbol": "USDJPY",
+      "stooq_symbol": "usdjpy",
+      "market": "FX",
+      "keywords": [
+        "USDJPY",
+        "US dollar yen",
+        "BOJ",
+        "Fed"
+      ],
+      "industry_keywords": [
+        "FX",
+        "Macro rates",
+        "Carry trade"
+      ],
+      "note": "FX pair",
+      "added_at": "2026-02-10 17:43:45",
+      "active": true
+    },
+    {
+      "id": "macro-f019847cd3",
+      "title": "JPY Interest Rate",
+      "type": "macro",
+      "symbol": "",
+      "stooq_symbol": "",
+      "market": "",
+      "keywords": [
+        "BOJ policy rate",
+        "Japan interest rate",
+        "JGB yield",
+        "JPY rates"
+      ],
+      "industry_keywords": [
+        "Japan macro",
+        "monetary policy",
+        "bond market"
+      ],
+      "note": "Macro rate tracking",
+      "added_at": "2026-02-10 17:43:53",
+      "active": true
+    },
+    {
+      "id": "stock-396892b9d7",
+      "title": "Cloudflare",
+      "type": "stock",
+      "symbol": "NET",
+      "stooq_symbol": "net.us",
+      "market": "US",
+      "keywords": [
+        "Cloudflare",
+        "NET",
+        "connectivity cloud",
+        "Zero Trust",
+        "Workers"
+      ],
+      "industry_keywords": [
+        "Edge cloud",
+        "CDN",
+        "SASE",
+        "Zero Trust",
+        "Cybersecurity"
+      ],
+      "note": "Initial full understanding + value chain tracking",
+      "added_at": "2026-02-11 09:10:41",
+      "active": true
+    },
+    {
+      "id": "macro-a31e8cb1ab",
+      "title": "HY OAS",
+      "type": "macro",
+      "symbol": "",
+      "stooq_symbol": "",
+      "market": "",
+      "keywords": [
+        "HY OAS",
+        "BAMLH0A0HYM2",
+        "high yield spread",
+        "credit spread"
+      ],
+      "industry_keywords": [
+        "US credit",
+        "bond market",
+        "risk appetite"
+      ],
+      "note": "Core credit risk indicator",
+      "added_at": "2026-02-12 17:02:55",
+      "active": true
+    },
+    {
+      "id": "macro-d9aea6c3d5",
+      "title": "Z1 Corporate Maturity-Liquidity",
+      "type": "macro",
+      "symbol": "",
+      "stooq_symbol": "",
+      "market": "",
+      "keywords": [
+        "BOGZ1FL104140006Q",
+        "BOGZ1FL104001006Q",
+        "short-term debt ratio",
+        "liquid assets short-term liabilities"
+      ],
+      "industry_keywords": [
+        "Fed Z.1",
+        "corporate credit",
+        "liquidity"
+      ],
+      "note": "Z.1 dual indicator block",
+      "added_at": "2026-02-12 17:20:57",
+      "active": true
+    },
+    {
+      "id": "macro-e3141cfb7a",
+      "title": "Interest Burden Gap (YoY)",
+      "type": "macro",
+      "symbol": "",
+      "stooq_symbol": "",
+      "market": "",
+      "keywords": [
+        "BOGZ1FA106130001Q",
+        "NCBOSNQ027S",
+        "EBITDA proxy",
+        "interest expense yoy gap"
+      ],
+      "industry_keywords": [
+        "corporate profits",
+        "operating surplus",
+        "debt service"
+      ],
+      "note": "Interest YoY vs EBITDA/NOS gap block",
+      "added_at": "2026-02-12 17:21:07",
+      "active": true
+    },
+    {
+      "id": "stock-1fe3279b71",
+      "title": "Uber Technologies",
+      "type": "stock",
+      "symbol": "UBER",
+      "stooq_symbol": "uber.us",
+      "market": "US",
+      "keywords": [
+        "Uber",
+        "UBER",
+        "ride-hailing",
+        "Uber Eats",
+        "Robotaxi",
+        "Waymo",
+        "autonomous vehicle",
+        "self-driving",
+        "AV partnership",
+        "Dara Khosrowshahi",
+        "GMV",
+        "trip growth",
+        "Aurora",
+        "Cruise",
+        "Zoox",
+        "ride-sharing"
+      ],
+      "industry_keywords": [
+        "Ride-hailing",
+        "Food Delivery",
+        "Autonomous Vehicles",
+        "Platform Economy",
+        "Mobility"
+      ],
+      "note": "【核心論點】UBER是AV时代的分发层，不会被Robotaxi消灭。FCF 2025=$9.76B（+41%YoY），PR=0.39，美股最便宜平台龙头。【买入区间】$68-$78（当前$72.94），可用3-5%仓位建仓。【加仓区】$62-$65（安全边际扩大至35%+）。【止损线】$55（若季度GMV增速<10%或Waymo进入30+城市且定价低于UBER 15%）。【目标价】保守$95 / 基准$115 / 乐观$140，3年加权期望+57%。【关键催化剂】Q1 2026财报(4月)验证FCF增速；更多AV合作官宣；GMV增速维持15%+。【主要风险】Waymo超预期快速扩张（概率20%）；GMV内生放缓；SBC稀释（目前被回购$6.52B/年对冲）。【数据日期】2026-02-20。",
+      "added_at": "2026-02-20 20:46:03",
+      "priority": "high",
+      "active": true,
+      "price_alerts": {
+        "buy_zone_low": 68,
+        "buy_zone_high": 78,
+        "add_zone": 65,
+        "stop_loss": 55,
+        "target_base": 115,
+        "target_bull": 140,
+        "target_bear": 95,
+        "ref_date": "2026-02-20",
+        "ref_price": 72.94
+      }
+    },
+    {
+      "id": "stock-9b3b7ed3e2",
+      "title": "NVIDIA",
+      "type": "stock",
+      "symbol": "NVDA",
+      "stooq_symbol": "nvda.us",
+      "market": "US",
+      "keywords": [
+        "NVIDIA",
+        "NVDA",
+        "GPU",
+        "AI chips",
+        "Blackwell",
+        "CUDA"
+      ],
+      "industry_keywords": [
+        "Semiconductor",
+        "AI Infrastructure",
+        "Data Center",
+        "HPC"
+      ],
+      "note": "US stock - AI infra anchor, PR=0.43, post-DeepSeek correction",
+      "added_at": "2026-02-20 20:46:18",
+      "active": true
+    },
+    {
+      "id": "stock-a42c6ca4ef",
+      "title": "Meta Platforms",
+      "type": "stock",
+      "symbol": "META",
+      "stooq_symbol": "meta.us",
+      "market": "US",
+      "keywords": [
+        "Meta",
+        "META",
+        "Facebook",
+        "Instagram",
+        "WhatsApp",
+        "Ray-Ban",
+        "Llama"
+      ],
+      "industry_keywords": [
+        "Social Media",
+        "Digital Advertising",
+        "AI",
+        "XR"
+      ],
+      "note": "US stock - quality compounder, PR=0.91, AI capex misread",
+      "added_at": "2026-02-20 20:46:19",
+      "active": true
+    },
+    {
+      "id": "stock-d5fd335980",
+      "title": "Amazon",
+      "type": "stock",
+      "symbol": "AMZN",
+      "stooq_symbol": "amzn.us",
+      "market": "US",
+      "keywords": [
+        "Amazon",
+        "AMZN",
+        "AWS",
+        "cloud",
+        "Prime",
+        "Alexa",
+        "advertising"
+      ],
+      "industry_keywords": [
+        "Cloud Computing",
+        "E-commerce",
+        "Digital Advertising",
+        "Logistics"
+      ],
+      "note": "US stock - AWS reacceleration, PR=1.28, drop -20.8%",
+      "added_at": "2026-02-20 20:46:20",
+      "active": true
+    }
+  ]
+}

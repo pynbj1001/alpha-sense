@@ -1,0 +1,29 @@
+{
+  "_说明": "Agent OS 基础配置",
+  
+  "trader": {
+    "name": "",
+    "name_说明": "填入你的名字，系统在 Decision Brief 中会使用"
+  },
+
+  "trading": {
+    "market": "A股",
+    "initial_capital": 1000000,
+    "initial_capital_说明": "初始资金（模拟），用于计算仓位比例"
+  },
+
+  "preferences": {
+    "style": "稳健",
+    "style_说明": "交易风格: 激进/稳健/保守，影响 AI 的审查严格程度",
+    "focus_sectors": [],
+    "focus_sectors_说明": "重点关注的行业板块，如 ['消费', '科技', '医药']",
+    "avoid_sectors": [],
+    "avoid_sectors_说明": "回避的行业板块"
+  },
+
+  "display": {
+    "language": "zh-CN",
+    "report_detail_level": "detailed",
+    "report_detail_level_说明": "报告详细程度: brief/standard/detailed"
+  }
+}

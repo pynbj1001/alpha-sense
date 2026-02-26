@@ -1,0 +1,72 @@
+{
+  "_说明": "Agent OS 风控硬性规则 — AI 必须严格遵守这些规则，不可被用户覆盖",
+
+  "仓位规则": {
+    "max_single_position_pct": 0.20,
+    "max_single_position_pct_说明": "单笔交易不超过总资产的20%",
+    "max_total_position_pct": 0.80,
+    "max_total_position_pct_说明": "总仓位不超过80%",
+    "max_single_stock_pct": 0.30,
+    "max_single_stock_pct_说明": "单一标的累计不超过30%",
+    "max_positions": 10,
+    "max_positions_说明": "同时持有的标的数量上限"
+  },
+
+  "止损规则": {
+    "stop_loss_required": true,
+    "stop_loss_required_说明": "每笔交易必须设定止损，否则不允许执行",
+    "default_stop_loss_pct": 0.05,
+    "min_stop_loss_pct": 0.02,
+    "max_stop_loss_pct": 0.10,
+    "stop_loss_range_说明": "止损幅度建议在2%-10%之间，超出需要特别说明"
+  },
+
+  "回撤规则": {
+    "max_daily_loss_pct": 0.03,
+    "max_daily_loss_pct_说明": "当日亏损超过3%时强制停止所有新交易",
+    "max_drawdown_pct": 0.10,
+    "max_drawdown_pct_说明": "累计回撤超过10%时进入防守模式",
+    "drawdown_defense_说明": "防守模式下：仓位减半，只允许平仓不允许开仓"
+  },
+
+  "频率规则": {
+    "max_daily_trades": 5,
+    "max_daily_trades_说明": "每日最多交易5笔",
+    "frequency_alert_count": 3,
+    "frequency_alert_window_minutes": 30,
+    "frequency_alert_说明": "30分钟内交易3次触发频率告警"
+  },
+
+  "置信度规则": {
+    "min_confidence_to_trade": 0.50,
+    "min_confidence_to_trade_说明": "置信度低于50%不允许交易",
+    "confidence_threshold_auto": 0.85,
+    "confidence_threshold_auto_说明": "置信度超过85%时可考虑自动执行（仍需人工确认）"
+  },
+
+  "风险回报规则": {
+    "min_risk_reward_ratio": 1.5,
+    "min_risk_reward_ratio_说明": "风险回报比至少1:1.5，建议1:2以上"
+  },
+
+  "交易时段": {
+    "market": "A股",
+    "pre_market_start": "08:00",
+    "morning_open": "09:30",
+    "morning_close": "11:30",
+    "afternoon_open": "13:00",
+    "afternoon_close": "15:00",
+    "post_market_end": "17:00",
+    "no_trade_first_minutes": 15,
+    "no_trade_last_minutes": 15,
+    "no_trade_说明": "开盘前15分钟和收盘前15分钟不建议交易"
+  },
+
+  "强制规则": {
+    "_说明": "以下规则不可被用户覆盖，即使强制执行也会被标记",
+    "no_trade_after_invalidation": "判断被证伪后，禁止以同一逻辑重新开仓",
+    "no_trade_without_stop_loss": "没有止损不允许交易",
+    "no_trade_after_daily_loss_limit": "触及日损限额后停止交易",
+    "must_have_judgment": "每笔交易必须有对应的判断，不允许无判断交易"
+  }
+}

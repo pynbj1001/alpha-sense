@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-02-13 09:55:23",
+  "company": "中远海能(600026.SH)",
+  "price": {
+    "akshare_latest": 17.04,
+    "akshare_latest_date": "2026-02-12",
+    "yfinance_last_close": 17.5,
+    "return_1m_pct": 35.626357711803045,
+    "return_3m_pct": 41.25188536953244,
+    "return_ytd_pct": 60.35958904109591
+  },
+  "valuation": {
+    "yf_marketCap": 95641362432,
+    "ak_marketCap": 93127363096.56,
+    "yf_trailingPE": 25.735294,
+    "yf_forwardPE": 16.01054,
+    "yf_priceToBook": 2.2312891,
+    "ak_priceToBook_derived": 2.1726117049455604,
+    "dividendYield_pct": 2.3
+  },
+  "fundamentals": {
+    "report_period_latest": "20250930",
+    "revenue_cum": 17107904130.42,
+    "revenue_cum_yoy_pct": -2.548391429289798,
+    "net_profit_cum": 2722895613.84,
+    "net_profit_cum_yoy_pct": -21.224807279831104,
+    "operating_cf_cum": 4827280422.8,
+    "operating_cf_cum_yoy_pct": -17.868324905100575,
+    "revenue_ttm_derived": 22796366023.23,
+    "net_profit_ttm_derived": 3302879854.6100006,
+    "operating_cf_ttm_derived": 7575077322.34,
+    "roe_pct": 7.3308,
+    "roa_pct": 5.514851,
+    "gross_margin_pct": 22.520277,
+    "net_margin_pct": 17.736924,
+    "asset_liability_ratio_pct": 50.445237,
+    "bps": 7.843095
+  },
+  "cross_validation": {
+    "price_ak_vs_yf_pct": 2.6995305164319303,
+    "mcap_ak_vs_yf_pct": 2.6995280998489544,
+    "revenue_ttm_ak_vs_yf_pct": -8.739550827496653e-07,
+    "net_income_ttm_ak_vs_yf_pct": -3.3488956752685826e-06,
+    "ocf_ttm_ak_vs_yf_pct": 7.083756054761447e-07,
+    "pb_ak_vs_yf_pct": 2.700776900026413
+  },
+  "shipping_indices": {
+    "BCTI": {
+      "date": "2026-02-12",
+      "value": 856.0,
+      "chg_1d_pct": -4.14333707,
+      "chg_3m_pct": 27.76119403,
+      "chg_6m_pct": 34.59119497,
+      "chg_1y_pct": 34.37990581
+    },
+    "BDI": {
+      "date": "2026-02-12",
+      "value": 2095.0,
+      "chg_1d_pct": 6.99693565,
+      "chg_3m_pct": 3.20197044,
+      "chg_6m_pct": 3.8671294,
+      "chg_1y_pct": 169.9742268
+    },
+    "BCI": {
+      "date": "2026-02-12",
+      "value": 3241.0,
+      "chg_1d_pct": 11.2216884,
+      "chg_3m_pct": 7.21137942,
+      "chg_6m_pct": -0.6133088,
+      "chg_1y_pct": 355.83684951
+    }
+  },
+  "peers": {
+    "600026.SS": {
+      "name": "COSCO SHIPPING ENGY TPT CO LTD",
+      "marketCap": 95586705408,
+      "trailingPE": 25.720587,
+      "forwardPE": 16.00139,
+      "priceToBook": 2.230014,
+      "profitMargins": 0.14489001,
+      "debtToEquity": 81.722,
+      "revenueGrowth": -0.026,
+      "earningsGrowth": 0.043
+    },
+    "601872.SS": {
+      "name": "CHINA MERCHANTS ENERGY SHIPPING",
+      "marketCap": 100447256576,
+      "trailingPE": 19.74603,
+      "forwardPE": 14.29885,
+      "priceToBook": 2.4633663,
+      "profitMargins": 0.19518,
+      "debtToEquity": 67.156,
+      "revenueGrowth": 0.109,
+      "earningsGrowth": 0.475
+    },
+    "601975.SS": {
+      "name": "NANJING TANKER CORPORATION",
+      "marketCap": 16896043008,
+      "trailingPE": 14.44,
+      "forwardPE": 11.107693,
+      "priceToBook": 1.5104601,
+      "profitMargins": 0.21136,
+      "debtToEquity": 6.696,
+      "revenueGrowth": 0.011,
+      "earningsGrowth": -0.134
+    }
+  },
+  "errors": {},
+  "data_sources": {
+    "yfinance": "https://finance.yahoo.com/quote/600026.SS",
+    "akshare": "https://github.com/akfamily/akshare"
+  }
+}

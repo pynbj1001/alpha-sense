@@ -1,0 +1,25 @@
+# 01-价值投资体系
+
+> 本索引优先引用 `.txt` 文件，方便 AI 直接读取
+
+## 📂 子文件夹
+
+- [Baillie Gifford/](Baillie%20Gifford/INDEX.md)
+- [ResAlpha/](ResAlpha/INDEX.md)
+- [价值投资3.0/](%E4%BB%B7%E5%80%BC%E6%8A%95%E8%B5%843.0/INDEX.md)
+- [巴菲特/](%E5%B7%B4%E8%8F%B2%E7%89%B9/INDEX.md)
+- [市赚率/](%E5%B8%82%E8%B5%9A%E7%8E%87/INDEX.md)
+- [散户乙/](%E6%95%A3%E6%88%B7%E4%B9%99/INDEX.md)
+- [胡猛-利润率投资体系/](%E8%83%A1%E7%8C%9B-%E5%88%A9%E6%B6%A6%E7%8E%87%E6%8A%95%E8%B5%84%E4%BD%93%E7%B3%BB/INDEX.md)
+- [芒格之道/](%E8%8A%92%E6%A0%BC%E4%B9%8B%E9%81%93/INDEX.md)
+- [贝叶斯拐点/](%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8B%90%E7%82%B9/INDEX.md)
+- [赛斯 卡拉曼 研究框架/](%E8%B5%9B%E6%96%AF%20%E5%8D%A1%E6%8B%89%E6%9B%BC%20%E7%A0%94%E7%A9%B6%E6%A1%86%E6%9E%B6/INDEX.md)
+
+## 📄 知识文件 (txt)
+
+- [偏成长的低市盈率-聂夫](%E5%81%8F%E6%88%90%E9%95%BF%E7%9A%84%E4%BD%8E%E5%B8%82%E7%9B%88%E7%8E%87-%E8%81%82%E5%A4%AB.txt)
+- [反向策略核心定义（Contrarian Strategy）](%E5%8F%8D%E5%90%91%E7%AD%96%E7%95%A5%E6%A0%B8%E5%BF%83%E5%AE%9A%E4%B9%89%EF%BC%88Contrarian%20Strategy%EF%BC%89.txt)
+- [无限投资者：评估企业持久性的卡斯式框架](%E6%97%A0%E9%99%90%E6%8A%95%E8%B5%84%E8%80%85%EF%BC%9A%E8%AF%84%E4%BC%B0%E4%BC%81%E4%B8%9A%E6%8C%81%E4%B9%85%E6%80%A7%E7%9A%84%E5%8D%A1%E6%96%AF%E5%BC%8F%E6%A1%86%E6%9E%B6.txt)
+- [林园投资思想精髓：垄断、趋势与人性博弈的智慧](%E6%9E%97%E5%9B%AD%E6%8A%95%E8%B5%84%E6%80%9D%E6%83%B3%E7%B2%BE%E9%AB%93%EF%BC%9A%E5%9E%84%E6%96%AD%E3%80%81%E8%B6%8B%E5%8A%BF%E4%B8%8E%E4%BA%BA%E6%80%A7%E5%8D%9A%E5%BC%88%E7%9A%84%E6%99%BA%E6%85%A7.txt)
+- [林园的框架](%E6%9E%97%E5%9B%AD%E7%9A%84%E6%A1%86%E6%9E%B6.txt)
+

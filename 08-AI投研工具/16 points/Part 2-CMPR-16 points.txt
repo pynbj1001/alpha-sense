@@ -1,0 +1,128 @@
+By Thursday March 22nd, 9:00AM, please submit the following 2 PART assignment to the folder on Canvas.
+
+PART 2:
+
+Analyze CIMPRESS (ticker symbol CMPR).   Include the following, (remember, we are just trying to determine value, which is basically predicting cash flows):
+
+FIELD RESEARCH: TASTING THE ICE CREAM.  
+
+READ THE CONSOLIDATED FIELD RESEARCH (TASTING THE ICE CREAM) FROM THE ENTIRE CLASS THAT WE SENT YOU BEFORE THE LAST CLASS WEEKEND WE DISCUSSED CMPR
+
+DO MORE FIELD RESEARCH.  
+
+Submit a word document that reports IN GREAT DETAIL everything you did while “tasting the ice cream” and your experiences, without trying to draw conclusions.  (Experience tells me this is worth repeating--- please in great detail just give a data dump of your experiences testing VPRT in the field.  Don’t worry about drawing conclusions--- just expose yourself as much as you can to Vistaprint and their competition, and report your experience in detail.
+
+If you then at the end want to give a summary conclusion re your experience please do so.
+
+In your field research do anything that will help you answer the 16 points below. 
+
+COMPLETELY REDO THE 16 POINTS FROM SCRATCH:  
+
+Analyze CMPR by answering the “16 Points” listed below as they relate to CMPR.  Where evidence is asked for, please gather ALL evidence. PLEASE INCLUDE EVERYTHING IN YOUR THOUGHT PROCESS.
+
+An excel spreadsheet showing both historical and projected financial data.  Include only RELEVANT balance sheet, income statement and cash flow data.  
+
+(FEEL FREE TO EMAIL ANY QUESTIONS YOU MAY HAVE):
+
+READINGS TO HELP IN YOUR ANALYSIS:  In addition to Annual Reports, press releases, 10Ks and Qs — please read quarterly conference calls, and analyst investor days.
+
+
+16 Points: 
+
+Product:  
+
+What is all the evidence that:
+
+The product has (or does not have) a value proposition to all constituencies (customers, employees, vendors, shareholders, etc) that is both unique and easy to understand? 
+The product offering provides (or does not provide), a stable, recurring revenue base? 
+The products or services are highly unlikely (or likely) to be commoditized? 
+
+Yes, after surfing the website, I can understand their products easily.  
+The service payment is monthly subscription. The products are consumables. The customers will need its products if the business continues. 
+No. Customization make it hard to commoditized.
+
+
+
+What is all the evidence that there is (or is not) a large market potential for the product with the opportunity to grow for the foreseeable future? 
+
+It will grow with its customers. It’s a one stop mall for micro business. As long as its customers’ business grow, its business will grow accordingly.
+
+What is all the evidence that there is (or is not) a definable competitive advantage (Either in culture, product, market share, etc.) in a business niche that we can understand?  If there IS a competitive advantage, what is it and what makes it unique and sustainable? 
+
+There are competitive advantages in this company. Customer captivity, Economic of scale make it unique and sustainable.
+
+Sales and Marketing: 
+
+What is all the evidence that there is (or is not) an above average sales and marketing organization? 
+
+The promotion ad and discount page is attractive and impressive.
+Easy to find and use.
+
+Financial/Accounting: 
+
+ 
+What do the historical financials tell us, are there any meaningful trends?
+What does the financial history tell you about the business and your ability to forecast it?  
+Is this a business that currently generates, or in the future will generate, significant Economic Value Added (EVA)?  Calculate current  EVA?
+What are the financial characteristics of a great business? And what is all the evidence that that this company has (or does not have) the financial characteristics of a potentially great business?  
+What are the unit economics if determinable? 
+
+
+
+
+
+
+It has positive EVA around 10%,which is quite significant EVA.
+
+
+What is all the evidence that the accounting and financial disclosure are (or are not) both complete and easy to understand?  
+Is it easy to determine the “TRUE” (as opposed to “bizarro world” accounting) or as Warren Buffett calls them the  “OWNERS EARNINGS” (see THE ESSAYS OF WARREN BUFFETT. PG 244)?  If so what are they specifically, and are they different than the GAAP accounting earnings, and why?   
+What do you do with this owner’s earnings number now that you have it?
+
+
+
+Compare it with future cash flow and calculate the PV of it.
+
+What is all the evidence that that there is (or is not) a high probability of either increasing margins or, at worst, maintaining them through a variety of potential business environments? 
+
+Its performance was quite good during financial crisis, shows its resilience in hard time.
+ 
+What is all the evidence that that the company has (or does not have) good controls and cost analysis?  
+
+
+
+Its SG&A/Sales ratio is declining in past 5 years.
+
+Culture and Management: 
+
+What is all the evidence that top management has (or does not have) a clear vision of what the company can be “best in the world at” (This point is written about in Good To Great)?  If they have a clear vision, what evidence is there that they are (or are not) intensely focused on it?  
+
+The CEO and founder converted 100%of his LTI into PSU programm. Showing his full commitment to the future of this company.
+
+What is all the evidence that the company has (or does not have) depth to its management? 
+
+
+
+ What is all the evidence that there is (or is not) an appropriately focused entrepreneurial culture that is both unique and sustainable?  (ie what is the evidence that they can (or cannot) get things done?)
+
+Their incentive programm focused in long term benefits. Binding all the interests of management with the company.
+Management orientation:
+
+What is all the evidence that they are (or are not) a management team that demonstrably thinks and acts like owners?  
+What is all the evidence that top management has (or does not have) a demonstrated understanding that the financial purpose of a public company it to build EVA (or something that is the equivalent of EVA) in per share terms?  
+What is all the evidence that they have (or do not have) a thoughtful, shareholder oriented compensation structure throughout the company? 
+ The CEO is the founder of the company.
+They have a concept in investor letter: stable state free cash flow, which is a good indicator for value investor.
+What is all the evidence that they are a management team with unquestionable integrity and business ethics?  Do they avoid self-dealings and any improper behavior?
+No found yet.
+What is all the evidence that they have (or do not have) outstanding employee relations?  
+Not found yet.They have 8000 employee globally.
+General
+
+Is there anything else unique to this company that should be considered?
+They have strong competitve advantages in this business and they have a long road ahead.
+Your valuation.  (REMEMBER WHAT THE VALUE OF AN ASSET IS) Is this company a potentially attractive or unattractive as an investment?  In detail show why.
+
+
+Its current price is 166, the model shows its price around 220. So the implied margin of safety is 30%.
+So it’s an attractive investment.

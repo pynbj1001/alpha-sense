@@ -1,0 +1,158 @@
+项目名称： Local InvestAI
+项目目标： 创建一个本地运行的桌面可视化应用程序（.exe 文件）。该程序能够集成大型语言模型（如 OpenAI GPT 和 Google Gemini）与主流金融数据源，根据用户选择的投资分析框架，对指定公司进行深入分析，并生成包含文本和图表的综合性投资报告。
+
+一、 核心技术栈建议 (Technology Stack Recommendation)
+为了实现这个项目，建议使用以下技术栈：
+编程语言 (Programming Language): Python 3.10+
+GUI 框架 (GUI Framework):
+PyQt6 或 PySide6: 功能强大，专业美观。
+CustomTkinter: 基于 Tkinter，但提供更现代化、更美观的组件，开发速度快。
+文件处理 (File Handling):
+python-docx: 用于读取 Word (.docx) 文件。
+pypdf: 用于读取 PDF (.pdf) 文件。
+API 交互 (API Interaction):
+requests: 用于所有 HTTP API 请求。
+openai: OpenAI 官方 Python 库。
+google-generativeai: Google Gemini 官方 Python 库。
+数据可视化 (Data Visualization):
+matplotlib 或 plotly: 用于在 GUI 界面中嵌入图表。matplotlib 与 PyQt/Tkinter 集成良好。
+打包成 .exe (Packaging):
+PyInstaller 或 cx_Freeze: 用于将 Python 程序打包成单个可执行文件。
+API 密钥存储 (API Key Storage):
+keyring: 安全地存储和访问系统钥匙串中的敏感信息。
+（备选）cryptography: 如果要自行实现加密存储在一个本地文件中（例如 config.ini 或 config.json）。
+
+二、 详细功能模块需求 (Detailed Functional Requirements)
+模块 1：主应用程序界面 (Main Application GUI)
+这是一个单窗口应用程序，界面布局如下：
+窗口顶部 (Top Bar):
+AI 模型选择框 (AI Model Selector):
+类型：下拉菜单 (Dropdown/ComboBox)。
+选项：OpenAI GPT-4o (对应用户需求的O3), Google Gemini 1.5 Pro (对应用户需求的2.5 pro)。
+动作：选择不同模型会切换下方需要使用的 API Key。
+AI API Key 输入框 (AI API Key Input):
+类型：文本输入框 (LineEdit)，内容应以 * 显示。
+旁边应有 "保存 (Save)" 和 "删除 (Delete)" 按钮。
+功能：程序启动时，自动加载已保存的对应模型的 Key。保存时，对 Key 进行加密后存储。删除时，清除已保存的 Key。
+公司名称输入框 (Company Name Input):
+类型：文本输入框 (LineEdit)。
+功能：用户输入目标公司的名称或股票代码 (e.g., "Apple Inc." or "AAPL")。
+金融数据源选择框 (Data Source Selector):
+类型：下拉菜单 (Dropdown/ComboBox)。
+选项：例如 Alpha Vantage, Financial Modeling Prep, Yahoo Finance 等。
+动作：选择不同数据源会联动显示对应的 API Key 输入区域。
+金融数据源 API Key 管理 (Data Source API Key Management):
+与 AI API Key 管理类似，包含输入框、保存和删除按钮。
+"生成报告 (Generate Report)" 按钮:
+类型：按钮 (Button)。
+动作：点击后触发核心工作流程。按钮在生成报告期间应变为不可用状态，并显示加载动画或进度提示。
+界面左侧 (Left Panel): 投资框架管理 (Investment Framework Management)
+类型：列表框 (ListWidget)。
+功能：显示 Frameworks 文件夹下的所有 .docx 和 .pdf 文件名。
+选择模式：单选 (Single Selection)。用户每次只能选择一个框架进行分析。
+"上传框架 (Upload Framework)" 按钮:
+动作：打开文件对话框，允许用户选择 .docx 或 .pdf 文件，并将其复制到程序目录下的 Frameworks 文件夹中，然后刷新列表。
+"删除框架 (Delete Framework)" 按钮:
+动作：删除在列表中选中的文件，并从 Frameworks 文件夹中移除，然后刷新列表。
+主显示区域 (Main Display Area): 报告页面
+类型：标签页控件 (TabWidget)。
+第一个 Tab: "综合报告 (Full Report)"
+功能：以富文本格式完整显示由 AI 生成的最终长篇报告。应支持滚动浏览。
+后续 Tabs: "图形化分析 (Graphical Analysis)"
+功能：将报告中的关键数据和结论进行可视化。每个 Tab 展示报告的一个方面。
+示例 Tabs:
+财务摘要 (Financial Summary): 用条形图展示近5年的收入、净利润、现金流。
+估值分析 (Valuation Analysis): 用仪表盘或表格展示市盈率 (P/E)、市净率 (P/B) 等指标，并与行业对比。
+市场表现 (Market Performance): 用线图展示近一年的股价走势。
+SWOT 分析: 用一个 2x2 的网格清晰地展示优势、劣势、机会、威胁。
+实现逻辑: AI 生成的报告需要有结构化的输出（例如使用 Markdown 格式），以便程序可以解析特定部分并生成图表。
+
+三、 核心工作流程 (Core Workflow Logic)
+当用户点击 "生成报告" 按钮后，程序应按以下顺序执行：
+输入验证 (Input Validation):
+检查是否已选择 AI 模型并输入/加载了对应的 API Key。
+检查是否已选择投资框架。
+检查是否已输入公司名称。
+检查是否已选择金融数据源并输入/加载了对应的 API Key。
+如有任何一项缺失，弹出提示框要求用户完成输入。
+数据提取 (Data Extraction):
+读取投资框架: 程序根据左侧列表的选择，使用 python-docx 或 pypdf 读取对应文件的全部文本内容。将此内容存为一个字符串变量 framework_content。
+获取金融数据: 程序使用选择的金融数据源 API (e.g., Alpha Vantage) 和对应的 API Key，获取输入公司的关键金融数据。
+需要获取的数据应全面，例如：公司概况、年度/季度财报（损益表、资产负债表、现金流量表）、主要财务比率、股价数据、分析师评级等。
+将获取的所有数据整理成一个结构化的文本或 JSON 格式，存为变量 financial_data。
+AI Prompt 构建 (AI Prompt Construction):
+这是最关键的一步。程序需要构建一个高质量、结构化的 Prompt，发送给选择的 AI 模型。
+Prompt 模板示例:
+Plaintext
+作为一名专业的投资分析师，请根据我提供的投资分析框架和目标公司的详细金融数据，为该公司撰写一份深入、全面、专业的投资分析报告。
+
+**分析要求：**
+1.  严格遵循我提供的“投资分析框架”的结构和要点进行分析。
+2.  报告必须长篇、深入，并结合我提供的所有“金融数据”。
+3.  在报告的末尾，请根据你的分析，以结构化的格式（例如JSON或Markdown表格）总结出用于生成图表的关键数据点。例如：近五年的收入和利润数据，关键估值指标，以及SWOT分析的四个象限内容。
+
+---
+
+**【投资分析框架】**
+{framework_content}
+
+---
+
+**【目标公司】**
+{company_name}
+
+---
+
+**【金融数据】**
+{financial_data}
+调用 AI 模型 (Call AI Model):
+程序使用对应的 Python 库 (openai 或 google-generativeai) 和 API Key，将构建好的 Prompt 发送出去。
+需要处理网络请求的超时和异常。
+结果解析与展示 (Parse and Display Results):
+接收 AI 返回的报告文本。
+主报告展示: 将完整的报告文本显示在 "综合报告" Tab 页中。
+图表生成:
+解析 AI 在报告末尾提供的结构化数据。
+根据这些数据，使用 matplotlib 或 plotly 生成相应的图表。
+将生成的图表嵌入到 "图形化分析" 下的各个 Tab 页中。
+
+四、 非功能性需求 (Non-Functional Requirements)
+安全性 (Security): API 密钥绝不能以明文形式存储。必须使用 keyring 或 cryptography 库进行安全存储。
+错误处理 (Error Handling):
+API Key 错误或无效时，应有明确提示。
+网络连接失败时，应有提示。
+金融数据源找不到公司数据时，应有提示。
+AI 模型返回错误时，应显示错误信息。
+配置文件 (Configuration): 应用程序的设置（如窗口大小、保存的 API Keys 加密后的内容）可以保存在一个本地的 config.json 或 config.ini 文件中。
+打包 (Packaging): 提供一个 build.py 脚本，使用 PyInstaller 将整个项目（包括代码、资源文件、Frameworks 文件夹）打包成一个独立的 .exe 文件，方便分发和使用。
+
+五、 给 Claude 的分步实现建议 (Step-by-Step Implementation Plan for Claude)
+为了让你能更有条理地完成这个项目，建议你按照以下步骤进行编码：
+步骤一：搭建基础 GUI 框架。
+使用 PyQt6 或 CustomTkinter 创建主窗口。
+布局好顶部栏、左侧列表、主显示区域（标签页）的基本框架。暂时不需要实现功能，先把界面搭好。
+步骤二：实现投资框架管理功能。
+实现程序启动时扫描 Frameworks 文件夹并显示在左侧列表的功能。
+实现 "上传" 和 "删除" 按钮的功能（文件操作）。
+实现读取 .docx 和 .pdf 文件内容的功能。
+步骤三：实现 API 密钥管理。
+在界面上添加 AI 模型和数据源的下拉框、输入框和按钮。
+编写一个独立的模块（例如 key_manager.py），使用 cryptography 或 keyring 来实现 API 密钥的加密保存和读取功能。
+步骤四：集成一个金融数据源。
+选择一个数据源（例如 Alpha Vantage，因为它有免费的 API tier）。
+编写一个函数，该函数接收公司名称和 API Key，返回该公司的金融数据。
+步骤五：集成一个 AI 模型。
+先集成一个模型（例如 OpenAI）。
+编写一个函数，该函数接收一个完整的 Prompt，并返回 AI 的响应。
+步骤六：串联核心工作流程。
+实现 "生成报告" 按钮的点击事件。
+按照前面定义的工作流程，将步骤 2、4、5 串联起来：获取框架内容 -> 获取金融数据 -> 构建 Prompt -> 调用 AI -> 获取结果。
+首先，将 AI 返回的完整文本显示在 "综合报告" Tab 中。
+步骤七：实现数据可视化。
+优化你的 Prompt，要求 AI 输出结构化的数据用于制图。
+编写解析 AI 结构化输出的逻辑。
+使用 matplotlib，根据解析出的数据生成图表，并将其嵌入到 GUI 的各个图形化 Tab 中。
+步骤八：完善和打包。
+添加全面的错误处理和用户提示。
+编写 PyInstaller 打包脚本，生成最终的 .exe 文件。
+进行最终测试。

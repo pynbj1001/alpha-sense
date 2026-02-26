@@ -1,0 +1,176 @@
+{
+  "retrieved_at": "2026-02-09 13:36:57",
+  "fx_summary": {
+    "USDJPY": {
+      "pair": "USDJPY",
+      "latest_date": "2026-02-09",
+      "latest_close": 156.5585,
+      "latest_open": 157.5743,
+      "ma20": 156.4952,
+      "ma60": 156.3607,
+      "atr14": 1.5189,
+      "atr14_pct": 0.009702,
+      "rsi14": 51.72,
+      "rv20": 0.1097,
+      "high20": 159.4555,
+      "low20": 152.0945,
+      "slope20_pct": -0.010163,
+      "z60": 0.148,
+      "trend": "range",
+      "ytd_ret": -0.000731,
+      "ytd_high": 159.4555,
+      "ytd_high_date": "2026-01-14",
+      "ytd_low": 152.0945,
+      "ytd_low_date": "2026-01-27",
+      "drawdown_from_ytd_high": -0.018168,
+      "ret_1m": -0.008691,
+      "ret_3m": 0.011272,
+      "ret_6m": 0.063877,
+      "percentile_2y": 0.8369,
+      "high_2y": 161.9525,
+      "low_2y": 139.5795
+    },
+    "AUDJPY": {
+      "pair": "AUDJPY",
+      "latest_date": "2026-02-09",
+      "latest_close": 110.0455,
+      "latest_open": 110.2315,
+      "ma20": 107.6618,
+      "ma60": 104.8982,
+      "atr14": 1.4344,
+      "atr14_pct": 0.013035,
+      "rsi14": 67.64,
+      "rv20": 0.1109,
+      "high20": 110.7945,
+      "low20": 105.223,
+      "slope20_pct": 0.036886,
+      "z60": 2.1095,
+      "trend": "uptrend",
+      "ytd_ret": 0.052468,
+      "ytd_high": 110.7945,
+      "ytd_high_date": "2026-02-09",
+      "ytd_low": 104.3905,
+      "ytd_low_date": "2026-01-02",
+      "drawdown_from_ytd_high": -0.00676,
+      "ret_1m": 0.041868,
+      "ret_3m": 0.086678,
+      "ret_6m": 0.149186,
+      "percentile_2y": 0.9981,
+      "high_2y": 110.7945,
+      "low_2y": 86.0535
+    }
+  },
+  "cross_validation": {
+    "USDJPY": {
+      "ak_stooq_common_date": "2026-02-09",
+      "ak_close": 156.5585,
+      "stooq_close": 156.5615,
+      "stooq_diff_pct": 1.9e-05,
+      "frankfurter_date": "2026-02-06",
+      "frankfurter_rate": 157.09,
+      "ak_close_on_frankfurter_date": 157.2348,
+      "frankfurter_diff_pct": -0.000921
+    },
+    "AUDJPY": {
+      "ak_stooq_common_date": "2026-02-09",
+      "ak_close": 110.0455,
+      "stooq_close": 110.05,
+      "stooq_diff_pct": 4.1e-05,
+      "frankfurter_date": "2026-02-06",
+      "frankfurter_rate": 109.76,
+      "ak_close_on_frankfurter_date": 110.2843,
+      "frankfurter_diff_pct": -0.004754
+    }
+  },
+  "yfinance_check": {
+    "USDJPY=X": {
+      "ok": false,
+      "rows": 0
+    },
+    "AUDJPY=X": {
+      "ok": false,
+      "rows": 0
+    }
+  },
+  "macro": {
+    "us2y": {
+      "series": "DGS2",
+      "date": "2026-02-05",
+      "value": 3.47
+    },
+    "us10y": {
+      "series": "DGS10",
+      "date": "2026-02-05",
+      "value": 4.21
+    },
+    "vix": {
+      "series": "VIXCLS",
+      "date": "2026-02-05",
+      "value": 21.77
+    },
+    "fedfunds": {
+      "series": "FEDFUNDS",
+      "date": "2026-01-01",
+      "value": 3.64
+    },
+    "us_short": {
+      "series": "IRSTCI01USM156N",
+      "date": "2025-12-01",
+      "value": 3.723333
+    },
+    "jp_short": {
+      "series": "IRSTCI01JPM156N",
+      "date": "2025-12-01",
+      "value": 0.557
+    },
+    "au_short": {
+      "series": "IRSTCI01AUM156N",
+      "date": "2025-12-01",
+      "value": 3.6
+    },
+    "us_long": {
+      "series": "IRLTLT01USM156N",
+      "date": "2025-12-01",
+      "value": 4.14
+    },
+    "jp_long": {
+      "series": "IRLTLT01JPM156N",
+      "date": "2025-12-01",
+      "value": 2.06
+    },
+    "au_long": {
+      "series": "IRLTLT01AUM156N",
+      "date": "2025-12-01",
+      "value": 4.719
+    },
+    "jp_3m": {
+      "series": "IR3TIB01JPM156N",
+      "date": "2025-11-01",
+      "value": 0.80636
+    },
+    "au_3m": {
+      "series": "IR3TIB01AUM156N",
+      "date": "2025-12-01",
+      "value": 3.71
+    }
+  },
+  "macro_calc": {
+    "us_jp_short_diff_pp": 3.166333,
+    "au_jp_short_diff_pp": 3.043,
+    "us_jp_long_diff_pp": 2.08,
+    "au_jp_long_diff_pp": 2.659,
+    "us10y_minus_us2y_pp": 0.74
+  },
+  "correlation": {
+    "usd_jpy_vs_us10y_corr": 0.431,
+    "usd_jpy_vs_vix_corr": -0.2811,
+    "aud_jpy_vs_vix_corr": -0.596,
+    "aud_jpy_vs_aud_usd_corr": 0.7241
+  },
+  "sources": {
+    "primary_fx": "akshare.forex_hist_em (Eastmoney historical FX)",
+    "validation_1": "stooq daily CSV",
+    "validation_2": "frankfurter.app ECB reference rates",
+    "macro": "FRED via pandas_datareader"
+  }
+}

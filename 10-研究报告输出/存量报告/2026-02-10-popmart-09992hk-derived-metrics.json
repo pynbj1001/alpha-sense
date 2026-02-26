@@ -1,0 +1,108 @@
+{
+  "price": {
+    "date": "2026-02-10",
+    "close": 269.79998779296875,
+    "pct_1d": 4.898901628276464,
+    "pct_20d": 41.03501489227479,
+    "pct_60d": 22.41379095486098,
+    "high_52w": 339.79998779296875,
+    "low_52w": 98.69999694824219,
+    "market_cap": 358331547648.0,
+    "shares_outstanding": 1328137713.0,
+    "trailing_pe": 47.003483,
+    "pb": 22.452156
+  },
+  "yf_annual": {
+    "2021-12-31": {
+      "revenue": 4490651000.0,
+      "net_income": 854339000.0,
+      "gross_margin": 61.430380584017776,
+      "ebit_margin": 26.553766925998033,
+      "fcf": 445349000.0,
+      "ocf": 779097000.0
+    },
+    "2022-12-31": {
+      "revenue": 4617324000.0,
+      "net_income": 475660000.0,
+      "gross_margin": 57.490940640076374,
+      "ebit_margin": 14.686168871840053,
+      "fcf": 543399000.0,
+      "ocf": 891022000.0
+    },
+    "2023-12-31": {
+      "revenue": 6301002000.0,
+      "net_income": 1082344000.0,
+      "gross_margin": 61.32470676885994,
+      "ebit_margin": 22.956809091633364,
+      "fcf": 1598130000.0,
+      "ocf": 1990596000.0
+    },
+    "2024-12-31": {
+      "revenue": 13037749000.0,
+      "net_income": 3125473000.0,
+      "gross_margin": 66.78886823177835,
+      "ebit_margin": 33.81289208743012,
+      "fcf": 4437530000.0,
+      "ocf": 4954220000.0
+    }
+  },
+  "cagr_2021_2024": {
+    "revenue_cagr_pct": 42.658538513053216,
+    "net_income_cagr_pct": 54.085524072743056
+  },
+  "cash_quality_2024": {
+    "fcf_to_net_income_pct": 141.9794699874227,
+    "ocf_to_net_income_pct": 158.51104776780986
+  },
+  "ak_latest_annual": {
+    "report_date": "2024-12-31 00:00:00",
+    "operate_income": 13037749000.0,
+    "operate_income_yoy_pct": 106.9154874098,
+    "holder_profit": 3125473000.0,
+    "holder_profit_yoy_pct": 188.7689126562,
+    "gross_margin_pct": 66.788868231778,
+    "net_margin_pct": 25.3751241875,
+    "roe_avg_pct": 33.874164979176,
+    "roic_pct": 69.113251958622,
+    "debt_asset_pct": 26.8046595339,
+    "current_ratio": 3.630854402397
+  },
+  "ak_latest_report_period": {
+    "report_date": "2025-06-30 00:00:00",
+    "operate_income": 13876276000.0,
+    "operate_income_yoy_pct": 204.4491118692,
+    "holder_profit": 4574368000.0,
+    "holder_profit_yoy_pct": 396.4945356348,
+    "gross_margin_pct": 70.343541739873,
+    "net_margin_pct": 33.738972906,
+    "roe_avg_pct": 36.789861098885
+  },
+  "ak_spot": {
+    "datetime": "2026/02/10 16:09:18",
+    "code": "09992",
+    "name": "泡泡玛特",
+    "last": 269.79999,
+    "chg_pct": 4.89891,
+    "prev_close": 257.2,
+    "open": 263.4,
+    "high": 270.0,
+    "low": 257.2,
+    "volume": 22536513.0,
+    "amount": 6005257363.0
+  },
+  "valuation": {
+    "market_cap_calc": 358331538754.78143,
+    "forward_np_assumption_base": 6175396800.0,
+    "forward_np_assumption_bear": 3594293949.9999995,
+    "forward_np_assumption_bull": 7318988800.0,
+    "forward_pe_now_base": 58.02567031073719,
+    "target_price_bear": 75.7754482949465,
+    "target_price_base": 185.98664098020384,
+    "target_price_bull": 303.0893408566285,
+    "pe_assumptions": {
+      "bear": 28,
+      "base": 40,
+      "bull": 55
+    }
+  }
+}

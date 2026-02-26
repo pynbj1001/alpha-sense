@@ -1,0 +1,264 @@
+投资组合管理指令（v1.0）
+——ResAlpha：Normalized Residual Portfolio Modeling（残差化指数增强）投委会作业规程
+这不是“研究报告”，而是可执行的作业手册。目标是：在既有基准（如沪深300）上，仅学习“为何偏离”与“偏离多少”，在成本与风险受控下，产出稳健、可复用的增强组合。
+先立“反蠢条款”：凡是与以下规程冲突的主观拍脑袋，一律无效。
+
+0. 范围、目标与约束
+目标
+在给定被动基准（例：沪深300全收益）基础上，构建增强组合，以年化信息比率（IR）为主目标；次级目标为最大回撤可控、风格稳定、容量可交易。
+设计为模块化流水线，可独立升级、回滚。
+硬约束
+跟踪误差（ex-ante TE）：2%–4%（按项目阶段可调整）。
+单票权重上限：min(指数权重×1.5, 流动性/容量上限)；行业偏离与风格偏离分别设限（见 §6）。
+年化换手 ≤ 80%–100%；净α < 2×边际成本时禁止交易。
+合规：持仓黑名单/信息壁垒/事件窗口控制（见 §12）。
+危险假设与防呆
+市场非平稳、对抗性；不允许“端到端直接学收益”。
+一切“历史最优”皆视为数据挖矿，必须通过样本外与多窗口中位数聚合。
+发生数据污染/模型漂移或超阈风险，一键回被动（见 §11 Kill Switch）。
+
+1. 投委会架构与职责
+1.1 角色分工
+首席投资官（CIO）：总责；冲突裁决；触发 Kill Switch。
+量化生成器负责人（Q-Gen Lead）：残差生成器/扩散模型与特征库。
+排序器负责人（Ranker Lead）：PPDMS 指标与候选排序训练。
+组合构建负责人（PM/Optim Lead）：二次规划、约束、再平衡时序。
+风险负责人（Risk Lead）：TE、风格漂移、情景测试、压力测试。
+执行交易负责人（Trading Lead）：成本模型、TCA、券商路由。
+宏观与行业负责人（Macro/Industry Lead）：状态标注与事件门控。
+数据工程负责人（Data Eng）：数据源、血缘、质检、回溯锁定。
+合规负责人（Compliance）：清单维护、审计、信息壁垒。
+项目管理（PMO）：版本管理、灰度、回滚与里程碑。
+1.2 决策规则
+日常：Optim Lead + Risk Lead + Trading Lead 三人签可落地调整。
+大幅参数/约束变更：需 CIO + 至少三位模块负责人同意。
+紧急停机：任何一位（CIO/Risk/Trading）可单方触发 Kill Switch。
+
+2. 总体流程（High-Level Pipeline）
+基准参考生成（Reference Portfolio）
+残差定义与归一化（PRNorm for Δw）
+参考扰动生成多模态候选（Reference Perturbation）
+残差生成器（v1 线性/树；v2 条件扩散去噪）
+候选排序器（PPDMS：风险合规×容量×净α×稳定性）
+组合优化（净α–风险–成本；带硬约束的二次规划）
+执行（门槛交易→订单分拆→TCA 反馈）
+风控与监控（TE/漂移/回撤/容量）
+事后归因与版本评审（因子/行业/选股/时机分解）
+变更管理与灰度（A/B & Paper Trading）
+
+3. 模块 A：基准参考生成（“惯性参考线”）
+A.1 定义
+( w^{ref} )：被动指数复制 + 风格/行业中性化后的参考持仓。
+被动复制优先最小成本复制（考虑停牌、融资融券与可交易性）；行业与β、规模、价值、动量暴露限定在指数±阈值。
+A.2 输出
+参考权重向量 ( w^{ref}_t )；
+风险暴露向量 ( b^{ref}_t ) 与可交易清单（含容量上限）。
+
+4. 模块 B：残差定义与 PRNorm 归一化
+B.1 残差权重
+[
+\Delta w_t \equiv w_t - w^{ref}_t
+]
+B.2 风险单位归一（PRNorm-Portfolio 版）
+对每个资产 (i)：
+[
+\widetilde{\Delta w}{i,t}=\frac{\Delta w{i,t}}{\text{MTE}{i,t}},\quad
+\text{MTE}{i,t}=\sqrt{(\mathbf{e}_i^\top \Sigma_t \mathbf{e}_i)}
+]
+其中 (\Sigma_t) 为协方差；(\mathbf{e}_i) 为资产单位向量。
+目标：让近端、可交易的小改进不被高波动/远期不确定性淹没。
+时间折扣：训练/评估对更近窗口加权更高。
+
+5. 模块 C：参考扰动（多模态）
+C.1 扰动空间
+轻微扰动：TE 预算、行业/风格上限、成本参数、容量阈值、β目标等；
+从 (\mathcal{N}(0,\Omega)) 采样超参，生成 ( {w^{ref,k}}_{k=1..K} )。
+C.2 目的
+得到一簇“合理但不同”的参考持仓，为后续多模态候选提供条件。
+
+6. 模块 D：残差生成器（Generator）
+D.1 特征（候选）
+基础：估值分位、成长/盈利质量（ROE、毛利变化）、应计质量、现金回购/分红、财报意外与预期修正、基本面动量、技术动量（12–1/近3月回撤）、季节性、股东行为。
+微观：换手率、盘口不对称、交易簇密度、北向资金、融资融券变化。
+状态：宏观/行业 Nowcast（PMI、供需、价格、库存）、波动/流动性 Regime 标注。
+D.2 训练 v1（先快跑）
+岭/Elastic Net/GBDT 预测风险单位下的 α，再通过二次规划内嵌约束解出 (\Delta w^k)。
+目标函数（见 §8）：净α–风险–成本，加入 L1/L2 正则与换手惩罚。
+D.3 训练 v2（条件扩散去噪）
+条件：({w^{ref,k}})+特征；
+任务：从噪声恢复 (\widetilde{\Delta w}^k)（PRNorm 空间），2–4 步 DDIM 采样；
+约束：每步投影回可行域（权重上限/行业/风格/容量/TE）。
+D.4 产出
+候选残差集合 ({\Delta w^k})。
+
+7. 模块 E：候选排序器（Ranker；PPDMS）
+E.1 指标（PPDMS）
+[
+\text{PPDMS}_k = \underbrace{\mathbb{1}[\text{Risk OK}k]}{\text{TE/暴露合规}}
+\times \underbrace{\text{Capacity}k}{\text{成交与冲击成本可承受}}
+\times \left( \alpha \cdot \text{NetAlpha}_k + \beta \cdot \text{CostControl}_k + \gamma \cdot \text{Stability}_k \right)
+]
+NetAlpha：预期α – 成本；CostControl：单位α成本与换手惩罚；
+Stability：多窗口一致性 + Regime 鲁棒性 + 偏离集中度；
+(\alpha,\beta,\gamma) 默认为 5:2:5，可在灰度中调参。
+E.2 训练
+多任务：规则分（合规/容量/风控） + 事后收益打分；
+目标：排序 NDCG / Pairwise-Hinge；输入含环境状态，防止错时选择。
+E.3 决策
+取前 m 个候选（或软加权），进入优化器；拒绝高 PPDMS 方差解。
+
+8. 模块 F：组合优化器（Optim）
+F.1 目标函数
+[
+\max_{\Delta w} ;; \underbrace{a^\top \Delta w}{\text{预期α}}
+;-; \lambda \underbrace{\Delta w^\top \Sigma \Delta w}{\text{风险}}
+;-; \gamma \underbrace{\text{Cost}(|\Delta w|)}_{\text{成本/冲击}}
+;-; \eta |\Delta w|_1
+]
+(\lambda)：风险厌恶；(\gamma)：成本权重；(\eta)：稀疏/换手控制。
+F.2 约束
+权重守恒：(\sum_i \Delta w_i = 0)；
+单票/行业/风格/β 上下限；
+TE ≤ 预算；容量/流动性约束（成交量占比、日均成交额门槛）；
+交易门槛：若 ((a_i - \text{cost}_i) < \theta)，强制 (\Delta w_i=0)。
+F.3 解法
+二次规划（QP）+ 投影；大规模可用坐标下降/ADMM；
+多候选融合：对不同 λ/γ/约束的 K 个最优解取中位数或最小后悔合成权重。
+
+9. 模块 G：执行与TCA
+G.1 门控
+仅在门槛满足（净α>2×边际成本）时下单；
+事件窗口（财报、停复牌、合并重组、监管公告）触发延迟/禁止。
+G.2 交易细则（A股特性）
+竞价/连续竞价时段；涨跌停/临停；T+1；大宗与协议条件。
+订单分拆：时间分割（TWAP/VWAP/IS）+ 成交簇适配；
+券商/通道：多券商路由与成本对标；
+TCA：事前/事后成本、冲击模型刷新；坏点回报给生成器与排序器。
+
+10. 模块 H：风控与监控
+H.1 在线监控
+TE（ex-ante & ex-post）、风格暴露漂移、行业偏离、β 偏离；
+α产出/成本分解、容量使用率、集中度（HHI）、胜率与分位贡献。
+H.2 触发器
+单月回撤 > 8% 或 TE 漂移 > 2σ → 降风险 30%；
+任何数据质量/模型漂移报警 → 暂停生成器，启用参考+风控兜底；
+连续两周 NetAlpha/Cost 反常 → 召集临时投委会。
+
+11. 模块 I：Kill Switch 与回退
+手动触发：CIO/Risk/Trading 任意一人可立刻切换到纯被动 (w=w^{ref})。
+自动触发：极端情景（流动性枯竭、系统性风险阈值、交易基础设施异常）。
+回退流程：冻结新信号→平稳减仓→仅被动再平衡→事件复盘→逐步灰度恢复。
+
+12. 模块 J：合规与审计
+清单：限制名单、行业/敏感主题库、内幕信息隔离墙。
+记录：特征与信号血缘、版本、参数、审批链、交易指令/回报、TCA 报告。
+留痕：任何参数变更与回测必须可重现；一键回滚到 N–1 版。
+
+13. 模块 K：验证与回测
+样本外：滚动窗口、时间折扣；多窗口中位数汇总绩效。
+泄漏防护：事件对齐、停牌/并购处理、公告发布时间校准。
+鲁棒性：Regime 分层（高/低波动、宽/窄基差、风险偏好）下 IR/回撤统计。
+PBO 检查（Probability of Backtest Overfitting）：拒收高 PBO 模型。
+压力测试：熔断、极端跳空、连续跌停、流动性骤降、合规事件。
+
+14. 模块 L：归因与汇报
+Brinson-Fachler 与因子归因并行：选股α/行业配置/时机效应分解。
+成本归因：佣金、冲击、延迟、机会成本。
+风格稳定性：暴露漂移与 α 来源一致性雷达图。
+周报/月报：IR、超额、TE、换手、容量、胜率、Top/Bottom 贡献，异常说明与改进项。
+
+15. 模块 M：变更管理与灰度发布
+版本门槛：样本外 IR↑、成本/容量不过度恶化、风险不增；
+灰度：Paper→微资金→分批资金；并行 A/B 30–60 天；
+回滚：任一核心指标劣于对照 ≥ 2 个统计周期 → 自动回退。
+
+16. 运行节奏（Runbook）
+每日
+数据质检（缺失/跳变/异常值）；事件日历；风险/容量阈值刷新。
+生成扰动参考 → 候选残差 → 排序 → 优化 → 门槛交易 → 执行 → TCA。
+每周
+Regime 识别更新；成本模型刷新；风控回顾与小幅参数校正。
+每月
+归因与评审；样本外回测滚动；灰度/升级/回滚决议。
+临时
+黑天鹅/监管重大变更 → 紧急投委会 + Kill Switch 评估。
+
+17. 配置模板（示例：沪深300增强）
+benchmark: CSI300_TR
+target_TE: 0.03            # 3%
+weight_cap_single: min(1.5 * w_ref[i], liquidity_cap[i])
+beta_band: [-0.05, 0.05]
+industry_active_band: [-0.02, 0.02]
+style_exposure_band:
+  size:  [-0.1, 0.1]
+  value: [-0.1, 0.1]
+  mom:   [-0.1, 0.1]
+turnover_cap_annual: 0.9
+trade_gate_theta: 2.0       # α > 2 × cost 才交易
+risk_lambda: 6.0e-3
+cost_gamma:  1.5
+l1_eta:      2.0e-3
+perturbation:
+  K: 32
+  hyper_cov_omega: diag([TE, beta, industry, cost]^2) * 0.1
+generator_v1:
+  model: ElasticNet + GBDT
+  features: [valuation, quality, accruals, revisions, earnings_surprise,
+             fundamental_mom, price_mom, seasonality, microstructure,
+             northbound, financing_lending, event_flags, regime_state]
+  target: alpha_in_risk_units
+  regularization: time_decay_halflife=60d
+ranker:
+  metric: PPDMS
+  weights: {net_alpha: 0.42, cost_ctrl: 0.16, stability: 0.42}
+execution:
+  venue: AShare
+  algo: ["TWAP","VWAP","IS"]
+  tca_feedback: true
+kill_switch:
+  dd_monthly: 0.08
+  te_drift_sigma: 2.0
+
+18. 组合优化伪代码（可直接给工程师）
+# inputs: a (expected alpha), Sigma (cov), cost(|Δw|),
+#         w_ref, bands (single/industry/style), TE_budget
+# output: Δw*
+
+initialize Δw = 0
+candidates = {Δw^k from generator under different perturbations}
+
+scores = Ranker.PPDMS(candidates, env_state)
+S = top_m(candidates, by=scores)      # or soft-weights
+
+# fuse multi-solution by median or min-regret
+Δw_init = median_projection(S)
+
+# Quadratic Programming with constraints
+Δw* = argmax_{Δw} aᵀΔw - λ ΔwᵀΣΔw - γ Cost(|Δw|) - η ||Δw||₁
+s.t. sum(Δw)=0, TE(Δw)≤TE_budget, bands on single/industry/style/beta,
+     liquidity & capacity constraints, trade_gates
+
+return project_to_feasible(Δw*)
+
+19. 数据与质检（要点）
+血缘：每列字段“来源→处理→落地”全链路追踪；
+锁定：历史回测使用回溯可得数据快照（禁止用修订后数据）；
+质检：缺失/异常/停牌/并表事件表，公告时间对齐至交易时点。
+
+20. 路线图（3 期）
+P0（4–6周）：v1 线性/树 + QP 优化 + PPDMS 规则排序；跑通线上闭环。
+P1（8–12周）：条件扩散去噪、在线 Regime 自适应、最小后悔合成。
+P2（>12周）：跨品种/跨指数迁移；自适应 TE 预算；因果特征加入（供应链冲击、政策文本 embedding 等）。
+
+21. 交付物与验收
+落地：每日交易指令与执行回报；
+文档：数据字典、特征手册、优化与排序器描述、合规模块 SOP；
+仪表盘：IR/TE/换手/容量/成本/风格/归因/异常日志；
+回滚包：N–1 稳定版镜像与参数集。
+
+末尾再“泼冷水”（照规程行事）
+没有“物理先验”就没有“端到端”：我们用“风险先验+残差化”替代。
+不追日内噪声：周/半月节奏 + 门槛交易；
+不赌单解：扰动→多模态→排序→中位/最小后悔；
+不爱炫技：先稳 IR，再谈复杂模型。
+本指令即刻生效。任何偏离本规程的重大决策，须在投委会会议纪要中显式记录理由与风险补偿措施。

@@ -1,0 +1,139 @@
+﻿{
+    "$schema":  "https://json.schemastore.org/claude-code-settings.json",
+    "paiVersion":  "2.5",
+    "env":  {
+                "PAI_DIR":  "C:\\Users\\pynbj\\OneDrive\\1.文档-积累要看的文件\\1. 投资框架\\.pai_runtime\\.claude",
+                "PROJECTS_DIR":  "C:\\Users\\pynbj\\OneDrive\\1.文档-积累要看的文件\\1. 投资框架",
+                "CLAUDE_CODE_MAX_OUTPUT_TOKENS":  "80000",
+                "BASH_DEFAULT_TIMEOUT_MS":  "600000"
+            },
+    "contextFiles":  [
+                         "skills/PAI/SKILL.md",
+                         "skills/PAI/SYSTEM/AISTEERINGRULES.md",
+                         "skills/PAI/USER/AISTEERINGRULES.md",
+                         "skills/PAI/USER/DAIDENTITY.md",
+                         "skills/InvestmentCRO/SKILL.md",
+                         "skills/InvestmentCRO/USER/GOALS.md",
+                         "skills/InvestmentCRO/USER/THOUGHTS.md",
+                         "skills/InvestmentCRO/USER/PREFERENCES.md",
+                         "skills/InvestmentCRO/USER/EXPERIENCE.md"
+                     ],
+    "daidentity":  {
+                       "name":  "InvestmentCRO",
+                       "fullName":  "InvestmentCRO - PAI Investment Assistant",
+                       "displayName":  "InvestmentCRO",
+                       "color":  "#3B82F6",
+                       "voiceId":  "21m00Tcm4TlvDq8ikWAM",
+                       "voice":  {
+                                     "stability":  0.35,
+                                     "similarity_boost":  0.80,
+                                     "style":  0.90,
+                                     "speed":  1.1,
+                                     "use_speaker_boost":  true,
+                                     "volume":  0.8
+                                 },
+                       "startupCatchphrase":  "PAI here, ready to go."
+                   },
+    "principal":  {
+                      "name":  "User",
+                      "timezone":  "America/Los_Angeles"
+                  },
+    "pai":  {
+                "repoUrl":  "github.com/danielmiessler/PAI",
+                "version":  "2.5"
+            },
+    "techStack":  {
+                      "terminal":  "Kitty",
+                      "packageManager":  "bun",
+                      "pythonPackageManager":  "uv",
+                      "language":  "TypeScript"
+                  },
+    "permissions":  {
+                        "allow":  [
+                                      "Bash",
+                                      "Read",
+                                      "Write",
+                                      "Edit",
+                                      "MultiEdit",
+                                      "Glob",
+                                      "Grep",
+                                      "LS",
+                                      "WebFetch",
+                                      "WebSearch",
+                                      "NotebookRead",
+                                      "NotebookEdit",
+                                      "TodoWrite",
+                                      "ExitPlanMode",
+                                      "Task",
+                                      "Skill",
+                                      "mcp__*"
+                                  ],
+                        "deny":  [
+
+                                 ],
+                        "ask":  [
+                                    "Bash(rm -rf /)",
+                                    "Bash(rm -rf /:*)",
+                                    "Bash(sudo rm -rf /)",
+                                    "Bash(sudo rm -rf /:*)",
+                                    "Bash(rm -rf ~)",
+                                    "Bash(rm -rf ~:*)",
+                                    "Bash(rm -rf ~/.claude)",
+                                    "Bash(rm -rf ~/.claude:*)",
+                                    "Bash(diskutil eraseDisk:*)",
+                                    "Bash(diskutil zeroDisk:*)",
+                                    "Bash(diskutil partitionDisk:*)",
+                                    "Bash(diskutil apfs deleteContainer:*)",
+                                    "Bash(diskutil apfs eraseVolume:*)",
+                                    "Bash(dd if=/dev/zero:*)",
+                                    "Bash(mkfs:*)",
+                                    "Bash(gh repo delete:*)",
+                                    "Bash(gh repo edit --visibility public:*)",
+                                    "Bash(git push --force:*)",
+                                    "Bash(git push -f:*)",
+                                    "Bash(git push origin --force:*)",
+                                    "Bash(git push origin -f:*)",
+                                    "Read(~/.ssh/id_*)",
+                                    "Read(~/.ssh/*.pem)",
+                                    "Read(~/.aws/credentials)",
+                                    "Read(~/.gnupg/private*)",
+                                    "Write(~/.claude/settings.json)",
+                                    "Edit(~/.claude/settings.json)",
+                                    "Write(~/.ssh/*)",
+                                    "Edit(~/.ssh/*)"
+                                ],
+                        "defaultMode":  "default"
+                    },
+    "enableAllProjectMcpServers":  true,
+    "enabledMcpjsonServers":  [
+
+                              ],
+    "hooks":  {
+                  "Stop":  [
+                               {
+                                   "hooks":  [
+                                                 {
+                                                     "command":  "bun \"${PAI_DIR}/hooks/InvestmentMemoryUpdate.hook.ts\"",
+                                                     "type":  "command"
+                                                 }
+                                             ]
+                               }
+                           ]
+              },
+    "alwaysThinkingEnabled":  true,
+    "_docs":  {
+                  "_overview":  "SETTINGS.JSON - Central configuration for PAI v2.5. Replace __INSTALL_WILL_SET_THIS__ placeholders with your paths.",
+                  "_sections":  {
+                                    "contextFiles":  "Files loaded at session start. Defaults: SKILL.md, AISTEERINGRULES (SYSTEM+USER), DAIDENTITY. Customize to load additional context.",
+                                    "daidentity":  "AI identity (name, voice). Edit directly to customize.",
+                                    "principal":  "Your identity. Edit name and timezone directly.",
+                                    "permissions":  "Pre-configured for security and usability.",
+                                    "hooks":  "Hook configuration for lifecycle events."
+                                },
+                  "_env":  {
+                               "PAI_DIR":  "REQUIRED. Root directory for your PAI installation (usually ~/.claude). Replace placeholder with absolute path.",
+                               "PROJECTS_DIR":  "OPTIONAL. Base directory for projects (e.g., ~/Projects). Skills use ${PROJECTS_DIR}/PAI for public repo path. Set empty string if unused."
+                           }
+              },
+    "max_tokens":  4096
+}

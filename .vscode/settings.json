@@ -1,0 +1,26 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "files.associations": {
+    "*.md": "markdown",
+    "*.txt": "plaintext"
+  },
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "markdown.preview.fontSize": 14,
+  "editor.fontSize": 14,
+  "workbench.editor.labelFormat": "short",
+  "explorer.sortOrder": "default",
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": ".github/copilot-instructions.md"
+    }
+  ],
+  "python.analysis.typeCheckingMode": "standard"
+}
