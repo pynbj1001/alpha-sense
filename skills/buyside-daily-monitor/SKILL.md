@@ -1,7 +1,7 @@
 ---
 name: buyside-daily-monitor
 description: |
-  买方机构级日报生成技能。将 stock_tracker.py 产出的新闻情绪原料，升级为CIO级别的每日投资跟踪备忘录。
+  买方机构级日报生成技能。将 stock_tracker.py 产出的新闻情绪原料，升级为 CIO 级别的每日投资跟踪备忘录。
   整合：市场情绪扫描 + 实时估值快照 + 论点健康度评分 + 宏观/信用看板 + 仓位信号 + 当日行动建议。
 
   **适用场景：**
@@ -18,7 +18,7 @@ description: |
   **触发词：** "日报"、"buyside daily"、"晨报"、"@日报"、"daily monitor"、"投资组合日报"
 ---
 
-# Buyside Daily Monitor — 买方机构级日报技能 v1.0
+# Buyside Daily Monitor — 买方机构级日报技能 v1.1
 
 ## ⚠️ CRITICAL CONSTRAINTS — 首先阅读，全程遵守
 
@@ -27,30 +27,39 @@ description: |
 ### 数据源优先级（严格按序）
 
 1. **FIRST：stock_tracker.py 原料** — 读取最新的 `11.投资机会跟踪报告/daily_reports/YYYY-MM-DD-investment-idea-tracking-report.md`，这是新闻情绪扫描的基础数据
-2. **SECOND：Python 实时价格** — `yfinance`（美股/港股/ETF）获取当日收盘价、52周高/低、PE/PB、EV/EBITDA
-3. **THIRD：akshare** — A股双源验证估值数据
-4. **LAST RESORT：Web 搜索** — 仅当以上均不可用，必须标注"非机构数据源"
+2. **SECOND：DashScope Web Search** — 使用 `web_search` 工具获取实时价格数据（**优先推荐**，无限流问题）
+3. **THIRD：yfinance** — 美股/港股/ETF 获取当日收盘价、52 周高/低、PE/PB、EV/EBITDA（如遇限流则跳过）
+4. **FOURTH：akshare** — A 股双源验证估值数据
+5. **LAST RESORT：手动更新** — 从财经网站获取并标注来源（如 Morningstar、Robinhood、Yahoo Finance）
 
-❌ **NEVER 凭记忆引用股价、PE、目标价等任何数字**  
-❌ **NEVER 在未获取最新价格的情况下输出"估值偏低/偏高"结论**  
-❌ **NEVER 跳过论点健康度评估直接给出仓位信号**  
-❌ **NEVER 使用"一定""肯定""必然"等词**  
+✅ **推荐工作流**：
+```python
+# 1. 先跑 stock_tracker.py 获取新闻情绪
+# 2. 使用 web_search(query="GOOGL stock price today", provider="dashscope") 获取价格
+# 3. 解析搜索结果，提取价格数字
+# 4. 生成日报，标注数据来源
+```
+
+❌ **NEVER 凭记忆引用股价、PE、目标价等任何数字**
+❌ **NEVER 在未获取最新价格的情况下输出"估值偏低/偏高"结论**
+❌ **NEVER 跳过论点健康度评估直接给出仓位信号**
+❌ **NEVER 使用"一定""肯定""必然"等词**
 ❌ **NEVER 输出超过 5 页（约 2000 字）的报告正文** — 日报必须可在 5 分钟内读完
 
 ### 防止走捷径规则
 
-❌ **NEVER** 写"此部分数据待更新"（必须显示实际获取的数字，或明确标注 N/A + 原因）  
-❌ **NEVER** 跳过 Risk Tripwire 检查（每个持仓必须测试止损条件）  
-❌ **NEVER** 在论点分数 < 50 的标的上输出"维持"建议（需明确说明维持理由）  
+❌ **NEVER** 写"此部分数据待更新"（必须显示实际获取的数字，或明确标注 N/A + 原因）
+❌ **NEVER** 跳过 Risk Tripwire 检查（每个持仓必须测试止损条件）
+❌ **NEVER** 在论点分数 < 50 的标的上输出"维持"建议（需明确说明维持理由）
 ❌ **NEVER** 合并展示两个不同方向的仓位信号（多头/空头信号必须分栏）
 
 ### 输出规范
 
 | 深度等级 | 触发条件 | 报告长度 | 核心内容 |
 |---|---|---|---|
-| **快报（Quick Flash）** | 临时触发、追问 | ≤ 300字 | 仅执行摘要 + TOP3 变化 |
-| **标准日报（Standard Daily）** | 每日常规触发 | 800-1500字 | 全规格报告（本技能默认） |
-| **周报版（Weekly Digest）** | 每周五触发 | 2000-3000字 | 标准日报 + 7日论点漂移分析 |
+| **快报（Quick Flash）** | 临时触发、追问 | ≤ 300 字 | 仅执行摘要 + TOP3 变化 |
+| **标准日报（Standard Daily）** | 每日常规触发 | 800-1500 字 | 全规格报告（本技能默认） |
+| **周报版（Weekly Digest）** | 每周五触发 | 2000-3000 字 | 标准日报 + 7 日论点漂移分析 |
 
 ---
 
@@ -58,11 +67,10 @@ description: |
 
 ### Step 0：数据准备（硬性前提）
 
-执行以下操作，**确认数据已就绪再开始写报告**：
+**推荐方法：使用 DashScope Web Search 获取价格**
 
 ```python
 # 0-A：定位最新日报原料
-import glob, os
 from pathlib import Path
 
 report_dir = Path("11.投资机会跟踪报告/daily_reports")
@@ -70,23 +78,20 @@ reports = sorted(report_dir.glob("*-investment-idea-tracking-report.md"))
 latest = reports[-1] if reports else None
 # → 读取 latest 文件，提取各标的新闻条数、情绪偏向、热词
 
-# 0-B：用 yfinance 拉取实时快照（批量）
-import yfinance as yf
+# 0-B：使用 web_search 获取价格数据（推荐）
+# 对每个持仓标的执行：
+search_results = web_search("GOOGL stock price today February 2026", provider="dashscope")
+# → 解析搜索结果，提取价格数字
 
-watchlist_tickers = [...]  # 从 ideas_watchlist.json 读取
-data = yf.download(watchlist_tickers, period="5d", auto_adjust=True)
-# → 记录当日收盘价、5日涨跌幅、52周高/低位置（%ile）
-
-# 0-C：估值指标（PE、PB、EV/EBITDA）
-for ticker in watchlist_tickers:
-    info = yf.Ticker(ticker).info
-    # → pe_ratio, pb_ratio, ev_to_ebitda, target_mean_price
+# 0-C：从 ideas_watchlist.json 读取持仓论点和仓位标记
+with open("11.投资机会跟踪报告/ideas_watchlist.json", "r", encoding="utf-8") as f:
+    watchlist = json.load(f)
 ```
 
 **前置验证 Checklist（每次生成日报必做）：**
 ```
 ✅ [ ] 最新日报原料文件已定位并读取
-✅ [ ] yfinance 价格快照已获取（或标注 N/A 原因）
+✅ [ ] 价格数据已获取（web_search 优先，yfinance 备选）
 ✅ [ ] ideas_watchlist.json 持仓标记已读取（区分"重仓/标配/观察/空仓"）
 ✅ [ ] 上一份日报的仓位信号已读取（用于对比变化）
 ✅ [ ] 宏观信用看板数据（HY OAS、Z1 期限）已从原料文件提取
@@ -105,7 +110,7 @@ IF 任一未通过 → 明确告知缺失项，要求用户确认后方可出具
 报告人：[CIO / Portfolio Manager]
 覆盖范围：XX 个标的 | 今日事件：N 条催化剂 | 宏观信号：[绿色/黄色/红色]
 
-TOP CALL：[最值得关注的一件事，1句话]
+TOP CALL：[最值得关注的一件事，1 句话]
 → 影响标的：[Ticker] | 建议动作：[增持/观察/止损] | 时限：[当日/本周/中线]
 
 今日市场情绪：[偏正面/偏负面/中性]
@@ -115,7 +120,7 @@ TOP CALL：[最值得关注的一件事，1句话]
 **撰写原则：**
 - 执行摘要必须有观点，不是纯信息汇编
 - TOP CALL 必须是可在晨会上拍板决策的事项
-- 如果"无值得关注之事"，明确说"今日无 TOP CALL，全仓维持，下一重要事件为 [日期+事件]"
+- 如果"无值得关注之事"，明确说"今日无 TOP CALL，全仓维持，下一重要事件为 [日期 + 事件]"
 
 ---
 
@@ -126,14 +131,14 @@ TOP CALL：[最值得关注的一件事，1句话]
 ```markdown
 ## 宏观与信用看板
 
-| 信号 | 最新值 | 6M变动 | 状态 | 解读 |
+| 信号 | 最新值 | 6M 变动 | 状态 | 解读 |
 |---|---|---|---|---|
 | HY OAS | X.XX% | ±0.XXpct | 🟢未恶化 / 🟡关注 / 🔴警报 | [一句话] |
 | Z1 期限/流动性 | 短债占比 XX% | ±Xpct | 🟢/🟡/🔴 | [一句话] |
-| 利息负担缺口 | dE-dEBITDA X.Xpct | 连续X季度 | 🟢/🟡/🔴 | [一句话] |
+| 利息负担缺口 | dE-dEBITDA X.Xpct | 连续 X 季度 | 🟢/🟡/🔴 | [一句话] |
 | **综合信号** | | | **OFF / ON** | [风险判断一句话] |
 
-> 宏观信号颜色规则：绿=三因子均未恶化；黄=1-2因子预警；红=三因子同时恶化（Kill-Switch 触发）
+> 宏观信号颜色规则：绿=三因子均未恶化；黄=1-2 因子预警；红=三因子同时恶化（Kill-Switch 触发）
 ```
 
 **⚠️ 若综合信号为"RED / ON"，则：**
@@ -155,8 +160,8 @@ TOP CALL：[最值得关注的一件事，1句话]
 | 指标 | 当前值 | 建仓参考价 | 变化 |
 |---|---|---|---|
 | 最新收盘价 | $XX.XX | $XX.XX | [+XX% / -XX%] |
-| 52周位置 | XX%ile | — | — |
-| P/E (TTM) | XX.Xx | [建仓时PE] | [+X / -X] |
+| 52 周位置 | XX%ile | — | — |
+| P/E (TTM) | XX.Xx | [建仓时 PE] | [+X / -X] |
 | EV/EBITDA | XX.Xx | — | — |
 | 分析师目标价均值 | $XX.XX | — | 隐含 [+/-]XX% |
 
@@ -164,19 +169,19 @@ TOP CALL：[最值得关注的一件事，1句话]
 
 | 论点支柱 | 原始期望 | 当前状态 | 分 |
 |---|---|---|---|
-| [支柱1，如：AI算力需求持续] | [预期增长XX%] | ✅强化/⚠️动摇/❌破坏 | XX |
-| [支柱2] | ... | ... | XX |
-| [支柱3] | ... | ... | XX |
+| [支柱 1，如：AI 算力需求持续] | [预期增长 XX%] | ✅强化/⚠️动摇/❌破坏 | XX |
+| [支柱 2] | ... | ... | XX |
+| [支柱 3] | ... | ... | XX |
 
-**今日新闻信号：** [X条正面 / X条负面 / X条中性]
+**今日新闻信号：** [X 条正面 / X 条负面 / X 条中性]
 **热词变化：** [今日热词 vs 昨日热词，是否有新议题]
 
 **当日仓位信号：**
-- 🟢 **维持 / 加仓** — [理由，1-2句]
-- 🟡 **观察** — [需要确认的条件，1句]
-- 🔴 **减仓/止损** — [触发条件，1句]
+- 🟢 **维持 / 加仓** — [理由，1-2 句]
+- 🟡 **观察** — [需要确认的条件，1 句]
+- 🔴 **减仓/止损** — [触发条件，1 句]
 
-> Risk Tripwire：如果 [具体条件，如"Q4 GPU出货增速低于20%"]，则立即触发止损
+> Risk Tripwire：如果 [具体条件，如"Q4 GPU 出货增速低于 20%"]，则立即触发止损
 ```
 
 **论点健康度评分规则（0-100）：**
@@ -202,7 +207,7 @@ TOP CALL：[最值得关注的一件事，1句话]
 对 `ideas_watchlist.json` 中标记为 **观察**（position = "观察" / "空仓"）的标的：
 
 **只有满足以下条件之一才值得汇报：**
-1. 过去24h 新闻条数 ≥ 3 条（异常关注度）
+1. 过去 24h 新闻条数 ≥ 3 条（异常关注度）
 2. 情绪出现明显偏向（正面/负面，非中性）
 3. 价格变动 ≥ 3%（当日）
 4. 出现投资论点中定义的催化剂关键词
@@ -212,16 +217,16 @@ TOP CALL：[最值得关注的一件事，1句话]
 
 ### 有信号标的
 
-**[公司名] ([TICKER])** — [触发原因，1句话]
-- 新闻信号：[X条，情绪偏向]
-- 价格：$XX.XX（+X.X%）｜ 52周位置 XX%ile
-- 当前 PE：XX.X（vs 历史中位 XX.X，偏[贵/便宜] XX%）
+**[公司名] ([TICKER])** — [触发原因，1 句话]
+- 新闻信号：[X 条，情绪偏向]
+- 价格：$XX.XX（+X.X%）｜ 52 周位置 XX%ile
+- 当前 PE：XX.X（vs 历史中位 XX.X，偏 [贵/便宜] XX%）
 - 论点进展：[催化剂是否出现 / 关键数据是否披露]
-- **行动建议：** [建立观察仓 / 等待回调至$XX建仓 / 无行动]
+- **行动建议：** [建立观察仓 / 等待回调至$XX 建仓 / 无行动]
 
 ### 无信号标的（简表）
 
-| 标的 | 今日情绪 | 价格(%变化) | 状态 |
+| 标的 | 今日情绪 | 价格 (%变化) | 状态 |
 |---|---|---|---|
 | [TICKER] | 中性 | $XX(+/-X%) | 无变化 |
 ```
@@ -237,8 +242,8 @@ TOP CALL：[最值得关注的一件事，1句话]
 
 | 日期 | 标的 | 事件类型 | 预期影响 | 论点影响 | 行动预案 |
 |---|---|---|---|---|---|
-| MM/DD | [TICKER] | 财报 Q4 | +中性 | 支柱1检验 | 超预期→加仓；低于预期→减仓 |
-| MM/DD | [TICKER] | 产品发布 | +偏正面 | 支柱2催化 | 发布→维持；取消→止损 |
+| MM/DD | [TICKER] | 财报 Q4 | 🔑关键 | 支柱 1 检验 | 超预期→加仓；低于预期→减仓 |
+| MM/DD | [TICKER] | 产品发布 | +偏正面 | 支柱 2 催化 | 发布→维持；取消→止损 |
 | MM/DD | 宏观 | FOMC 会议 | 不确定 | 宏观框架 | 降息→增配成长；暂停→无操作 |
 
 > 催化剂评级：🔑 = 论点关键（不符合则止损）｜ ⭐ = 重要（但非决定性）｜ 📝 = 关注（信息收集）
@@ -263,7 +268,7 @@ TOP CALL：[最值得关注的一件事，1句话]
 | — | 全组合 | 无操作 | — | — | 宏观绿色，持仓论点健康 |
 
 **今日无行动理由（如适用）：**
-[若今日无操作，1-2句说明原因，避免无缘由的"维持不变"]
+[若今日无操作，1-2 句说明原因，避免无缘由的"维持不变"]
 ```
 
 ---
@@ -324,73 +329,34 @@ TOP CALL：[最值得关注的一件事，1句话]
 
 ---
 
-## 附录：Python 数据拉取模板
-
-以下代码块可直接在工作区 Python 环境中执行：
+## 附录：DashScope Web Search 使用示例
 
 ```python
-#!/usr/bin/env python
-"""
-buyside_daily_data.py — 买方日报数据拉取模板
-"""
-import json
-import yfinance as yf
-from pathlib import Path
-from datetime import datetime
+# 使用 web_search 工具获取股票价格
+from tools import web_search
 
-ROOT = Path(__file__).resolve().parent
-WATCHLIST_PATH = ROOT / "11.投资机会跟踪报告" / "ideas_watchlist.json"
-REPORT_DIR = ROOT / "11.投资机会跟踪报告" / "daily_reports"
+# 搜索 GOOGL 价格
+result = web_search("GOOGL Alphabet stock price today February 2026", provider="dashscope")
 
-def load_watchlist():
-    with open(WATCHLIST_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-def get_price_snapshot(tickers: list[str]) -> dict:
-    """批量拉取价格快照 — 收盘价、52周高低、PE、PB"""
-    result = {}
-    for t in tickers:
-        try:
-            info = yf.Ticker(t).info
-            hist = yf.Ticker(t).history(period="52wk")
-            w52_low = hist["Close"].min()
-            w52_high = hist["Close"].max()
-            cur = info.get("currentPrice") or info.get("regularMarketPrice")
-            pct_52w = (cur - w52_low) / (w52_high - w52_low) * 100 if cur else None
-            result[t] = {
-                "price": cur,
-                "pct_52w_percentile": round(pct_52w, 1) if pct_52w else "N/A",
-                "pe_ttm": info.get("trailingPE"),
-                "pb": info.get("priceToBook"),
-                "ev_ebitda": info.get("enterpriseToEbitda"),
-                "target_mean": info.get("targetMeanPrice"),
-                "data_date": datetime.now().strftime("%Y-%m-%d"),
-            }
-        except Exception as e:
-            result[t] = {"error": str(e)}
-    return result
-
-def locate_latest_tracker_report() -> Path | None:
-    """定位最新的 stock_tracker 原料文件"""
-    reports = sorted(REPORT_DIR.glob("[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-investment-idea-tracking-report.md"))
-    return reports[-1] if reports else None
-
-if __name__ == "__main__":
-    wl = load_watchlist()
-    # 提取所有有 ticker 的标的
-    tickers = [
-        idea["ticker"] for idea in wl.get("ideas", [])
-        if idea.get("ticker") and idea.get("market") in ("US", "HK")
-    ]
-    print(f"拉取 {len(tickers)} 个标的的价格快照...")
-    snapshot = get_price_snapshot(tickers)
-    for t, d in snapshot.items():
-        print(f"{t}: {d}")
-
-    latest = locate_latest_tracker_report()
-    print(f"\n最新原料文件：{latest}")
+# 解析结果，提取价格
+# 从 result 中查找类似 "$312.90" 或 "312.90" 的数字模式
+import re
+price_match = re.search(r'\$?(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)', result)
+if price_match:
+    price = float(price_match.group(1).replace(",", ""))
+    print(f"GOOGL price: ${price}")
 ```
+
+### 推荐搜索语句
+
+| 数据类型 | 搜索语句示例 |
+|---|---|
+| 美股价格 | `{TICKER} stock price today February 2026` |
+| 港股价格 | `{TICKER} HK stock price today February 2026` |
+| 市盈率 | `{TICKER} P/E ratio TTM 2026` |
+| 分析师目标价 | `{TICKER} analyst target price 2026` |
+| 52 周高低 | `{TICKER} 52 week high low today` |
 
 ---
 
-*Buyside Daily Monitor Skill v1.0 — 买方日报 × 论点健康度 × Risk Tripwire × 机构标准*
+*Buyside Daily Monitor Skill v1.1 — 买方日报 × 论点健康度 × Risk Tripwire × 机构标准 × DashScope 优先*
