@@ -16,5 +16,17 @@
     "initial_prior": 0.6000000000000001,
     "created_at": "2026-03-25T19:51:41.562915",
     "status": "new"
+  },
+  {
+    "id": "d16d1303",
+    "raw_input": "https://mp.weixin.qq.com/s/HbbcctY2tckr4qXzFYkZtw 分析这篇文章，得出投资信号",
+    "signal_type": "reading_insight",
+    "matched_catalysts": [],
+    "tech_stage": "",
+    "related_tickers": [],
+    "thesis_draft": "信号来源：https://mp.weixin.qq.com/s/HbbcctY2tckr4qXzFYkZtw 分析这篇文章，得出投资信号... → 关联标的 待确定标的，匹配催化剂：待识别催化剂",
+    "initial_prior": 0.53,
+    "created_at": "2026-03-25T20:47:17.238429",
+    "status": "new"
   }
 ]
