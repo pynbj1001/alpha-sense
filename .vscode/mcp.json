@@ -48,6 +48,15 @@
     "sp-global": {
       "type": "http",
       "url": "https://kfinance.kensho.com/integrations/mcp"
+    },
+    "qveris": {
+      "command": "npx",
+      "args": [
+        "@qverisai/mcp"
+      ],
+      "env": {
+        "QVERIS_API_KEY": "sk-gox_c_V7R3jROGp-tsFEXOPGHUEsk2By8yn5cWC1sRo"
+      }
     }
   }
 }

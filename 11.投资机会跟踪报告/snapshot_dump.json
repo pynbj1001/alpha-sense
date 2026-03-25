@@ -1,0 +1,200 @@
+{
+  "GOOGL": {
+    "price": 311.76,
+    "pct_52w_percentile": 84.0,
+    "pe_ttm": 28.84,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "MU": {
+    "price": 412.37,
+    "pct_52w_percentile": 93.2,
+    "pe_ttm": 39.2,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "TSM": {
+    "price": 374.58,
+    "pct_52w_percentile": 94.7,
+    "pe_ttm": 35.55,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "9992.HK": {
+    "price": 229.8,
+    "pct_52w_percentile": "N/A",
+    "pe_ttm": 91.34,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "0883.HK": {
+    "price": 25.32,
+    "pct_52w_percentile": 95.4,
+    "pe_ttm": 8.08,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "NET": {
+    "price": 172.19,
+    "pct_52w_percentile": 48.1,
+    "pe_ttm": -593.76,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "UBER": {
+    "price": 75.42,
+    "pct_52w_percentile": 30.4,
+    "pe_ttm": 15.95,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "NVDA": {
+    "price": 177.19,
+    "pct_52w_percentile": 73.5,
+    "pe_ttm": 36.16,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "META": {
+    "price": 648.18,
+    "pct_52w_percentile": 53.9,
+    "pe_ttm": 27.59,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "AMZN": {
+    "price": 210.0,
+    "pct_52w_percentile": 49.2,
+    "pe_ttm": 29.29,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "0700.HK": {
+    "price": 518.0,
+    "pct_52w_percentile": 35.1,
+    "pe_ttm": 22.51,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "1088.HK": {
+    "price": 44.96,
+    "pct_52w_percentile": "N/A",
+    "pe_ttm": 13.25,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "JPM": {
+    "price": 300.3,
+    "pct_52w_percentile": 73.0,
+    "pe_ttm": 15.0,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "9988.HK": {
+    "price": 142.9,
+    "pct_52w_percentile": "N/A",
+    "pe_ttm": 19.36,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "CSCO": {
+    "price": 79.46,
+    "pct_52w_percentile": 78.8,
+    "pe_ttm": 28.58,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "AVGO": {
+    "price": 319.55,
+    "pct_52w_percentile": 65.3,
+    "pe_ttm": 66.99,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "PLTR": {
+    "price": 137.19,
+    "pct_52w_percentile": 47.4,
+    "pe_ttm": 217.76,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "MELI": {
+    "price": 1757.58,
+    "pct_52w_percentile": 1.9,
+    "pe_ttm": 44.61,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "ISRG": {
+    "price": 503.51,
+    "pct_52w_percentile": 45.3,
+    "pe_ttm": 63.98,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "ARM": {
+    "price": 127.45,
+    "pct_52w_percentile": 44.9,
+    "pe_ttm": 169.93,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "1816.HK": {
+    "price": 3.14,
+    "pct_52w_percentile": "N/A",
+    "pe_ttm": 13.58,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  },
+  "1072.HK": {
+    "price": 39.58,
+    "pct_52w_percentile": "N/A",
+    "pe_ttm": 43.38,
+    "pb": null,
+    "ev_ebitda": "N/A",
+    "target_mean": "N/A",
+    "data_date": "2026-02-28"
+  }
+}

@@ -2,6 +2,7 @@
 
 > 用途：记录用户长期偏好与当前执行状态，供每次对话快速加载。  
 > 原则：保留高价值、可执行信息；删除冗余流水账；持续迭代。
+> **详细偏好/目标/洞见/经验 → `03-Agents_Config/USER/`**
 
 ---
 
@@ -27,8 +28,8 @@
 
 - 偏好：专业投研表达，但避免模板化、机械化语言。
 - 结构：前提 -> 证据 -> 推理 -> 结论（可追踪）。
-- 风格：可读、叙事化、少空话；更像公众号长文——“先抛观点再上数据”，把关键机制讲明白。
-- 关键段落需“数据+逻辑链”充分展开，不接受一句话带过。
+- 风格：可读、叙事化、少空话；更像公众号长文——"先抛观点再上数据"，把关键机制讲明白。
+- 关键段落需"数据+逻辑链"充分展开，不接受一句话带过。
 
 ### 2.3 输出格式
 
@@ -55,87 +56,36 @@
 
 - 债券策略先跑数据：`python bond_data.py --all`
 - 债券报告必须包含：曲线、通胀、政策利率三项硬指标。
-- 追踪任务以“新闻线索优先”，行情数据可选，不可阻塞产出。
+- 追踪任务以"新闻线索优先"，行情数据可选，不可阻塞产出。
 - 重大偏差或数据异常必须显式标注（来源、时间、偏差说明）。
+- 额度受限场景可采用"关键数据双源核验 + 非关键单源披露"模式。
 
 ---
 
 ## 5) 近期关键状态（压缩摘要）
 
-### 2026-02（有效）
+### 2026-02 研究产出总结
 
-- 已建立并强化 v3.0 投研中枢（框架选取、冲突仲裁、Kill-Switch、二阶思考）。
-- 已部署投资机会追踪工作流（含定时任务、中文日报、md/html/pdf联动输出）。
-- 已完成多份美股/宏观深度研究（如 UBER、MU、GOOGL CapEx 等）。
-- 用户近期偏好进一步强化：
-  - 结论必须客观、事实密度高；
-  - 宏观与行业分析强调第一性原理；
-  - 研究需可落地到仓位与风控动作。
+- **投研中枢 v3.0**：框架选取决策引擎、冲突仲裁、Kill-Switch、二阶思考全面部署。
+- **六层金字塔**：确立为唯一顶层入口，每层1-2主框架，其他框架作为维度插件。
+- **完成深度研报**（L3-L6）：UBER（L3/L4）、MRNA（L5）、LLY（L6）、GOOGL（L4/L5/L6）、ASML（DCF）、AMD（L4）、AAPL/LITE（BMP）。
+- **工具基建**：实时数据底座（yfinance+SEC+Stooq）固化，L5分析工具开发，RSS+search_web 新闻引擎增强。
+- **Superpowers 集成**：投研TDD、verification-before-completion、systematic-debugging 铁律纳入框架。
+- **投资机会追踪**：含定时任务、中文日报、md/html/pdf联动输出已部署。
 
-### 2026-02-21（最新）
+### 2026-03-01（最新）
 
-- 完成《六层金字塔深度投研框架20260108.pdf》转 Markdown。
-- 完成“六层主框架-全库融合版”，确立“六层为唯一顶层入口”：
-  - 每层 1-2 主框架；
-  - 其他框架作为维度插件；
-  - 一次调用覆盖价值/成长/宏观/风控/行为。
-- 已对六层文档完成去断行重排（PDF 折行合并为自然段落）。
+- 引入 **Day1Global-Skills** 5个外部 Skill（`skills/14.external/Day1Global-Skills/` 克隆，已解压至标准 skills 目录）：
+  - `us-value-investing` — 美股价值投资4维评分（ROE/负债/FCF/护城河），与 `@护城河/@估值` 互补
+  - `macro-liquidity` — 宏观流动性4指标监控（Fed净流动性/SOFR/MOVE/日元套利），与 `@宏观` 联动
+  - `tech-earnings-deepdive` — 科技股财报深度分析 v3.0（16模块+6大投资哲学+估值矩阵），@财报 触发
+  - `btc-bottom-model` — 比特币抄底6指标判断（RSI/成交量/MVRV/恐慌指数/矿机成本/LTH），@BTC 触发
+  - `us-market-sentiment` — 美股情绪5指标仪表盘（NAAIM/机构配置/散户净买入/标普PE/对冲杠杆），@情绪 触发
 
-### 2026-02-23（最新）
+### 2026-02-28
 
-- 已运行 ai-news-radar 24h 更新，并生成当日《投资机会跟踪》日报（md/html/pdf）到 `11.投资机会跟踪报告/daily_reports/`。
-- 修复 `stock_tracker.py` 的 f-string 语法错误，恢复 `run-daily` 正常出报。
-
-### 2026-02-24（最新）
-
-- 完成《礼来 LLY》六层金字塔全库融合版研报输出（md+pdf）到 `10-研究报告输出/`。
-- 修复 `yfinance` 在含中文路径下的证书校验失败问题（curl 77，通过将 CA bundle 复制到纯英文临时目录解决）。
-- 开发并部署 **L5 分析工具** (Python 核心库 `l5_analysis_tool.py`)，包含高价值数据模块 (Unit Economics / Sensitivity Matrix)。
-- 完成 **Moderna (MRNA)** L5 级深度估值：
-  - 发现显著低估 (股价 $45 vs 模型 $51-$87)，INT 隐含成功率 <20%。
-  - 验证了 mRNA 平台的高软件属性 (INT 毛利率 ~93%)。
-  - 通过 Kill-Switch 刚兑测试 (Runway 1.8年)。
-- 生成首份 L5 级别《首席投资官备忘录》并存档。
-- 完成 **UBER (L3 深度研报 · FY2025 年报更新版)**：
-  - FY2025 全年数据印证 2026-02-20 看多论点（FCF $9.76B 大幅超预期，营业利润率 10.7%）。
-  - 贝叶斯更新后看多概率从 72% 上调至 75-80%。
-  - 核心估值：P/FCF 14.9x，PR = 0.37（创同类平台历史低位），DCF 内含值 $120-$135。
-  - 仓位建议：$65-$78 建仓，目标价 $105-$125（基准）。
-  - 报告存档：`10-研究报告输出/2026-02-24-个股-UBER-L3深度研报（FY2025年报更新版）.md/.pdf`。
-- 完成 **UBER (L4 极致研究 · Turn Every Page)**：
-  - 新增 SEC XBRL 穿透：分部（Mobility/Delivery/Freight）与地域收入（US&CAN/EMEA/APAC/LatAm）定量化。
-  - 关键项双源核验通过：收入、营业利润、净利润、股本（SEC vs yfinance）+ 股价（Stooq vs yfinance）。
-  - 输出存档：`10-研究报告输出/2026-02-24-个股-UBER-L4级极致研报.md/.pdf`。
-- 用户偏好更新：在额度受限场景下，可采用“关键数据双源核验 + 非关键单源披露”的高效交付模式。
-
-### 2026-02-25（最新）
-
-- 完成 **礼来 LLY（L6 v2.0 全局态势推演）**：按《论持久战》方法输出九大模块（全相关方扫描、四维力量对比、主要矛盾、三阶段推演、红蓝军、终局图景、末日协议、执行兵法）。
-- 实时数据底座完成并固化：`yfinance + SEC CompanyFacts + Stooq`，快照存档于 `10-研究报告输出/2026-02-25-lly-l6-data-snapshot.json`。
-- 报告输出：`10-研究报告输出/2026-02-25-个股-礼来LLY-L6全局态势推演.md/.pdf`。
-- 本轮关键结论风格：维持“概率化+可证伪+执行绊线”表达，避免绝对化判断。
-- 完成 **谷歌 GOOGL（L4 极致研究 · Turn Every Page）**：
-  - 核心数据双源核验通过：FY2025 Revenue/Operating Income/Net Income（`yfinance vs SEC` 偏差 0.0%）+ 股价（`Stooq vs yfinance`）。
-  - 输出全流派 L4 报告：16项预检审计、竞争格局横测、跨市场估值锚、9维框架扫荡、Kill-Switch、范式陷阱检查、TSR与g*。
-  - 报告存档：`10-研究报告输出/2026-02-25-个股-谷歌-L4级极致研报.md/.pdf`。
-- 完成 **谷歌 GOOGL（L5 买方决策备忘录）**：
-  - 在 L4 基础上蒸馏 3 个 Key Variables（增长、终局估值、资本效率），输出可执行的仓位与触发器。
-  - 完成单变量 + 双变量敏感性矩阵，给出概率加权目标价 $370.1（较现价 +19.1%）与上下行情景赔率。
-  - 报告存档：`10-研究报告输出/2026-02-25-个股-谷歌-L5决策备忘录.md/.pdf`。
-- 完成 **谷歌 GOOGL（L6 v2.0 全局态势推演）**：
-  - 按《L6-全局态势推演执行手册 v3.0》完成九模块输出：全相关方扫描、四维力量对比、主要矛盾、三阶段战局、红蓝军对抗、终局图景、末日协议、执行兵法。
-  - 完成实时数据双源核验并固化快照：`yfinance + SEC + Stooq`，关键口径（Revenue/Operating Income/Net Income）偏差 0.0%，价格口径一致。
-  - 输出存档：`10-研究报告输出/2026-02-25-个股-谷歌GOOGL-L6全局态势推演.md/.pdf`；数据快照：`10-研究报告输出/2026-02-25-googl-l6-data-snapshot.json`。
-- 完成 **ASML（fsp-financial-analysis-dcf）** 快速估值工作流：
-  - 按“Comps → DCF → Sensitivity → Falsifiable Conditions”执行，生成报告：`10-研究报告输出/2026-02-25-个股-ASML-fsp-financial-analysis-dcf.md`。
-  - 解决 `yfinance` 在中文路径下的 SSL 证书错误（curl 77），采用 ASCII 证书路径回退后成功抓取实时数据。
-  - 基准情景结果：DCF 约 `$793/股`（现价 `$1,497.8`），并给出 `WACC×g` 敏感性矩阵与可证伪触发器。
-
-- **2026-02-26：Superpowers 技能库归档与集成**
-  - 从 https://github.com/obra/superpowers（v4.3.1+）读取并归档到本地 `14-superpowers/`。
-  - 核心技能全部落地为 SKILL.md 文件（brainstorming / writing-plans / test-driven-development / systematic-debugging / verification-before-completion / executing-plans / subagent-driven-development / writing-skills / using-superpowers）。
-  - 创建 `14-superpowers/INTEGRATION.md`：将 Superpowers 工作流哲学完整迁移到投研框架，形成投研版 TDD / Brainstorming / Systematic-Debugging / Verification-Before-Completion 铁律。
-  - **最关键的新纪律**：① 投研 TDD——先写可证伪的投资论点，再获取数据；② 声明任何财务数据前必须运行代码验证；③ Kill-Switch = Superpowers HARD-GATE，触发即停止。
+- 完成 AI 演化文件审计 + 记忆基础设施大修：统一路径到 `03-Agents_Config/USER/`、移除 `InvestmentCRO` 引用、补充USER记忆文件、同步Honor配置。
+- 增强所有 skills 的 `search_web` 实时新闻获取能力。
 
 ---
 
@@ -143,8 +93,9 @@
 
 - 每轮对话结束仅追加"本轮新增偏好/状态"1-5 条。
 - 超过 120 行时，按"长期稳定 / 当前有效 / 已失效"归档压缩。
-- 不记录可从 git 历史直接恢复的低价值细节（重复命令、重复路径）。
+- 偏好/目标/洞见/经验的详细记录 → `03-Agents_Config/USER/` 四个文件。
+- 不记录可从 git 历史直接恢复的低价值细节。
 
 ---
 
-*最后更新：2026-02-26（Superpowers 技能库集成）*
+*最后更新：2026-03-01（引入 Day1Global 5个外部 Skills）*

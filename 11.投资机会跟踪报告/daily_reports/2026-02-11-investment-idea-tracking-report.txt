@@ -1,0 +1,115 @@
+每日新闻信息线索综述报告
+生成时间: 2026-02-11 08:36:36
+活跃跟踪标的: 7
+新闻条目总数: 100
+非阻塞抓取错误数: 0
+报告风格: 仅保留关键信息线索与链接（标的2条 + 行业2条）。
+免责声明: 仅用于研究跟踪，不构成投资建议。
+今日线索热度TOP3
+Taiwan Semiconductor (TSMC): 近24h线索 16 条（标的情绪 偏正面 / 行业情绪 偏正面）
+Micron Technology: 近24h线索 14 条（标的情绪 中性 / 行业情绪 中性）
+JPY Interest Rate: 近24h线索 13 条（标的情绪 中性 / 行业情绪 偏正面）
+Google (Alphabet)
+标识: stock-de10217a58 | 类型: stock | 代码: GOOGL | 市场: US
+新闻信息线索综述
+热度: 标的近24h 8 条 / 行业近24h 3 条；近72h 合计 14 条
+情绪: 标的 II（+0/-0）| 行业 III（+2/-0）
+线索焦点: 融资/资本开支x3、产品/技术x1
+关键词: 标的[alphabet, google, billion, bond]；行业[google, tech, alphabet, debt]
+关键信息线索（附链接）
+[行业|融资/资本开支] Google raises over $30B in debt to fuel AI arms race - The Tech Buzz (2026-02-11 03:08 | The Tech Buzz)
+[标的|融资/资本开支] Alphabet Sells Almost $32 Billion Bonds as Tech Races to Fund AI - Bloomberg.com (2026-02-11 01:07 |
+Bloomberg.com)
+[标的|融资/资本开支] Alphabet to sell rare 100-year bond to fund AI expansion, bookrunner memo shows - The G⋯  (2026-02-11 00:22 |
+The Globe and Mail)
+[行业|产品/技术] Big Tech’
+s AI spend in 2026: following the money - Campaign US (2026-02-10 23:36 | Campaign US)
+Micron Technology
+标识: stock-afdad8fcdb | 类型: stock | 代码: MU | 市场: US
+新闻信息线索综述
+热度: 标的近24h 6 条 / 行业近24h 8 条；近72h 合计 16 条
+情绪: 标的 II（+1/-0）| 行业 II（+1/-1）
+线索焦点: 产品/技术x2、其他x1、财报/业绩x1
+关键词: 标的[micron, nvidia, memory, quietly]；行业[memory, chip, shortages, makers]
+
+关键信息线索（附链接）
+[标的|其他] Micron Is Quietly Outperforming NVIDIA - Don't Ignore It - TradingView (2026-02-11 04:00 | TradingView)
+[行业|产品/技术] Memory chip surge splits markets as shortages bite - The Economic Times (2026-02-11 02:31 | The Economic Times)
+[行业|财报/业绩] Memory makers are set to earn $551 billion from the AI boom, twice as much as contract⋯  (2026-02-11 02:04 | Tom's
+Hardware)
+[标的|产品/技术] Deutsche Bank raises Micron stock price target to $500 on HBM growth - Investing.com (2026-02-10 23:14 |
+Investing.com)
+Taiwan Semiconductor (TSMC)
+标识: stock-d91a17c78b | 类型: stock | 代码: TSM | 市场: US
+新闻信息线索综述
+热度: 标的近24h 8 条 / 行业近24h 8 条；近72h 合计 16 条
+情绪: 标的 III（+4/-0）| 行业 III（+3/-0）
+线索焦点: 产品/技术x3、财报/业绩x1
+关键词: 标的[tsmc, record, high, taiwan]；行业[tsmc, record, taiwan, semiconductor]
+关键信息线索（附链接）
+[行业|财报/业绩] TSMC’
+s Record Sales May Signal Strong Upcoming Earnings for Nvidia - NAI500 (2026-02-11 08:28 | NAI500)
+[行业|产品/技术] 3 Reasons to Buy Taiwan Semiconductor Manufacturing Stock Like There's No Tomorrow - AO⋯  (2026-02-11 07:25 |
+AOL.com)
+[标的|产品/技术] Taiwan Semiconductor Manufacturing (TSMC) Stock Just Hit a Record High. Here's Why - Th⋯  (2026-02-11 01:51 |
+The Motley Fool)
+[标的|产品/技术] TSMC Stock Hits Record High As Chip Foundry Posts Strong Sales - Investor's Business Da⋯  (2026-02-10 23:18 |
+Investor's Business Daily)
+Pop Mart
+标识: stock-4fd3fc1178 | 类型: stock | 代码: 9992.HK | 市场: HK
+新闻信息线索综述
+热度: 标的近24h 3 条 / 行业近24h 5 条；近72h 合计 13 条
+情绪: 标的 II（+0/-0）| 行业 II（+1/-0）
+线索焦点: 其他x2、产品/技术x2
+关键词: 标的[mart, sales, marketscreener, hang]；行业[retail, hasbro, global, consumer]
+关键信息线索（附链接）
+[行业|其他] Basic Fun! Embarks on New Adventure with the DUNGEONS & DRAGONS Questers Toy Line - Fin⋯  (2026-02-10 23:00 |
+Financial Times)
+[行业|产品/技术] Hasbro and Warner Bros. Discovery Global Consumer Products Announce Multi-Year Partners⋯  (2026-02-10 20:30 |
+Business Wire)
+[标的|其他] Hang Seng Index rises on Tuesday - The Standard (HK) (2026-02-10 16:58 | The Standard (HK))
+
+[标的|产品/技术] Pop Mart Product Sales Top 400 Million Units in 2025 - marketscreener.com (2026-02-10 11:26 | marketscreener.com)
+CNOOC (HK)
+标识: stock-99fba62478 | 类型: stock | 代码: 0883.HK | 市场: HK
+新闻信息线索综述
+热度: 标的近24h 0 条 / 行业近24h 0 条；近72h 合计 1 条
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 其他x2
+关键词: 标的[N/A]；行业[chinese, vessels, energy, greek]
+关键信息线索（附链接）
+[行业|其他] Chinese-Greek venture stacks fresh orders for LNG bunker vessels - Tradewinds News (2026-02-10 07:49 | Tradewinds News)
+[行业|其他] Three new LNG bunkering vessels enlarge Chinese player’
+s orderbook - Offshore Energy (2026-02-06 20:41 | Offshore
+Energy)
+USD/JPY
+标识: fx-40be6c7398 | 类型: fx | 代码: USDJPY | 市场: FX
+新闻信息线索综述
+热度: 标的近24h 8 条 / 行业近24h 4 条；近72h 合计 13 条
+情绪: 标的 III（+0/-2）| 行业 II（+2/-1）
+线索焦点: 其他x2、产品/技术x1、价格/市场表现x1
+关键词: 标的[japanese, bitcoin, world, dollar]；行业[think, financial, could, economic]
+关键信息线索（附链接）
+[标的|产品/技术] USD/JPY Plummets: Critical 155.00 Level in Sight as Traders Brace for US Retail Sales D⋯  (2026-02-11 06:30 | Bitcoin
+world)
+[标的|其他] Japanese Yen Outlook: USD/JPY Slides, GBP/JPY Rolls Over Ahead of NFP (2026-02-10 23:45 | BingNews)
+[行业|其他] Is Now a Good Time to Buy Yen? 2026 Checklist - EBC Financial Group (2026-02-10 16:37 | EBC Financial Group)
+[行业|价格/市场表现] Is the yen rally signaling a shift in global markets and dollar confidence? - TradingVi⋯  (2026-02-10 16:13 |
+TradingView)
+JPY Interest Rate
+标识: macro-f019847cd3 | 类型: macro | 代码: | II:
+新闻信息线索综述
+热度: 标的近24h 5 条 / 行业近24h 8 条；近72h 合计 16 条
+情绪: 标的 II（+0/-0）| 行业 III（+2/-0）
+
+线索焦点: 其他x2、产品/技术x1、政策/监管x1
+关键词: 标的[forecast, takaichi, bonds, navigating]；行业[could, asia, barclays, flip]
+关键信息线索（附链接）
+[行业|其他] China’
+s US Treasurys exit could limit Japan’
+s military spending - Asia Times (2026-02-11 01:49 | Asia Times)
+[标的|其他] USD/JPY Forecast: Navigating the Choppy but Elevated Path into 2026 with Cautious Optim⋯  (2026-02-10 21:24 |
+CryptoRank)
+[行业|产品/技术] Asia stocks extend tech-led gains; Nikkei hits new peak near 58k post Takaichi win - Me⋯  (2026-02-10 20:30 | Meyka)
+[标的|政策/监管] USD/JPY Forecast: Critical Downside Bias Looms As Policy Drivers Diverge - Bitcoin world (2026-02-10 17:15 | Bitcoin
+world)

@@ -1,0 +1,103 @@
+每日新闻信息线索综述报告
+生成时间: 2026-02-12 17:02:34
+活跃跟踪标的: 8
+新闻条目总数: 15
+非阻塞抓取错误数: 0
+报告风格: 仅保留关键信息线索与链接（标的2条 + 行业2条）。
+免责声明: 仅用于研究跟踪，不构成投资建议。
+今日线索热度TOP3
+Google (Alphabet): 近24h线索 2 条（标的情绪 中性 / 行业情绪 中性）
+Micron Technology: 近24h线索 2 条（标的情绪 中性 / 行业情绪 中性）
+Taiwan Semiconductor (TSMC): 近24h线索 2 条（标的情绪 中性 / 行业情绪 中性）
+HY OAS 每日跟踪
+最新值: 2.86% (2026-02-10)
+过去6个月: 2.94% -> 2.86% (变动 -0.08pct，区间 2.64%~3.20%，趋势 II)
+月度轨迹: 2025-08:2.84% | 2025-09:2.80% | 2025-10:2.94% | 2025-11:2.92% | 2025-12:2.81% | 2026-01:2.88% | 2026-02:2.86%
+Google (Alphabet)
+标识: stock-de10217a58 | 类型: stock | 代码: GOOGL | 市场: US
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 1 条；近72h 合计 2 条
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 产品/技术x1、财报/业绩x1
+关键词: 标的[谷歌母公司, alphabet, 股价回调, 人工智能业务成增长新引擎]；行业[alphabet, stays, quiet, google]
+关键信息线索（附链接）
+[标的|产品/技术] 谷歌母公司Alphabet股价回调，人工智能业务成增长新引擎 - NAI500 (2026-02-12 16:17 | NAI500)
+[行业|财报/业绩] Alphabet Stays Quiet on Google-Apple AI Partnership During Earnings Call - The Next Hint (2026-02-12 12:38 | The
+Next Hint)
+Micron Technology
+标识: stock-afdad8fcdb | 类型: stock | 代码: MU | 市场: US
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 1 条；近72h 合计 2 条
+
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 产品/技术x2
+关键词: 标的[samsung, claims, first, ship]；行业[smic, warns, pull, forward]
+关键信息线索（附链接）
+[行业|产品/技术] SMIC warns AI pull-forward is rewriting chip cycle, lifts mature-node pricing - digitim⋯  (2026-02-12 11:49 | digitimes)
+[标的|产品/技术] Samsung claims to be first to ship new memory chips. What it means for Micron. (2026-02-12 08:59 | BingNews)
+Taiwan Semiconductor (TSMC)
+标识: stock-d91a17c78b | 类型: stock | 代码: TSM | 市场: US
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 1 条；近72h 合计 2 条
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 产品/技术x2
+关键词: 标的[taiwan, powered, economy, soars]；行业[smic, warns, pull, forward]
+关键信息线索（附链接）
+[行业|产品/技术] SMIC warns AI pull-forward is rewriting chip cycle, lifts mature-node pricing - digitim⋯  (2026-02-12 11:49 | digitimes)
+[标的|产品/技术] Taiwan’
+s AI-powered economy soars in the shadow of bubble fears and China threats (2026-02-12 05:03 | BingNews)
+Pop Mart
+标识: stock-4fd3fc1178 | 类型: stock | 代码: 9992.HK | 市场: HK
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 1 条；近72h 合计 2 条
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 财报/业绩x1、其他x1
+关键词: 标的[泡泡玛特, 股票股价, 股价行情, 讨论]；行业[tale, toymakers, mattel, craters]
+关键信息线索（附链接）
+[标的|财报/业绩] 泡泡玛特(09992)股票股价_股价行情_讨论_资讯_财报_数据报告 - 雪球 (2026-02-12 16:52 | 雪球)
+[行业|其他] A tale of two toymakers: Mattel craters, while Hasbro’
+s digital pivot delivers - WKZO (2026-02-11 22:16 | WKZO)
+CNOOC (HK)
+标识: stock-99fba62478 | 类型: stock | 代码: 0883.HK | 市场: HK
+新闻信息线索综述
+
+热度: 标的近24h 0 条 / 行业近24h 0 条；近72h 合计 1 条
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 其他x1
+关键词: 标的[N/A]；行业[clean, energy, superpower, there]
+关键信息线索（附链接）
+[行业|其他] China is the clean energy superpower, but there’
+s another snapping at its heels — and i⋯  (2026-02-11 05:00 | BingNews)
+USD/JPY
+标识: fx-40be6c7398 | 类型: fx | 代码: USDJPY | 市场: FX
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 1 条；近72h 合计 2 条
+情绪: 标的 II（+0/-0）| 行业 II（+0/-0）
+线索焦点: 政策/监管x1、产品/技术x1
+关键词: 标的[strength, persists, policy, politics]；行业[odds, bank, raises, rates]
+关键信息线索（附链接）
+[标的|政策/监管] USD/JPY: Yen strength persists on policy and politics –  Scotiabank - FXStreet (2026-02-12 14:37 | FXStreet)
+[行业|产品/技术] Odds Bank of Japan raises rates hits 80% with Bitcoin on the sideline - one hidden sign⋯  (2026-02-12 04:37 | Bitget)
+JPY Interest Rate
+标识: macro-f019847cd3 | 类型: macro | 代码: | II:
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 1 条；近72h 合计 2 条
+情绪: 标的 II（+0/-0）| 行业 II（+1/-0）
+线索焦点: 政策/监管x2
+关键词: 标的[resilient, strength, shakes, forex]；行业[surges, amidst, ominous, bearish]
+关键信息线索（附链接）
+[标的|政策/监管] USD/JPY Analysis: Yen's Resilient Strength Shakes Forex Markets Amid Policy And Politic⋯  (2026-02-12 15:30 |
+Bitcoin world)
+[行业|政策/监管] USD/JPY Surges to 153.25 Amidst Ominous Bearish Pressure and BOJ Policy Crossroads - Cr⋯  (2026-02-12 00:41 |
+CryptoRank)
+Cloudflare
+标识: stock-396892b9d7 | 类型: stock | 代码: NET | 市场: US
+
+新闻信息线索综述
+热度: 标的近24h 1 条 / 行业近24h 0 条；近72h 合计 2 条
+情绪: 标的 II（+0/-0）| 行业 II（+1/-0）
+线索焦点: 产品/技术x2
+关键词: 标的[cloudflare, climbed, globe, mail]；行业[versa, bolsters, data, protection]
+关键信息线索（附链接）
+[标的|产品/技术] Why Cloudflare Stock Climbed Today - The Globe and Mail (2026-02-12 08:35 | The Globe and Mail)
+[行业|产品/技术] Versa bolsters data protection, AI-powered operations in SASE upgrade (2026-02-10 18:12 | BingNews)

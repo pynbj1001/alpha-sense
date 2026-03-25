@@ -1,0 +1,169 @@
+每日新闻信息线索综述报告
+生成时间: 2026-02-14 17:00:47
+活跃跟踪标的: 11
+新闻条目总数: 115
+非阻塞抓取错误数: 2
+报告风格: 先综述，后线索，所有结论附原文链接。
+免责声明: 仅用于研究跟踪，不构成投资建议。
+今日线索热度TOP3
+Taiwan Semiconductor (TSMC): 近24h线索 16 条（标的情绪 偏正面 / 行业情绪 中性）
+Google (Alphabet): 近24h线索 13 条（标的情绪 偏正面 / 行业情绪 偏正面）
+Micron Technology: 近24h线索 11 条（标的情绪 中性 / 行业情绪 中性）
+今日总览
+今日跟踪 11 个主题，共抓取 115 条新闻；热度主要集中在：Taiwan Semiconductor (TSMC)、Google (Alphabet)、Micron
+Technology。
+建议阅读顺序：先看“ 一句话综述” ，再看“ 重点新闻摘要” 。
+信用风险看板（三因子）
+触发规则：仅当三个子项同时恶化，“ 风险放大信号” 才为 ON。
+1) Z.1 期限与流动性
+短期债务/总债务：29.19%（2025-07-01），QoQ -0.16pct。
+流动资产/短期负债：98.16%（2025-07-01），QoQ +3.81pct。
+子项状态：III（规则：短债占比上升且流动性比例下降）。
+2) HY OAS（ICE BofA）
+最新 HY OAS：2.92%（2026-02-12）。
+6个月变动：-0.01pct ｜ 走势：II。
+子项状态：III（规则：6个月利差走阔 > 0.25pct）。
+3) 利息负担缺口（同比）
+最新（2025-07-01）：利息支出同比 +0.00%，EBITDA代理同比 +6.06%，经营盈余同比 +2.88%。
+缺口：利息-EBITDA -6.06pct，利息-NOS -2.88pct；双缺口>0的连续季度数 0。
+最近4个季度路径：2024Q4: dE +0.15, dNOS +4.30 | 2025Q1: dE -4.45, dNOS -2.31 | 2025Q2: dE -3.46, dNOS -0.78 | 2025Q3: dE -6.06,
+dNOS -2.88。
+子项状态：III（规则：两个缺口同时>0且连续>=2个季度）。
+综合信号
+
+风险放大信号：OFF。
+子项状态：Z1=III，HY OAS=III，利息缺口=III。
+Google (Alphabet)
+标识 stock-de10217a58 | 类型 stock | 代码 GOOGL | 市场 US
+一句话综述： 过去24小时，Google (Alphabet)相关新闻5条，行业相关8条；近72小时合计16条。
+今日简要综述
+情绪上，标的侧偏正面（+2/-0）；行业侧偏正面（+2/-0）。
+当前焦点为产品/技术x2、其他x1、融资/资本开支x1。高频词显示，标的端集中在alphabet、google、motley，行业端集中在your、tech、we
+重点新闻摘要（先看这个）
+1. 行业 / 产品/技术：Why ads are coming to your AI chatbot（2026-02-14 03:02，Financial Times）原文链接
+2. 行业 / 产品/技术：The $300 Billion Gamble: How Big Tech's AI Spending Spree Sets Up a High-Stakes Reckoning in 20?（2026-02-14
+02:20，WebProNews）原文链接
+3. 标的 / 其他：Down 6%, Should You Buy the Dip on Alphabet?（2026-02-14 00:00，The Motley Fool）原文链接
+4. 标的 / 融资/资本开支：Why Is Google Parent Alphabet Taking on $32 Billion in New Debt?（2026-02-13 23:45，The Motley
+Fool）原文链接
+Micron Technology
+标识 stock-afdad8fcdb | 类型 stock | 代码 MU | 市场 US
+一句话综述： 过去24小时，Micron Technology相关新闻3条，行业相关8条；近72小时合计16条。
+今日简要综述
+情绪上，标的侧中性（+1/-0）；行业侧中性（+0/-0）。
+当前焦点为其他x2、价格/市场表现x2。高频词显示，标的端集中在micron、technology、rose，行业端集中在tech、memory、broadband。
+重点新闻摘要（先看这个）
+1. 行业 / 其他：Merifund Capital: Montage Rallies in Hong Kong Debut（2026-02-14 06:04，Digital Journal）原文链接
+2. 行业 / 其他：Tech Boom & Defense Backlogs: 2 Sectors Poised to Outperform in 2026（2026-02-14 03:00，TradingView）原文链接
+3. 标的 / 价格/市场表现：Micron Rose 20% in the Last 30 Days. Here’
+s Where Shares Could Go in 2026（2026-02-13
+21:31，TIKR.com）原文链接
+4. 标的 / 价格/市场表现：Competition is heating up for Micron. Should you buy, sell, or hold MU stock now?（2026-02-13
+20:02，BingNews）原文链接
+Taiwan Semiconductor (TSMC)
+标识 stock-d91a17c78b | 类型 stock | 代码 TSM | 市场 US
+一句话综述： 过去24小时，Taiwan Semiconductor (TSMC)相关新闻8条，行业相关8条；近72小时合计16条。
+
+今日简要综述
+情绪上，标的侧偏正面（+3/-0）；行业侧中性（+1/-0）。
+当前焦点为财报/业绩x2、产品/技术x1、价格/市场表现x1。高频词显示，标的端集中在tsmc、revenue、taiwan，行业端集中在taiwan、semi
+重点新闻摘要（先看这个）
+1. 标的 / 财报/业绩：TSMC Record Revenue And Japan 3 Nm Ramp Raise Valuation Questions（2026-02-14
+09:03，simplywall.st）原文链接
+2. 标的 / 财报/业绩：Why Taiwan Semiconductor (NYSE: TSM) Is Poised to Smash Earnings Expectations（2026-02-14
+03:19，AOL.com）原文链接
+3. 行业 / 产品/技术：Prediction: This Artificial Intelligence (AI) Stock Will Outperform Nvidia in 2026（2026-02-14
+03:13，AOL.com）原文链接
+4. 行业 / 价格/市场表现：Where Will TSMC Stock Be in 5 Years?（2026-02-14 02:02，AOL.com）原文链接
+Pop Mart
+标识 stock-4fd3fc1178 | 类型 stock | 代码 9992.HK | 市场 HK
+一句话综述： 过去24小时，Pop Mart相关新闻1条，行业相关2条；近72小时合计10条。
+今日简要综述
+情绪上，标的侧中性（+0/-0）；行业侧中性（+0/-1）。
+当前焦点为产品/技术x2、其他x2。高频词显示，标的端集中在mart、sales、marketscreener，行业端集中在mattel、hasbro、digital。
+重点新闻摘要（先看这个）
+1. 行业 / 产品/技术：Funko CEO Josh Simon on New York Toy Fair Reveals, Economic Strategy（2026-02-14 00:19，Variety）原文链接
+2. 行业 / 其他：Ultra-Nostalgic Toy Acquisitions（2026-02-13 23:39，Trend Hunter）原文链接
+3. 标的 / 产品/技术：10 家值得关注的中国游戏股：随着 Moonton 易手（2026-02-13 18:26，NAI500）原文链接
+4. 标的 / 其他：Hang Seng Index rises on Wednesday（2026-02-11 16:45，The Standard (HK)）原文链接
+CNOOC (HK)
+标识 stock-99fba62478 | 类型 stock | 代码 0883.HK | 市场 HK
+一句话综述： 过去24小时，CNOOC (HK)相关新闻0条，行业相关0条；近72小时合计0条。
+今日简要综述
+情绪上，标的侧中性（+0/-0）；行业侧中性（+0/-0）。
+当前焦点为其他x2。高频词显示，标的端集中在无明显集中，行业端集中在clean、energy、superpower。
+重点新闻摘要（先看这个）
+1. 行业 / 其他：China is the clean energy superpower, but there’
+s another snapping at its heels — and it’
+s movi?（2026-02-11
+05:00，BingNews）原文链接
+2. 行业 / 其他：China’
+s Clean Energy Boom Still Rests on Coal, Oil, and Gas（2026-02-10 23:59，BingNews）原文链接
+
+抓取备注（非阻塞）
+行业新闻: GoogleNews-US: The read operation timed out
+USD/JPY
+标识 fx-40be6c7398 | 类型 fx | 代码 USDJPY | 市场 FX
+一句话综述： 过去24小时，USD/JPY相关新闻1条，行业相关0条；近72小时合计8条。
+今日简要综述
+情绪上，标的侧中性（+1/-0）；行业侧中性（+0/-0）。
+当前焦点为其他x2。高频词显示，标的端集中在forecast、japanese、slides，行业端集中在无明显集中。
+重点新闻摘要（先看这个）
+1. 标的 / 其他：Dollar Finishes Slightly Lower on Tame US Consumer Prices（2026-02-14 04:34，inkl）原文链接
+2. 标的 / 其他：Japanese Yen Forecast: USD/JPY Slides as US CPI Report Looms（2026-02-13 09:28，FXEmpire）原文链接
+抓取备注（非阻塞）
+行业新闻: GoogleNews-US: The read operation timed out
+JPY Interest Rate
+标识 macro-f019847cd3 | 类型 macro | 代码 | II
+一句话综述： 过去24小时，JPY Interest Rate相关新闻0条，行业相关2条；近72小时合计13条。
+今日简要综述
+情绪上，标的侧偏正面（+3/-0）；行业侧中性（+1/-0）。
+当前焦点为产品/技术x2、其他x1、政策/监管x1。高频词显示，标的端集中在policy、bitcoin、world，行业端集中在equity、breakout、signa
+重点新闻摘要（先看这个）
+1. 行业 / 产品/技术：Global Markets Waver as AI Disruption and U.S. Inflation Loom（2026-02-13 20:55，Devdiscourse）原文链接
+2. 行业 / 产品/技术：Why Foreign Money Is Flooding Japan’
+s Stocks—What It Means for You（2026-02-13
+18:37，tradekaizen.in）原文链接
+3. 标的 / 其他：USD/JPY: Gradual Yen recovery towards 145 –  Rabobank（2026-02-12 21:40，FXStreet）原文链接
+4. 标的 / 政策/监管：USD/JPY Analysis: Yen's Resilient Strength Shakes Forex Markets Amid Policy And Political Shifts（2026-02-12
+15:30，Bitcoin world）原文链接
+Cloudflare
+标识 stock-396892b9d7 | 类型 stock | 代码 NET | 市场 US
+
+一句话综述： 过去24小时，Cloudflare相关新闻0条，行业相关0条；近72小时合计8条。
+今日简要综述
+情绪上，标的侧中性（+1/-0）；行业侧中性（+1/-0）。
+当前焦点为产品/技术x2、财报/业绩x1。高频词显示，标的端集中在cloudflare、agentic、cloud，行业端集中在versa、bolsters、data。
+重点新闻摘要（先看这个）
+1. 标的 / 产品/技术：The Agentic AI Revolution: Fastly's Moment（2026-02-13 01:09，Nasdaq）原文链接
+2. 标的 / 财报/业绩：AI Agent Boom: Cloudflare Profits From OpenClaw Amid Rising Security Demand（2026-02-13
+00:50，WinBuzzer）原文链接
+3. 行业 / 产品/技术：Versa bolsters data protection, AI（2026-02-10 18:12，BingNews）原文链接
+HY OAS
+标识 macro-a31e8cb1ab | 类型 macro | 代码 | II
+一句话综述： 过去24小时，HY OAS相关新闻0条，行业相关5条；近72小时合计8条。
+今日简要综述
+情绪上，标的侧中性（+0/-0）；行业侧中性（+0/-0）。
+当前焦点为其他x2。高频词显示，标的端集中在无明显集中，行业端集中在crash、jones、after。
+重点新闻摘要（先看这个）
+1. 行业 / 其他：USD/JPY Weekly Forecast: Fragile footing as carry unwind risks grow（2026-02-14 13:30，FOREX.com）原文链接
+2. 行业 / 其他：Ether Holds $2K as $242M Spot ETH ETF Outflow Could Reignite Downside（2026-02-14 10:17，MEXC）原文链接
+Z1 Corporate Maturity-Liquidity
+标识 macro-d9aea6c3d5 | 类型 macro | 代码 | II
+一句话综述： 过去24小时，Z1 Corporate Maturity-Liquidity相关新闻0条，行业相关0条；近72小时合计1条。
+今日简要综述
+情绪上，标的侧中性（+0/-0）；行业侧中性（+0/-0）。
+当前焦点为融资/资本开支x1。高频词显示，标的端集中在short、term、debt，行业端集中在无明显集中。
+重点新闻摘要（先看这个）
+1. 标的 / 融资/资本开支：Short-Term Debt (Current Liabilities): What It Is and How It Works（2026-02-13 04:22，BingNews）原文链接
+Interest Burden Gap (YoY)
+标识 macro-e3141cfb7a | 类型 macro | 代码 | II
+
+一句话综述： 过去24小时，Interest Burden Gap (YoY)相关新闻0条，行业相关2条；近72小时合计6条。
+今日简要综述
+情绪上，标的侧中性（+0/-0）；行业侧中性（+0/-1）。
+当前焦点为财报/业绩x1、产品/技术x1。高频词显示，标的端集中在无明显集中，行业端集中在profit、markets、mojo。
+重点新闻摘要（先看这个）
+1. 行业 / 财报/业绩：Energy Development Company Q3 FY26: Profit Plunge Amid Revenue Volatility Raises Sustainability?（2026-02-14
+14:34，Markets Mojo）原文链接
+2. 行业 / 产品/技术：Air T, Inc. Reports Third Quarter Fiscal 2026 Results（2026-02-14 06:00，Newswire.com）原文链接

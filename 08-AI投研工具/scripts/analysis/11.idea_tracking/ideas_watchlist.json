@@ -1,0 +1,134 @@
+{
+  "version": 2,
+  "updated_at": "2026-03-03 08:38:47",
+  "ideas": [
+    {
+      "id": "stock-9b3b7ed3e2",
+      "title": "NVDA",
+      "type": "stock",
+      "symbol": "NVDA",
+      "stooq_symbol": "nvda.us",
+      "market": "US",
+      "keywords": [
+        "NVDA",
+        "NVDA"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:40",
+      "active": true
+    },
+    {
+      "id": "stock-8d86190b78",
+      "title": "AAPL",
+      "type": "stock",
+      "symbol": "AAPL",
+      "stooq_symbol": "aapl.us",
+      "market": "US",
+      "keywords": [
+        "AAPL",
+        "AAPL"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:41",
+      "active": true
+    },
+    {
+      "id": "stock-de10217a58",
+      "title": "GOOGL",
+      "type": "stock",
+      "symbol": "GOOGL",
+      "stooq_symbol": "googl.us",
+      "market": "US",
+      "keywords": [
+        "GOOGL",
+        "GOOGL"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:42",
+      "active": true
+    },
+    {
+      "id": "stock-0e7009ade2",
+      "title": "MSFT",
+      "type": "stock",
+      "symbol": "MSFT",
+      "stooq_symbol": "msft.us",
+      "market": "US",
+      "keywords": [
+        "MSFT",
+        "MSFT"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:43",
+      "active": true
+    },
+    {
+      "id": "stock-72ab006c39",
+      "title": "TSLA",
+      "type": "stock",
+      "symbol": "TSLA",
+      "stooq_symbol": "tsla.us",
+      "market": "US",
+      "keywords": [
+        "TSLA",
+        "TSLA"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:44",
+      "active": true
+    },
+    {
+      "id": "stock-5b7316aad5",
+      "title": "AMD",
+      "type": "stock",
+      "symbol": "AMD",
+      "stooq_symbol": "amd.us",
+      "market": "US",
+      "keywords": [
+        "AMD",
+        "AMD"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:45",
+      "active": true
+    },
+    {
+      "id": "stock-30bb4b2199",
+      "title": "LLY",
+      "type": "stock",
+      "symbol": "LLY",
+      "stooq_symbol": "lly.us",
+      "market": "US",
+      "keywords": [
+        "LLY",
+        "LLY"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:46",
+      "active": true
+    },
+    {
+      "id": "stock-c4e76d6fa7",
+      "title": "700.HK",
+      "type": "stock",
+      "symbol": "0700.HK",
+      "stooq_symbol": "700.hk",
+      "market": "HK",
+      "keywords": [
+        "700.HK",
+        "0700.HK"
+      ],
+      "industry_keywords": [],
+      "note": "",
+      "added_at": "2026-03-03 08:38:47",
+      "active": true
+    }
+  ]
+}

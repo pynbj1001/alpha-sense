@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "tushare": {
+      "source": "waditu-tushare/skills",
+      "sourceType": "github",
+      "computedHash": "6dc14fee46f204fb3cc142e7c37aae785ca696bcb8b5ca44fb6926913d36de51"
+    },
+    "ima-note": {
+      "source": "https://app-dl.ima.qq.com/skills/ima-skills-1.0.5.zip",
+      "sourceType": "url",
+      "version": "1.0.5"
+    }
+  }
+}

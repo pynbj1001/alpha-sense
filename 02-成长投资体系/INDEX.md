@@ -12,6 +12,7 @@
 
 - [Global Outperformers](Global%20Outperformers.txt)
 - [Global-Outperformers-Jenga-Investment-Partners-Ltd](Global-Outperformers-Jenga-Investment-Partners-Ltd.txt)
+- [偏向成长的低市盈率投资](%E5%81%8F%E5%90%91%E6%88%90%E9%95%BF%E7%9A%84%E4%BD%8E%E5%B8%82%E7%9B%88%E7%8E%87%E6%8A%95%E8%B5%84.txt)
 - [戴维斯双击投资体系_](%E6%88%B4%E7%BB%B4%E6%96%AF%E5%8F%8C%E5%87%BB%E6%8A%95%E8%B5%84%E4%BD%93%E7%B3%BB_.txt)
 - [费雪“超级强势股”框架](%E8%B4%B9%E9%9B%AA%E2%80%9C%E8%B6%85%E7%BA%A7%E5%BC%BA%E5%8A%BF%E8%82%A1%E2%80%9D%E6%A1%86%E6%9E%B6.txt)
 

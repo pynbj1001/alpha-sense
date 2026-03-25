@@ -123,4 +123,4 @@ python tools/vscode_investment_router.py --query "@宏观"
 
 ---
 
-*打开 VS Code → 打开本文件夹 → 开始对话 → 即刻获得机构级投研分析*
+*打开 VS Code → 打开本文件夹 → 开始对话 → 即刻获得机构级投资决策*

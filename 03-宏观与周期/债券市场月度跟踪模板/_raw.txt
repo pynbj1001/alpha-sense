@@ -1,0 +1,28 @@
+﻿python : Traceback (most recent call last):
+At line:1 char:1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback 
+    (most recent call last)::String) [], RemoteExcept  
+  ion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 3, in <module>
+  File "C:\Users\pynbj\AppData\Local\Programs\Python\Py
+thon310\lib\site-packages\openpyxl\reader\excel.py", li
+ne 346, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\pynbj\AppData\Local\Programs\Python\Py
+thon310\lib\site-packages\openpyxl\reader\excel.py", li
+ne 123, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\pynbj\AppData\Local\Programs\Python\Py
+thon310\lib\site-packages\openpyxl\reader\excel.py", li
+ne 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\pynbj\AppData\Local\Programs\Python\Py
+thon310\lib\zipfile.py", line 1249, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Use
+rs\\pynbj\\OneDrive\\1.积累要看的文件\\1. 投资框架\\03-宏观与周期\\债券市场
+月度跟踪模板\\债券市场_月度跟踪_2025-10_11.xlsx'

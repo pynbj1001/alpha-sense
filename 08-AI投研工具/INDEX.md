@@ -5,6 +5,10 @@
 ## 📂 子文件夹
 
 - [16 points/](16%20points/INDEX.md)
+- [PAI-Super-Investment-Assistant/](PAI-Super-Investment-Assistant/INDEX.md)
+- [Personal_AI_Infrastructure/](Personal_AI_Infrastructure/INDEX.md)
+- [Personal_AI_Infrastructure_upstream/](Personal_AI_Infrastructure_upstream/INDEX.md)
+- [scripts/](scripts/INDEX.md)
 
 ## 📄 知识文件 (txt)
 

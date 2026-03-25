@@ -1,0 +1,161 @@
+# 贝叶斯 Lollapalooza 投资追踪器 — 实现计划
+
+芒格 Lollapalooza 效应 × 贝叶斯持续更新 = **多因子共振概率追踪器**。对一个投资标的，设定一个大目标（论点），然后从五个维度持续收集证据，每天自动更新贝叶斯后验概率，到达临界点时自动提醒用户操作。
+
+## 核心设计
+
+### 贝叶斯框架
+
+```
+P(论点成立 | 新证据) = P(新证据 | 论点成立) × P(论点成立) / P(新证据)
+```
+
+- **先验概率**：用户设定初始信念（默认 50%）
+- **似然比 (Likelihood Ratio)**：每条新证据带来的更新力度
+  - LR > 1 → 支持论点（概率上升）
+  - LR < 1 → 反对论点（概率下降）
+  - LR = 1 → 中性（无变化）
+- **后验概率**：连续累乘似然比，形成最终概率
+
+### 五维度信号收集
+
+| 维度 | 数据源 | 示例信号 |
+|------|--------|---------|
+| 📈 价格动量 | yfinance + Stooq | 突破52周高点、趋势反转、成交量异常 |
+| 📊 基本面 | data_toolkit | 营收加速、利润率扩张、ROE上升 |
+| 📰 新闻情绪 | Bing RSS + 金融RSS | 正面/负面新闻比例、关键词匹配 |
+| 🌐 宏观环境 | data_toolkit macro | VIX变化、利率方向、美元指数 |
+| 📐 技术面 | yfinance 计算 | MA 交叉、RSI 超买超卖 |
+
+### 临界点与提醒
+
+- 📗 **买入信号**: 概率 ≥ 75%（可配置）
+- 📕 **卖出信号**: 概率 ≤ 25%（可配置）
+- 📊 **显著变化**: 单日概率变化 > 5%
+- Windows toast 通知 + tkinter 弹窗
+
+---
+
+## Proposed Changes
+
+### 贝叶斯追踪器模块（新建文件夹 `14.贝叶斯追踪器`）
+
+---
+
+#### [NEW] [bayesian_engine.py](file:///c:/Users/pynbj/OneDrive/1.积累要看的文件-Honor-NBJ/1.%20投资框架/14.贝叶斯追踪器/bayesian_engine.py)
+
+贝叶斯核心计算引擎：
+- `BayesianTracker` 类：管理一个标的的完整追踪状态
+  - `prior`: 当前先验概率
+  - [thesis](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#818-826): 投资论点描述
+  - `target`: 大目标描述
+  - `signals_history`: 历史信号记录
+  - [update(signal) -> float](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/13.%E6%96%B0%E9%97%BB%E6%89%AB%E6%8F%8F/ai-news-radar/scripts/update_news.py#433-436): 接收新信号，用似然比更新概率
+  - `get_probability() -> float`: 返回当前后验概率
+  - `get_verdict() -> str`: 返回当前阶段判断（观察/跟踪/强化/扣动扳机）
+- `Signal` dataclass：信号数据结构
+  - `dimension`: 信号维度（price/fundamental/news/macro/technical）
+  - `name`: 信号名称
+  - [value](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#503-508): 原始数据值
+  - `likelihood_ratio`: 似然比
+  - `description`: 人类可读描述
+  - [timestamp](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/13.%E6%96%B0%E9%97%BB%E6%89%AB%E6%8F%8F/ai-news-radar/scripts/update_news.py#240-253): 时间戳
+- `TrackerStore` 类：管理所有标的的持久化存储（JSON）
+
+---
+
+#### [NEW] [signal_collectors.py](file:///c:/Users/pynbj/OneDrive/1.积累要看的文件-Honor-NBJ/1.%20投资框架/14.贝叶斯追踪器/signal_collectors.py)
+
+五维度信号收集器，复用现有工具：
+- `collect_price_signals(ticker)`: 复用 `data_toolkit.fetch_price_history` + [fetch_stock_snapshot](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/tools/data_toolkit.py#197-256)
+  - 突破52周高/低点 → LR 1.3 / 0.7
+  - 价格在 MA200 上方/下方 → LR 1.1 / 0.9
+  - 成交量放大 → LR 1.15
+- `collect_fundamental_signals(ticker)`: 复用 `data_toolkit.fetch_stock_snapshot`
+  - 对比上次快照：ROE 上升 → LR 1.2 / 下降 → LR 0.85
+  - 营收增速加速 → LR 1.25
+  - PE 进入高估区 → LR 0.8
+- `collect_news_signals(ticker, keywords)`: 复用 `stock_tracker.fetch_latest_news`
+  - 正面新闻占比 > 60% → LR 1.15 / 负面 > 60% → LR 0.85
+- `collect_macro_signals()`: 复用 `data_toolkit.fetch_macro_snapshot`
+  - VIX < 20 → LR 1.05 / VIX > 30 → LR 0.9
+- `collect_technical_signals(ticker)`: 计算 RSI、MA 交叉
+  - RSI > 70（超买）→ LR 0.85 / RSI < 30（超卖+做多论点）→ LR 1.2
+
+---
+
+#### [NEW] [tracker.py](file:///c:/Users/pynbj/OneDrive/1.积累要看的文件-Honor-NBJ/1.%20投资框架/14.贝叶斯追踪器/tracker.py)
+
+主程序 CLI 入口：
+- [add](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#241-281) 命令：添加跟踪标的（ticker + 投资论点 + 大目标 + 初始概率）
+- [remove](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#283-292) 命令：移除标的
+- [list](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#294-314) 命令：列出当前所有跟踪标的及概率
+- [run](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/tools/auto_investment_system.py#263-308) 命令：执行一轮信号收集 + 贝叶斯更新 + 检查临界点
+- `run-all` 命令：对所有活跃标的执行 run
+- [history](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#342-390) 命令：查看某标的的概率历史变化
+- [report](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/08-AI%E6%8A%95%E7%A0%94%E5%B7%A5%E5%85%B7/scripts/analysis/stock_tracker.py#1725-1733) 命令：生成 Markdown 报告
+- 支持 Windows 任务计划程序每天定时运行
+
+---
+
+#### [NEW] [alerter.py](file:///c:/Users/pynbj/OneDrive/1.积累要看的文件-Honor-NBJ/1.%20投资框架/14.贝叶斯追踪器/alerter.py)
+
+提醒模块（复用 [auto_investment_system.py](file:///c:/Users/pynbj/OneDrive/1.%E7%A7%AF%E7%B4%AF%E8%A6%81%E7%9C%8B%E7%9A%84%E6%96%87%E4%BB%B6-Honor-NBJ/1.%20%E6%8A%95%E8%B5%84%E6%A1%86%E6%9E%B6/tools/auto_investment_system.py) 的 tkinter 模式）：
+- `alert_threshold_reached(ticker, probability, thesis)`: 概率到达临界点弹窗
+- `alert_significant_change(ticker, old_prob, new_prob, signals)`: 显著变化弹窗
+- `show_dashboard(trackers)`: 展示所有标的的概率仪表盘
+- Windows toast 通知（使用 `ctypes` MessageBox 作为后备）
+
+---
+
+## 数据存储
+
+- `14.贝叶斯追踪器/data/trackers.json`: 所有标的追踪状态
+- `14.贝叶斯追踪器/data/history/`: 每个标的的历史概率记录
+- `14.贝叶斯追踪器/reports/`: 生成的 Markdown 报告
+
+---
+
+## Verification Plan
+
+### 自动测试
+
+```bash
+# 在项目根目录运行
+cd "c:\Users\pynbj\OneDrive\1.积累要看的文件-Honor-NBJ\1. 投资框架"
+python -m pytest "14.贝叶斯追踪器/tests/test_bayesian_engine.py" -v
+```
+
+测试内容：
+1. `test_initial_probability`: 初始概率正确设置
+2. `test_update_positive_signal`: 正面信号更新后概率上升
+3. `test_update_negative_signal`: 负面信号更新后概率下降
+4. `test_neutral_signal`: 中性信号不改变概率
+5. `test_probability_bounds`: 概率始终在 [0.01, 0.99] 范围内
+6. `test_cumulative_updates`: 多次更新的累积效应正确
+7. `test_verdict_thresholds`: 不同概率对应正确的判断阶段
+
+### 端到端 CLI 测试
+
+```bash
+# 添加标的
+python "14.贝叶斯追踪器/tracker.py" add --ticker NVDA --thesis "AI算力需求爆发推动营收翻倍" --target "股价翻倍至300" --prior 0.5
+
+# 查看列表
+python "14.贝叶斯追踪器/tracker.py" list
+
+# 执行一轮跟踪
+python "14.贝叶斯追踪器/tracker.py" run --ticker NVDA
+
+# 查看历史
+python "14.贝叶斯追踪器/tracker.py" history --ticker NVDA
+
+# 生成报告
+python "14.贝叶斯追踪器/tracker.py" report --ticker NVDA
+```
+
+### 用户手动验证
+
+1. 运行 `python "14.贝叶斯追踪器/tracker.py" add --ticker AAPL --thesis "测试论点" --target "测试目标"` → 确认显示添加成功
+2. 运行 `python "14.贝叶斯追踪器/tracker.py" run --ticker AAPL` → 确认显示信号收集结果和概率更新
+3. 运行 `python "14.贝叶斯追踪器/tracker.py" list` → 确认显示所有标的和当前概率

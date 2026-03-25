@@ -1,0 +1,50 @@
+{
+  "GOOGL": {
+    "price": 312.9,
+    "change_pct": 3.5,
+    "source": "Morningstar",
+    "date": "2026-02-25"
+  },
+  "NVDA": {
+    "price": 184.72,
+    "change_pct": -5.5,
+    "source": "Yahoo Finance",
+    "date": "2026-02-26"
+  },
+  "MU": {
+    "price": null,
+    "change_pct": null,
+    "source": "待更新",
+    "date": "2026-02-27"
+  },
+  "TSM": {
+    "price": null,
+    "change_pct": null,
+    "source": "待更新",
+    "date": "2026-02-27"
+  },
+  "UBER": {
+    "price": null,
+    "change_pct": null,
+    "source": "待更新",
+    "date": "2026-02-27"
+  },
+  "META": {
+    "price": null,
+    "change_pct": null,
+    "source": "待更新",
+    "date": "2026-02-27"
+  },
+  "AMZN": {
+    "price": null,
+    "change_pct": null,
+    "source": "待更新",
+    "date": "2026-02-27"
+  },
+  "NET": {
+    "price": null,
+    "change_pct": null,
+    "source": "待更新",
+    "date": "2026-02-27"
+  }
+}

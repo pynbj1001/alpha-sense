@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-02-20 21:00:00",
+  "updated_at": "2026-02-28 18:04:45",
   "ideas": [
     {
       "id": "stock-de10217a58",
@@ -370,6 +370,605 @@
       "note": "US stock - AWS reacceleration, PR=1.28, drop -20.8%",
       "added_at": "2026-02-20 20:46:20",
       "active": true
+    },
+    {
+      "id": "stock-c4e76d6fa7",
+      "title": "Tencent Holdings",
+      "type": "stock",
+      "symbol": "0700.HK",
+      "stooq_symbol": "700.hk",
+      "market": "HK",
+      "keywords": [
+        "Tencent",
+        "0700.HK",
+        "WeChat"
+      ],
+      "industry_keywords": [
+        "Internet",
+        "Gaming"
+      ],
+      "note": "AI Value 100 优选：核心底仓，极强自由现金流与极度充沛的分红回购防守带。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-3c0681e27f",
+      "title": "China Shenhua",
+      "type": "stock",
+      "symbol": "1088.HK",
+      "stooq_symbol": "1088.hk",
+      "market": "HK",
+      "keywords": [
+        "Shenhua",
+        "1088.HK",
+        "Coal"
+      ],
+      "industry_keywords": [
+        "Energy",
+        "Coal"
+      ],
+      "note": "AI Value 100 优选：防守红利侧配，长协煤托底利润，类公用事业。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-c79d31ee1a",
+      "title": "JPMorgan Chase",
+      "type": "stock",
+      "symbol": "JPM",
+      "stooq_symbol": "jpm.us",
+      "market": "US",
+      "keywords": [
+        "JPM",
+        "JPMorgan",
+        "Bank"
+      ],
+      "industry_keywords": [
+        "Financials",
+        "Banking"
+      ],
+      "note": "AI Value 100 优选：稳健底仓配置，极好的周期反转防御与优异ROE。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-7b801c97e9",
+      "title": "Alibaba Group",
+      "type": "stock",
+      "symbol": "9988.HK",
+      "stooq_symbol": "9988.hk",
+      "market": "HK",
+      "keywords": [
+        "Alibaba",
+        "9988.HK",
+        "E-commerce"
+      ],
+      "industry_keywords": [
+        "Internet",
+        "E-commerce"
+      ],
+      "note": "AI Value 100 优选：逢低深钻买入，被残酷错杀的估值，拥有千亿级别的真实净流入实力。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-eb9df61376",
+      "title": "Cisco Systems",
+      "type": "stock",
+      "symbol": "CSCO",
+      "stooq_symbol": "csco.us",
+      "market": "US",
+      "keywords": [
+        "CSCO",
+        "Cisco",
+        "Networking"
+      ],
+      "industry_keywords": [
+        "Technology",
+        "Networking"
+      ],
+      "note": "AI Value 100 观察/波段：左侧验证，传统的去库存低谷已经平滑且利润收租模式固化。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-bf3e28b10a",
+      "title": "Broadcom",
+      "type": "stock",
+      "symbol": "AVGO",
+      "stooq_symbol": "avgo.us",
+      "market": "US",
+      "keywords": [
+        "AVGO",
+        "Broadcom",
+        "Semiconductor"
+      ],
+      "industry_keywords": [
+        "Semiconductor",
+        "AI Networking"
+      ],
+      "note": "AI Growth 100 核心成长多头：包含极厚分红特征的极高加速网络建设设备提供商。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-10dba4a85e",
+      "title": "Palantir",
+      "type": "stock",
+      "symbol": "PLTR",
+      "stooq_symbol": "pltr.us",
+      "market": "US",
+      "keywords": [
+        "PLTR",
+        "Palantir",
+        "AIP",
+        "Data"
+      ],
+      "industry_keywords": [
+        "Software",
+        "AI Platform"
+      ],
+      "note": "AI Growth 100 强力买入：平台变现大翻盘带来的盈利超预期暴涨。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-f3c2eda711",
+      "title": "MercadoLibre",
+      "type": "stock",
+      "symbol": "MELI",
+      "stooq_symbol": "meli.us",
+      "market": "US",
+      "keywords": [
+        "MELI",
+        "MercadoLibre",
+        "LatAm",
+        "Fintech"
+      ],
+      "industry_keywords": [
+        "E-commerce",
+        "Fintech"
+      ],
+      "note": "AI Growth 100 逢低买入：拉美市场护城河与高ROE(30%+)完美结合，极好的地缘对冲分散成长标的。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-4b2eac60e4",
+      "title": "Intuitive Surgical",
+      "type": "stock",
+      "symbol": "ISRG",
+      "stooq_symbol": "isrg.us",
+      "market": "US",
+      "keywords": [
+        "ISRG",
+        "Intuitive Surgical",
+        "Da Vinci"
+      ],
+      "industry_keywords": [
+        "Medical Devices",
+        "Healthcare"
+      ],
+      "note": "AI Growth 100 长期右侧定投：手术耗材属性保证极其优异且不断翻倍的ROE表现。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-7a9bfeb4ab",
+      "title": "Arm Holdings",
+      "type": "stock",
+      "symbol": "ARM",
+      "stooq_symbol": "arm.us",
+      "market": "US",
+      "keywords": [
+        "ARM",
+        "Arm Holdings",
+        "CPU"
+      ],
+      "industry_keywords": [
+        "Semiconductor",
+        "IP"
+      ],
+      "note": "AI Growth 100 波段/动量跟飞：端云算力普及核心资产，连续大超华尔街盈利预测。",
+      "added_at": "2026-02-28 14:54:34",
+      "active": true
+    },
+    {
+      "id": "stock-hk1816pwr",
+      "title": "CGN Power Co., Ltd.",
+      "type": "stock",
+      "symbol": "1816.HK",
+      "stooq_symbol": "1816.hk",
+      "market": "HK",
+      "keywords": [
+        "1816.HK",
+        "CGN Power",
+        "Nuclear"
+      ],
+      "industry_keywords": [
+        "Utilities",
+        "Nuclear Energy",
+        "AI Power"
+      ],
+      "note": "AI Infra配套防守端：中国核电一哥。基荷电源纯正标的，绝对稳定的24/7供电，高股息/纯收息压舱石。",
+      "added_at": "2026-02-28 15:58:28",
+      "active": true
+    },
+    {
+      "id": "stock-hk1072eqp",
+      "title": "Dongfang Electric Corporation",
+      "type": "stock",
+      "symbol": "1072.HK",
+      "stooq_symbol": "1072.hk",
+      "market": "HK",
+      "keywords": [
+        "1072.HK",
+        "Dongfang Electric",
+        "Power Equipment"
+      ],
+      "industry_keywords": [
+        "Industrials",
+        "Power Equipment",
+        "AI Infrastructure"
+      ],
+      "note": "AI Infra配套防守端：重型发电设备(核岛/抽蓄/燃机)寡头“卖铲人”。极深估值折价，提供巨大安全边际。",
+      "added_at": "2026-02-28 15:58:28",
+      "active": true
+    },
+    {
+      "id": "stock-35eaec3a77",
+      "title": "Nidec",
+      "type": "stock",
+      "symbol": "6594.T",
+      "stooq_symbol": "6594.t",
+      "market": "JP",
+      "keywords": [
+        "Nidec",
+        "6594.T",
+        "日本电产",
+        "CDU",
+        "Liquid Cooling"
+      ],
+      "industry_keywords": [
+        "Cooling",
+        "AI Infrastructure",
+        "Data Center"
+      ],
+      "note": "Japan AI value chain: Cooling/Heat: 全球电动机龙头，CDU进入全球头部算力厂商供应链。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-3c7f6d768f",
+      "title": "Mitsubishi Heavy Industries",
+      "type": "stock",
+      "symbol": "7011.T",
+      "stooq_symbol": "7011.t",
+      "market": "JP",
+      "keywords": [
+        "Mitsubishi Heavy",
+        "7011.T",
+        "三菱重工"
+      ],
+      "industry_keywords": [
+        "Cooling",
+        "Data Center",
+        "Industrials"
+      ],
+      "note": "Japan AI value chain: Cooling/Heat: 工业冷却技术，开发超大规模数据中心液冷方案。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-239e1fce00",
+      "title": "Furukawa Electric",
+      "type": "stock",
+      "symbol": "5801.T",
+      "stooq_symbol": "5801.t",
+      "market": "JP",
+      "keywords": [
+        "Furukawa Electric",
+        "5801.T",
+        "古河电工",
+        "Heat Pipe"
+      ],
+      "industry_keywords": [
+        "Cooling",
+        "IT Infrastructure"
+      ],
+      "note": "Japan AI value chain: Cooling/Heat: 在热管和高性能散热片领域拥有极高市场份额。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-7769fed6e3",
+      "title": "Murata Manufacturing",
+      "type": "stock",
+      "symbol": "6981.T",
+      "stooq_symbol": "6981.t",
+      "market": "JP",
+      "keywords": [
+        "Murata",
+        "6981.T",
+        "村田制作所",
+        "MLCC"
+      ],
+      "industry_keywords": [
+        "Electronic Components",
+        "Semiconductor"
+      ],
+      "note": "Japan AI value chain: Electronics/Semiconductor: 全球最大的MLCC（积层陶瓷电容）供货商，控制AI算力电力负载。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-d370fcb38a",
+      "title": "Shin-Etsu Chemical",
+      "type": "stock",
+      "symbol": "4063.T",
+      "stooq_symbol": "4063.t",
+      "market": "JP",
+      "keywords": [
+        "Shin-Etsu",
+        "4063.T",
+        "信越化学",
+        "Silicon Wafers"
+      ],
+      "industry_keywords": [
+        "Semiconductor Materials",
+        "Chemicals"
+      ],
+      "note": "Japan AI value chain: Electronics/Semiconductor: 全球半导体硅片及光刻胶龙头。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-7456f6f765",
+      "title": "Ibiden",
+      "type": "stock",
+      "symbol": "4062.T",
+      "stooq_symbol": "4062.t",
+      "market": "JP",
+      "keywords": [
+        "Ibiden",
+        "4062.T",
+        "揖斐电",
+        "IC Substrates"
+      ],
+      "industry_keywords": [
+        "Semiconductor Packaging",
+        "Electronic Components"
+      ],
+      "note": "Japan AI value chain: Electronics/Semiconductor: 高性能IC封装载板全球领先，英伟达GPU核心配套。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-f7f439509b",
+      "title": "Fanuc",
+      "type": "stock",
+      "symbol": "6954.T",
+      "stooq_symbol": "6954.t",
+      "market": "JP",
+      "keywords": [
+        "Fanuc",
+        "6954.T",
+        "发那科",
+        "Robotics",
+        "CNC"
+      ],
+      "industry_keywords": [
+        "Robotics",
+        "Embodied AI",
+        "Automation"
+      ],
+      "note": "Japan AI value chain: Robotics (Embodied AI): 工业机器人霸主，机器人手臂集成AI视觉。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-75ac2ada51",
+      "title": "Yaskawa Electric",
+      "type": "stock",
+      "symbol": "6506.T",
+      "stooq_symbol": "6506.t",
+      "market": "JP",
+      "keywords": [
+        "Yaskawa",
+        "6506.T",
+        "安川电机",
+        "Servo Motors"
+      ],
+      "industry_keywords": [
+        "Robotics",
+        "Motion Control",
+        "Embodied AI"
+      ],
+      "note": "Japan AI value chain: Robotics (Embodied AI): 伺服电机垄断力，AI走向物理世界的“肌肉”。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-c999c1056d",
+      "title": "Harmonic Drive Systems",
+      "type": "stock",
+      "symbol": "6324.T",
+      "stooq_symbol": "6324.t",
+      "market": "JP",
+      "keywords": [
+        "Harmonic Drive",
+        "6324.T"
+      ],
+      "industry_keywords": [
+        "Robotics",
+        "Reducer",
+        "Embodied AI"
+      ],
+      "note": "Japan AI value chain: Robotics (Embodied AI): 生产机器人核心组件“高精度减速器”。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-fdc147f64f",
+      "title": "Sakura Internet",
+      "type": "stock",
+      "symbol": "3778.T",
+      "stooq_symbol": "3778.t",
+      "market": "JP",
+      "keywords": [
+        "Sakura Internet",
+        "3778.T"
+      ],
+      "industry_keywords": [
+        "Cloud Computing",
+        "AI Infrastructure",
+        "Sovereign AI"
+      ],
+      "note": "Japan AI value chain: LLM & Compute Platform: 日本政府扶持算力先行者，主权AI政策受益者。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-8152b41c5f",
+      "title": "SoftBank Group",
+      "type": "stock",
+      "symbol": "9984.T",
+      "stooq_symbol": "9984.t",
+      "market": "JP",
+      "keywords": [
+        "SoftBank",
+        "9984.T",
+        "软银"
+      ],
+      "industry_keywords": [
+        "AI Infrastructure",
+        "Investment",
+        "Data Center"
+      ],
+      "note": "Japan AI value chain: LLM & Compute Platform: 持有ARM及自建数据中心，转型AI基建。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-8416da72c7",
+      "title": "Mitsubishi Corp",
+      "type": "stock",
+      "symbol": "8058.T",
+      "stooq_symbol": "8058.t",
+      "market": "JP",
+      "keywords": [
+        "Mitsubishi Corp",
+        "8058.T",
+        "三菱商事"
+      ],
+      "industry_keywords": [
+        "Trading",
+        "AI Infrastructure",
+        "Energy"
+      ],
+      "note": "Japan AI value chain: Trading Companies: 深度参与AI基建与算力投资。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-9f4b66920a",
+      "title": "Mitsui & Co",
+      "type": "stock",
+      "symbol": "8031.T",
+      "stooq_symbol": "8031.t",
+      "market": "JP",
+      "keywords": [
+        "Mitsui",
+        "8031.T",
+        "三井物产"
+      ],
+      "industry_keywords": [
+        "Trading",
+        "Digital Infrastructure",
+        "Healthcare AI"
+      ],
+      "note": "Japan AI value chain: Trading Companies: 在数字基础设施和医疗AI领域布局极广。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-d2bbde9e1c",
+      "title": "Itochu Corp",
+      "type": "stock",
+      "symbol": "8001.T",
+      "stooq_symbol": "8001.t",
+      "market": "JP",
+      "keywords": [
+        "Itochu",
+        "8001.T",
+        "伊藤忠商事"
+      ],
+      "industry_keywords": [
+        "Trading",
+        "Consumption",
+        "Software Integration"
+      ],
+      "note": "Japan AI value chain: Trading Companies: 子公司在AI软件集成方面表现强劲。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-020cae0e85",
+      "title": "Sumitomo Corp",
+      "type": "stock",
+      "symbol": "8053.T",
+      "stooq_symbol": "8053.t",
+      "market": "JP",
+      "keywords": [
+        "Sumitomo Corp",
+        "8053.T",
+        "住友商事"
+      ],
+      "industry_keywords": [
+        "Trading",
+        "Real Estate",
+        "Data Center"
+      ],
+      "note": "Japan AI value chain: Trading Companies: 拥有大量数据中心选址所需的土地与电力资源。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
+    },
+    {
+      "id": "stock-17c89e7ed0",
+      "title": "Marubeni Corp",
+      "type": "stock",
+      "symbol": "8002.T",
+      "stooq_symbol": "8002.t",
+      "market": "JP",
+      "keywords": [
+        "Marubeni",
+        "8002.T",
+        "丸红"
+      ],
+      "industry_keywords": [
+        "Trading",
+        "Green Energy",
+        "Power"
+      ],
+      "note": "Japan AI value chain: Trading Companies: 在绿色能源供给（AI算力急需）上具有优势。",
+      "added_at": "2026-02-28 18:04:45",
+      "active": true,
+      "position": "观察"
     }
   ]
 }

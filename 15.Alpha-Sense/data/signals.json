@@ -1,0 +1,20 @@
+[
+  {
+    "id": "d5351993",
+    "raw_input": "苹果最新的笔记本芯片很厉害，M5 max的AI推理性能炸裂",
+    "signal_type": "product_intuition",
+    "matched_catalysts": [
+      "技术可行性验证（10倍性能飞跃）"
+    ],
+    "tech_stage": "",
+    "related_tickers": [
+      "AAPL",
+      "GOOGL",
+      "META"
+    ],
+    "thesis_draft": "信号来源：苹果最新的笔记本芯片很厉害，M5 max的AI推理性能炸裂... → 关联标的 AAPL / GOOGL / META，匹配催化剂：技术可行性验证（10倍性能飞跃）",
+    "initial_prior": 0.6000000000000001,
+    "created_at": "2026-03-25T19:51:41.562915",
+    "status": "new"
+  }
+]

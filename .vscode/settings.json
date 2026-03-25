@@ -22,5 +22,6 @@
       "file": ".github/copilot-instructions.md"
     }
   ],
-  "python.analysis.typeCheckingMode": "standard"
+  "python.analysis.typeCheckingMode": "standard",
+  "cursorpyright.analysis.typeCheckingMode": "standard"
 }
